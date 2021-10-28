@@ -1,0 +1,14 @@
+.primary-color-text { color: #e60028; }
+.secondary-color-text { color: #000000; }
+
+.primary-color, .primary-color:disabled {
+    background-color: #e60028;
+    border-color: #000000;
+    color: #000000;
+}
+
+.secondary-color, .secondary-color:disabled {
+    background-color: #000000;
+    border-color: #e60028;
+    color: #e60028;;
+}
