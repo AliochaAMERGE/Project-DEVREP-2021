@@ -1,4 +1,7 @@
-# Projet DEVREP
+# Projet DEVREP 2021
+
+MISTRY Namrata
+AMERGÉ Aliocha
 
 A faire avant le 9/12
 
@@ -34,4 +37,7 @@ https://spring.io/guides/gs/spring-boot/
 
 ### Restitution du projet
 
-- [ ] 
+- [ ] Code source (lien github)
+- [ ] Documentation utilisateur
+- [ ] Documentation administrateur
+- [ ] Documentation déploiement, démarrage et connexion à l'application (Docker ou Vagrant possible)
