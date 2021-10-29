@@ -41,3 +41,14 @@ https://spring.io/guides/gs/spring-boot/
 - [ ] Documentation utilisateur
 - [ ] Documentation administrateur
 - [ ] Documentation déploiement, démarrage et connexion à l'application (Docker ou Vagrant possible)
+
+
+## TODO with details :
+
+- [x] creer une connection a une bases de donnée
+- [ ] creer un serveur Spring Boot
+- [ ] lier la base de donnée et le serveur
+- [ ] creer une base de donne client solde (historique?)
+- [ ] afficher une page de garde dummy
+- [ ] afficher une vrai page de garde avec le front donné
+- [ ] 
