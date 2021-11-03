@@ -1,0 +1,15 @@
+.primary-color-text { color: #cfb128; }
+.secondary-color-text { color: #1847a1; }
+
+.primary-color, .primary-color:disabled {
+    background-color: #cfb128;
+    border-color: #1847a1;
+    color: #1847a1;
+}
+
+
+.secondary-color, .secondary-color:disabled {
+    background-color: #1847a1;
+    border-color: #cfb128;
+    color: #cfb128;;
+}

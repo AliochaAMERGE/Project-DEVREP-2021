@@ -45,10 +45,12 @@ https://spring.io/guides/gs/spring-boot/
 
 ## TODO with details :
 
-- [x] creer une connection a une bases de donnée
-- [ ] creer un serveur Spring Boot
+- [x] creer un serveur Spring Boot
+- [x] afficher une page de garde dummy
+- [ ] créer une base de donnnée mysql
+- [ ] creer une connection a une bases de donnée
 - [ ] lier la base de donnée et le serveur
 - [ ] creer une base de donne client solde (historique?)
-- [ ] afficher une page de garde dummy
 - [ ] afficher une vrai page de garde avec le front donné
+- [ ] Sevice d'authentification
 - [ ] 
