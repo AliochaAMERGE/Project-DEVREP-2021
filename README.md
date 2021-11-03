@@ -65,3 +65,6 @@ https://spring.io/guides/gs/spring-boot/
 
 https://www.baeldung.com/spring-boot-admin
 
+- database (mysql)
+
+https://spring.io/guides/gs/accessing-data-mysql/
