@@ -80,7 +80,7 @@ ajout de index.html dans resources/templates
 ajout de spring-boot-starter-thymeleaf dans pom.xml
 *-> rendu de la page*
 ajout de data images scripts styles etc (de frontend/app) dans static
-*Création de la database : https://spring.io/guides/gs/accessing-data-mysql/*
+**Création de la database : https://spring.io/guides/gs/accessing-data-mysql/**
 ajout de spring-boot-starter-data-jpa dans pom.xml
 ajout de mysql-connector-java dans pom.xml
 création de User.java
@@ -98,4 +98,11 @@ Les paths marchent, et sont en fait ("/db/all" pour voir la db)
 et `$ curl localhost:8080/demo/add -d name=First -d email=someemail@someemailprovider.com`
 pour ajouter une valeurs
 *-> database link ok*
-
+**Securing with https://spring.io/guides/gs/securing-web/**
+Création du fichier MvcConfig.java
+Ajout de spring-boot-starter-security dans pom.xml
+Ajout de spring-security-test dans pom.xml
+Création de home.html
+Création de WebSecurityConfig.java
+modification de helo.html & création de login.html
+*-> sur url /hello, demande de mot de passe user,password ok*
