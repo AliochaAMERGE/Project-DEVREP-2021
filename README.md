@@ -68,3 +68,27 @@ https://www.baeldung.com/spring-boot-admin
 - database (mysql)
 
 https://spring.io/guides/gs/accessing-data-mysql/
+
+
+## Work done :
+
+creation du projet avec Spring boot initializer
+Création d'un controller pour map ("/")
+ajout de index.html dans resources/templates
+ajout de spring-boot-starter-thymeleaf dans pom.xml
+*-> rendu de la page*
+ajout de data images scripts styles etc (de frontend/app) dans static
+*Création de la database : https://spring.io/guides/gs/accessing-data-mysql/*
+ajout de spring-boot-starter-data-jpa dans pom.xml
+ajout de mysql-connector-java dans pom.xml
+création de User.java
+Création de UserRepository.java
+création de DatabaseController.java
+*-> test de la database sur /all et /demo*
+ERROR
+ajout des éléments dans application.properties
+ERROR
+./mvmn package
+ERROR : java.sql.SQLException: Access denied for user 'springuser'@'localhost' (using password: YES)
+User changed to root, and sudo mysql_secure_installation
+le seveur se lance, mais pas les nouveaux path (add, demo et all)
