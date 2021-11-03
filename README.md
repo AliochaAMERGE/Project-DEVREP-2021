@@ -47,12 +47,14 @@ https://spring.io/guides/gs/spring-boot/
 
 - [x] creer un serveur Spring Boot
 - [x] afficher une page de garde dummy
-- [ ] créer une base de donnnée mysql
-- [ ] creer une connection a une bases de donnée
-- [ ] lier la base de donnée et le serveur
-- [ ] creer une base de donne client solde (historique?)
+- [x] créer une base de donnnée mysql
+- [x] creer une connection a une bases de donnée
+- [x] lier la base de données et le serveur
+- [x] creer une base de donne client solde (historique?)
+- [ ] ajouter un historique sur la base de donnée
 - [ ] afficher une vrai page de garde avec le front donné
 - [ ] Sevice d'authentification
+- [ ] admin page (password protected)
 
 
 
@@ -92,3 +94,8 @@ ERROR
 ERROR : java.sql.SQLException: Access denied for user 'springuser'@'localhost' (using password: YES)
 User changed to root, and sudo mysql_secure_installation
 le seveur se lance, mais pas les nouveaux path (add, demo et all)
+Les paths marchent, et sont en fait ("/db/all" pour voir la db)
+et `$ curl localhost:8080/demo/add -d name=First -d email=someemail@someemailprovider.com`
+pour ajouter une valeurs
+*-> database link ok*
+
