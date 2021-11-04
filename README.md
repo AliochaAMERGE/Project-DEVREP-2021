@@ -56,7 +56,10 @@ https://spring.io/guides/gs/spring-boot/
 - [ ] Sevice d'authentification
 - [ ] admin page (password protected)
 
+## Limites actuelles :
 
+- mysql database accéder par l'utilisateur root ayant tout les droits, et pas de protection de mot de passe
+- url admin "protégé" par un mot de passe en dur, et donc accessible par tous
 
 
 
@@ -106,3 +109,7 @@ Création de home.html
 Création de WebSecurityConfig.java
 modification de helo.html & création de login.html
 *-> sur url /hello, demande de mot de passe user,password ok*
+password protected url changed to /admin
+**Authentification with OAuth2**
+https://spring.io/guides/tutorials/spring-boot-oauth2/
+ 
