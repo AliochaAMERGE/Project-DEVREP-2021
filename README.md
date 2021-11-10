@@ -111,5 +111,9 @@ modification de helo.html & création de login.html
 *-> sur url /hello, demande de mot de passe user,password ok*
 password protected url changed to /admin
 **Authentification with OAuth2**
-https://spring.io/guides/tutorials/spring-boot-oauth2/
- 
+~~https://spring.io/guides/tutorials/spring-boot-oauth2/~~
+https://www.baeldung.com/spring-security-5-oauth2-login
+Google credentials :  https://console.cloud.google.com/apis/credentials?project=devrep-bankapp&supportedpurview=project
+ID Client : 1009894793512-apqco8t8p6al9j7caro49irc42p25og9.apps.googleusercontent.com
+Code secret client : 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
+

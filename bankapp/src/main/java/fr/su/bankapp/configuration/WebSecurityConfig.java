@@ -15,8 +15,15 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		http.authorizeRequests().antMatchers("/", "/home").permitAll().anyRequest().authenticated().and().formLogin()
-				.loginPage("/login").permitAll().and().logout().permitAll();
+		http.authorizeRequests().antMatchers("/", "/admin").permitAll().anyRequest().authenticated()
+		.and().formLogin().loginPage("/login").permitAll()
+		.and().logout().permitAll()
+		.and().oauth2Login()
+		// .defaultSuccessUrl("/loginSuccess")
+  		// .failureUrl("/loginFailure")
+		;
+
+		// http.authorizeRequests().anyRequest().authenticated().and().oauth2Login();
 	}
 
 	@Bean
@@ -28,7 +35,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 				 * Deprecated :
 				 * https://stackoverflow.com/questions/49847791/java-spring-security-user-withdefaultpasswordencoder-is-deprecated/49847852
 				 */
-				 User.withDefaultPasswordEncoder().username("user").password("password").roles("USER").build();
+				User.withDefaultPasswordEncoder().username("user").password("password").roles("USER").build();
 
 		return new InMemoryUserDetailsManager(user);
 	}
