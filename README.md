@@ -77,43 +77,86 @@ https://spring.io/guides/gs/accessing-data-mysql/
 
 ## Work done :
 
+
 creation du projet avec Spring boot initializer
+
 Création d'un controller pour map ("/")
+
 ajout de index.html dans resources/templates
+
 ajout de spring-boot-starter-thymeleaf dans pom.xml
+
 *-> rendu de la page*
+
 ajout de data images scripts styles etc (de frontend/app) dans static
+
 **Création de la database : https://spring.io/guides/gs/accessing-data-mysql/**
+
 ajout de spring-boot-starter-data-jpa dans pom.xml
+
 ajout de mysql-connector-java dans pom.xml
+
 création de User.java
+
 Création de UserRepository.java
+
 création de DatabaseController.java
+
 *-> test de la database sur /all et /demo*
+
 ERROR
+
 ajout des éléments dans application.properties
+
 ERROR
+
 ./mvmn package
+
 ERROR : java.sql.SQLException: Access denied for user 'springuser'@'localhost' (using password: YES)
+
 User changed to root, and sudo mysql_secure_installation
+
 le seveur se lance, mais pas les nouveaux path (add, demo et all)
+
 Les paths marchent, et sont en fait ("/db/all" pour voir la db)
+
 et `$ curl localhost:8080/demo/add -d name=First -d email=someemail@someemailprovider.com`
+
 pour ajouter une valeurs
+
 *-> database link ok*
+
 **Securing with https://spring.io/guides/gs/securing-web/**
+
 Création du fichier MvcConfig.java
+
 Ajout de spring-boot-starter-security dans pom.xml
+
 Ajout de spring-security-test dans pom.xml
+
 Création de home.html
+
 Création de WebSecurityConfig.java
+
 modification de helo.html & création de login.html
+
 *-> sur url /hello, demande de mot de passe user,password ok*
+
 password protected url changed to /admin
+
 **Authentification with OAuth2**
+
 ~~https://spring.io/guides/tutorials/spring-boot-oauth2/~~
+
 https://www.baeldung.com/spring-security-5-oauth2-login
+
 Google credentials :  https://console.cloud.google.com/apis/credentials?project=devrep-bankapp&supportedpurview=project
+
 ID Client : 1009894793512-apqco8t8p6al9j7caro49irc42p25og9.apps.googleusercontent.com
+
 Code secret client : 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
 
+
+## RE TODO
+
+https://spring.io/guides/tutorials/react-and-spring-data-rest/
