@@ -141,4 +141,26 @@ public class Client {
         return true;
     }
 
+    public Double deposit(Double amount) {
+        this.balance += amount;
+        return this.balance;
+    }
+
+    public Double withdraw(Double amount) {
+
+        if (this.balance - amount >= overdraft) {
+            this.balance -= amount;
+        } else {
+            // TODO Raise exception or return -1 ?
+        }
+        return this.balance;
+    }
+
+    public void displayClientInfo() {
+        System.out.println(" Account ID :" + this.id);
+        System.out.println(" Account owner : " + this.firstName + " " + this.lastName + " : " + this.mailAddress);
+        System.out.println(" Account Balance :" + this.balance);
+        System.out.println(" Account Limit :" + this.overdraft);
+    }
+
 }

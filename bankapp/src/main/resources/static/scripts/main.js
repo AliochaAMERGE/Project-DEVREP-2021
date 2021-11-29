@@ -1,5 +1,3 @@
-/// <reference path="../../node_modules/jquery/dist/jquery.js" />
-
 window.addEventListener("load", (_) => init());
 
 function init() {
