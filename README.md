@@ -45,12 +45,12 @@ https://spring.io/guides/gs/spring-boot/
 
 ## TODO with details :
 
-- [x] creer un serveur Spring Boot
-- [x] afficher une page de garde dummy
-- [x] créer une base de donnnée mysql
-- [x] creer une connection a une bases de donnée
-- [x] lier la base de données et le serveur
-- [x] creer une base de donne client solde (historique?)
+- [ ] creer un serveur Spring Boot
+- [ ] afficher une page de garde dummy
+- [ ] créer une base de donnnée mysql
+- [ ] creer une connection a une bases de donnée
+- [ ] lier la base de données et le serveur
+- [ ] creer une base de donne client solde (historique?)
 - [ ] ajouter un historique sur la base de donnée
 - [ ] afficher une vrai page de garde avec le front donné
 - [ ] Sevice d'authentification
@@ -74,57 +74,6 @@ https://www.baeldung.com/spring-boot-admin
 
 https://spring.io/guides/gs/accessing-data-mysql/
 
-
-## Work done :
-
-
-creation du projet avec Spring boot initializer
-
-Création d'un controller pour map ("/")
-
-ajout de index.html dans resources/templates
-
-ajout de spring-boot-starter-thymeleaf dans pom.xml
-
-*-> rendu de la page*
-
-ajout de data images scripts styles etc (de frontend/app) dans static
-
-**Création de la database : https://spring.io/guides/gs/accessing-data-mysql/**
-
-ajout de spring-boot-starter-data-jpa dans pom.xml
-
-ajout de mysql-connector-java dans pom.xml
-
-création de User.java
-
-Création de UserRepository.java
-
-création de DatabaseController.java
-
-*-> test de la database sur /all et /demo*
-
-ERROR
-
-ajout des éléments dans application.properties
-
-ERROR
-
-./mvmn package
-
-ERROR : java.sql.SQLException: Access denied for user 'springuser'@'localhost' (using password: YES)
-
-User changed to root, and sudo mysql_secure_installation
-
-le seveur se lance, mais pas les nouveaux path (add, demo et all)
-
-Les paths marchent, et sont en fait ("/db/all" pour voir la db)
-
-et `$ curl localhost:8080/demo/add -d name=First -d email=someemail@someemailprovider.com`
-
-pour ajouter une valeurs
-
-*-> database link ok*
 
 **Securing with https://spring.io/guides/gs/securing-web/**
 
@@ -160,3 +109,10 @@ Code secret client : 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
 ## RE TODO
 
 https://spring.io/guides/tutorials/react-and-spring-data-rest/
+
+https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#reference
+
+
+- Video magique :
+
+https://www.youtube.com/watch?v=G46fjVzQ7BQ
