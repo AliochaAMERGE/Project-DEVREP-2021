@@ -2,17 +2,21 @@ package fr.su.bankapp.model;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.UniqueConstraint;
 
 /**
  * Client model
  */
 @Entity
-@Table(name = "Client")
+@Table(name = "Client", uniqueConstraints = {
+        @UniqueConstraint(name = "firstname_lastname", columnNames = { "firstName", "lastName" })
+})
 public class Client implements Serializable {
 
     @Id
@@ -21,23 +25,25 @@ public class Client implements Serializable {
 
     private String firstName;
     private String lastName;
+
+    // email should be unique
+    @Column(unique = true)
     private String email;
+
     private Double balance;
     private Double overdraft;
-    private String currency;
 
     public Client() {
 
     }
 
-    public Client(String firstName, String lastName, String email, Double balance, Double overdraft, String currency) {
+    public Client(String firstName, String lastName, String email, Double balance, Double overdraft) {
         super();
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
         this.balance = balance;
         this.overdraft = overdraft;
-        this.currency = currency;
     }
 
     public Client(String firstName, String lastName, String email) {
@@ -47,7 +53,6 @@ public class Client implements Serializable {
         this.email = email;
         this.balance = 0.0;
         this.overdraft = 0.0;
-        this.currency = "Euros";
     }
 
     public long getId() {
@@ -98,25 +103,16 @@ public class Client implements Serializable {
         this.overdraft = overdraft;
     }
 
-    public String getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(String currency) {
-        this.currency = currency;
-    }
-
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((balance == null) ? 0 : balance.hashCode());
-        result = prime * result + ((currency == null) ? 0 : currency.hashCode());
         result = prime * result + ((email == null) ? 0 : email.hashCode());
         result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
-        result = prime * result + (int) (id ^ (id >>> 32));
         result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
         result = prime * result + ((overdraft == null) ? 0 : overdraft.hashCode());
+        result = prime * result + (int) (id ^ (id >>> 32));
         return result;
     }
 
@@ -133,11 +129,6 @@ public class Client implements Serializable {
             if (other.balance != null)
                 return false;
         } else if (!balance.equals(other.balance))
-            return false;
-        if (currency == null) {
-            if (other.currency != null)
-                return false;
-        } else if (!currency.equals(other.currency))
             return false;
         if (email == null) {
             if (other.email != null)

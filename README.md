@@ -64,55 +64,16 @@ https://spring.io/guides/gs/spring-boot/
 
 
 
-## Sources : 
 
-- Administrateur 
+TODO with sources : 
 
-https://www.baeldung.com/spring-boot-admin
-
-- database (mysql)
-
-https://spring.io/guides/gs/accessing-data-mysql/
+- register an account (if already logged in)
+https://www.codejava.net/frameworks/spring-boot/user-registration-and-login-tutorial
 
 
-**Securing with https://spring.io/guides/gs/securing-web/**
-
-Création du fichier MvcConfig.java
-
-Ajout de spring-boot-starter-security dans pom.xml
-
-Ajout de spring-security-test dans pom.xml
-
-Création de home.html
-
-Création de WebSecurityConfig.java
-
-modification de helo.html & création de login.html
-
-*-> sur url /hello, demande de mot de passe user,password ok*
-
-password protected url changed to /admin
-
-**Authentification with OAuth2**
-
-~~https://spring.io/guides/tutorials/spring-boot-oauth2/~~
-
-https://www.baeldung.com/spring-security-5-oauth2-login
-
-Google credentials :  https://console.cloud.google.com/apis/credentials?project=devrep-bankapp&supportedpurview=project
-
-ID Client : 1009894793512-apqco8t8p6al9j7caro49irc42p25og9.apps.googleusercontent.com
-
-Code secret client : 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
 
 
-## RE TODO
+@Question ❓
 
-https://spring.io/guides/tutorials/react-and-spring-data-rest/
-
-https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#reference
-
-
-- Video magique :
-
-https://www.youtube.com/watch?v=G46fjVzQ7BQ
+- Faire deux bases de données (login & account data)
+- 
