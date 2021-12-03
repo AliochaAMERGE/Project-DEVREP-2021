@@ -1,7 +1,5 @@
 package fr.su.bankapp.repository;
 
-import java.util.Optional;
-
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -12,8 +10,8 @@ import fr.su.bankapp.model.Client;
 @Repository
 public interface ClientRepository extends JpaRepository<Client, Long> {
 
-    // @Query("select c from Client c where c.firstname = :firstname and c.lastname = :lastname and c.email = :email")
-    // Optional<Client> findByName(@Param("firstname") String firstname, @Param("lastname") String lastname, @Param("email") String email);
-    // // Optional<Client> findByName(String firstname, String lastname, String email);
+    @Query("select c from Client c where c.firstName = :firstName and c.lastName = :lastName and c.email = :email")
+    Client findByIdentity(@Param("firstName") String firstName, @Param("lastName") String lastName, @Param("email") String email);
+    // Optional<Client> findByName(String firstname, String lastname, String email);
 
 }

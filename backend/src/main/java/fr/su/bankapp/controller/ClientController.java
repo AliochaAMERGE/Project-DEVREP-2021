@@ -68,6 +68,16 @@ public class ClientController {
     //                     + " couldn't be found in the database."));
     // }
 
+
+     @ResponseBody
+    @GetMapping(path = "/client/{firstname}/{lastname}/{email}")
+    public Client getClientName(@PathVariable("firstname") String firstname, @PathVariable("lastname") String lastname,
+            @PathVariable("email") String email) {
+
+        return clientRepository.findByIdentity(firstname, lastname, email);
+    }
+
+
     // TODO : change route ! admin reserved
     /** Add a client to the database with firstname, lastname and email */
     @ResponseBody
