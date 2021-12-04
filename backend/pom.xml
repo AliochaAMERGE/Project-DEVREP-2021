@@ -11,6 +11,8 @@
 
     <artifactId>backend</artifactId>
 
+    <packaging>war</packaging>
+
     <name>backend</name>
     <description>Backend Module for our project</description>
 
