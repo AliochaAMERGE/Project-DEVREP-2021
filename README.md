@@ -76,4 +76,8 @@ https://www.codejava.net/frameworks/spring-boot/user-registration-and-login-tuto
 @Question ❓
 
 - Faire deux bases de données (login & account data)
-- 
+
+
+TODO : 
+
+gérer les erreurs en cas de clients non existant

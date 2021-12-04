@@ -1,0 +1,13 @@
+java-jdk-11
+    can be changed in pom.xml
+mysql
+    localhost connection
+    port 3306
+    database client_bankapp
+    username = root
+    password = password
+    can be changed in /backend/src/ressources/application.properties
+npm@8.2.0
+@vue/cli 4.5.15
+
+
