@@ -4,13 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.*;
 
 import fr.su.bankapp.exception.ResourceNotFoundException;
 import fr.su.bankapp.model.Client;
@@ -25,7 +20,7 @@ import fr.su.bankapp.repository.ClientRepository;
  * ✅ add a client to the database
  * ❌ remove a client from the database
  */
-@RestController
+@Controller
 @RequestMapping("/api/")
 public class ClientController {
 
@@ -53,21 +48,6 @@ public class ClientController {
         }).orElseThrow(() -> new ResourceNotFoundException(
                 "The client with the id " + id + " couldn't be found in the database."));
     }
-
-    // /** Get an Client by his firstname, lastname and email */
-    // @ResponseBody
-    // @GetMapping(path = "/client/{firstname}/{lastname}/{email}")
-    // public Client getClientName(@PathVariable("firstname") String firstname, @PathVariable("lastname") String lastname,
-    //         @PathVariable("email") String email) {
-
-    //     return clientRepository.findByName(firstname, lastname, email).map(client -> {
-    //         // TODO logging : LOG.info("Reading client with id " + id + " from database.");
-    //         return client;
-    //     }).orElseThrow(() -> new ResourceNotFoundException(
-    //             "The client with the name " + firstname + " " + lastname + " : " + email
-    //                     + " couldn't be found in the database."));
-    // }
-
 
      @ResponseBody
     @GetMapping(path = "/client/{firstname}/{lastname}/{email}")
@@ -108,4 +88,10 @@ public class ClientController {
         return savedClient.getId();
     }
 
+    // Forwards all routes to FrontEnd except: '/', '/index.html', '/api', '/api/**', '/about.html'
+    @RequestMapping(value = "{_:^(?!index\\.html|api|about).$}")
+    public String redirectApi() {
+        // LOG.info("URL entered directly into the Browser, so we need to redirect...");
+        return "forward:/";
+    }
 }

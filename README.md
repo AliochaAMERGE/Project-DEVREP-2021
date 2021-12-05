@@ -81,3 +81,24 @@ https://www.codejava.net/frameworks/spring-boot/user-registration-and-login-tuto
 TODO : 
 
 gérer les erreurs en cas de clients non existant
+
+
+
+
+
+routes : 
+
+REST : 
+    upon client connection
+    - get client id from email password
+    - get client account from id
+    upon secured connection
+    - create new account
+    - delete account
+    - change account informations (like overdraft)
+
+route : 
+    client side : 
+    - main page
+    secured :
+    - creation menu ??
