@@ -11,15 +11,6 @@ import fr.su.bankapp.exception.ResourceNotFoundException;
 import fr.su.bankapp.model.Client;
 import fr.su.bankapp.repository.ClientRepository;
 
-/**
- * Main routes class for Rest requests.
- * TODO :
- * ✅ get a list of all clients
- * ✅ get a client with account id
- * ❌ check if client exists in database (with mail, firstname and lastName)
- * ✅ add a client to the database
- * ❌ remove a client from the database
- */
 @Controller
 @RequestMapping("/api/")
 public class ClientController {
@@ -32,12 +23,13 @@ public class ClientController {
      * 
      * @return list of Clients
      */
+    @ResponseBody
     @GetMapping("/clients")
     public List<Client> getAllClients() {
         return clientRepository.findAll();
     }
 
-    /** Get an Client by his account id */
+    /** Get a Client by his account id */
     @ResponseBody
     @GetMapping(path = "/client/{id}")
     public Client getClientById(@PathVariable("id") long id) {
@@ -49,7 +41,7 @@ public class ClientController {
                 "The client with the id " + id + " couldn't be found in the database."));
     }
 
-     @ResponseBody
+    @ResponseBody
     @GetMapping(path = "/client/{firstname}/{lastname}/{email}")
     public Client getClientName(@PathVariable("firstname") String firstname, @PathVariable("lastname") String lastname,
             @PathVariable("email") String email) {
@@ -88,6 +80,7 @@ public class ClientController {
         return savedClient.getId();
     }
 
+    @ResponseBody
     // Forwards all routes to FrontEnd except: '/', '/index.html', '/api', '/api/**', '/about.html'
     @RequestMapping(value = "{_:^(?!index\\.html|api|about).$}")
     public String redirectApi() {
