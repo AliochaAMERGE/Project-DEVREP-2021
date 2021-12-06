@@ -1,0 +1,20 @@
+.primary-color-text {
+  color: default;
+}
+.secondary-color-text {
+  color: default;
+}
+
+.primary-color,
+.primary-color:disabled {
+  background-color: default;
+  border-color: default;
+  color: default;
+}
+
+.secondary-color,
+.secondary-color:disabled {
+  background-color: default;
+  border-color: default;
+  color: default;
+}
