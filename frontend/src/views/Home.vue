@@ -82,7 +82,7 @@
                   - "./images/bank_icons/societe_generale.png"
                   ./images/bank_icons/banque_postale.png ./images/bank_icons/cic.png ./images/bank_icons/societe_generale.png
                 -->
-              <img src="images/bank_icons/banque_postale.png" alt="Image" />
+              <img src="./../static/images/bank_icons/banque_postale.png" alt="Image" />
             </figure>
           </div>
           <div class="media-content">
