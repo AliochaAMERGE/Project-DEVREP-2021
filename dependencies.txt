@@ -7,6 +7,6 @@ mysql
     username = root
     password = password
     can be changed in /backend/src/ressources/application.properties
-node@8.2.0
+node@16.13.1
 @vue/cli 4.5.15
 
