@@ -4,3 +4,4 @@ target/
 .mvn/wrapper/maven-wrapper.jar
 **/.vscode/**
 **/taget/
+./frontend/node_modules

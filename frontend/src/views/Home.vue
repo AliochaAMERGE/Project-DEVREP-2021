@@ -170,16 +170,6 @@
     </div>
   </div>
 
-  <!-- The core Firebase JS SDK is always required and must be listed first
-  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
-  <script type="text/javascript" src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>-->
-  <!-- Firebase configuration -->
-  <!--<script type="text/javascript" src="scripts/firebase_configuration.js"></script>-->
-  <!--<script type="text/javascript"
-          src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-  <!-- Personal scripts -->
-
   </body>
 
 </template>
@@ -192,4 +182,6 @@ export default {
   components: {
   }
 }
+
+
 </script>
