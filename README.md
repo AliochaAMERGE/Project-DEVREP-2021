@@ -102,3 +102,29 @@ route :
     - main page
     secured :
     - creation menu ??
+
+
+
+
+
+TODO
+
+LOGIN via AUTH  (firebase)
+LOIGN VIA MAIL ET MDP (ou pas) (route /login "simple")
+
+Lire le compte en fonction de l'adresse mail (puis l'id) 
+
+Faire le requete REST pour creer un utilisateur (ou modifier)
+
+Withdraw() et deposit()
+
+docker de la bdd (docker start ?)
+
+README explication executer
+
+(lancer indepedemment :  ./mvnm spring-boot:run   puis npm run serve et url localhost:8081)
+
+lancer tout en meme temps :  creation du package et java -jar backend/target/bankapp.war
+
+Logging !
+

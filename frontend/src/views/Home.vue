@@ -1,13 +1,13 @@
 <template>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Bank Web Application</title>
-    <link rel="apple-touch-icon" href="./../static/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="./../static/apple-touch-icon.png"/>
     <!-- Place favicon.ico in the root directory -->
     <!--<link href="bulma.min.css" /> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="./../static/styles/main.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"/>
+    <link rel="stylesheet" href="./../static/styles/main.css"/>
 
     <!-- Choose the icon between :
         - "./styles/banks/banque_postale.css"
@@ -16,7 +16,7 @@
 
         ./styles/banks/banque_postale.css ./styles/banks/cic.css ./styles/banks/societe_generale.css
       -->
-    <link rel="stylesheet" href="./../static/styles/banks/banque_postale.css" />
+    <link rel="stylesheet" href="./../static/styles/banks/banque_postale.css"/>
   </head>
 
 
@@ -46,7 +46,7 @@
         </button>
       </span>
       <span id="logout-button-container">
-        <button class="button is-danger is-outlined" id="logout-button">
+        <button v-if='connect' class="button is-danger is-outlined" id="logout-button">
           <span class="icon">
             <i class="fas fa-sign-out-alt"></i>
           </span>
@@ -56,16 +56,16 @@
     </div>
     <!-- Column that contains log states tags -->
     <div class="column" style="text-align: right">
-      <span id="logged-tag" class="tag is-success is-medium">Connected</span>
-      <span id="not-logged-tag" class="tag is-warning is-medium">Not connected</span>
+      <span v-if="connect" id="logged-tag" class="tag is-success is-medium">Connected</span>
+      <span v-else id="not-logged-tag" class="tag is-warning is-medium">Not connected</span>
     </div>
   </div>
 
   <!-- The name and description -->
   <section class="section">
     <div class="container">
-      <h1 class="title primary-color-text" id="bankNameContainer"></h1>
-      <h2 class="subtitle secondary-color-text" id="bankDescriptionContainer"></h2>
+      <h1 class="title primary-color-text" id="bankNameContainer">{{bankName}}</h1>
+      <h2 class="subtitle secondary-color-text" id="bankDescriptionContainer">{{bankDescription}}</h2>
     </div>
   </section>
 
@@ -82,15 +82,15 @@
                   - "./images/bank_icons/societe_generale.png"
                   ./images/bank_icons/banque_postale.png ./images/bank_icons/cic.png ./images/bank_icons/societe_generale.png
                 -->
-              <img src="./../static/images/bank_icons/banque_postale.png" alt="Image" />
+              <img src="./../static/images/bank_icons/banque_postale.png" alt="Image"/>
             </figure>
           </div>
           <div class="media-content">
             <div class="content">
               <p>
-                <strong>Account n°<span id="accountId"></span></strong> <br />
-                <small>Current balance : <span id="accountBalance"></span>
-                  <span id="accountCurrency"></span></small>
+                <strong>Account n°<span id="accountId">{{accountId}}</span></strong> <br/>
+                <small>Current balance : <span id="accountBalance">{{accountBalance}}</span>
+                  <span id="accountCurrency">Euros</span></small>
               </p>
             </div>
             <nav class="level is-mobile">
@@ -116,7 +116,7 @@
   <!-- The buttons -->
   <div class="columns">
     <div class="column" style="text-align: start">
-      <button id="withdraw-button" onclick="withdraw()" class="button primary-color">
+      <button id="withdraw-button" onclick="this.withdraw()" class="button primary-color">
         <span class="icon">
           <i class="fas fa-arrow-down"></i>
         </span>
@@ -128,7 +128,7 @@
         </label>-->
     </div>
     <div class="column" style="text-align: end">
-      <button id="deposit-button" onclick="deposit()" class="button secondary-color">
+      <button id="deposit-button" onclick="this.deposit()" class="button secondary-color">
         <span class="icon">
           <i class="fas fa-arrow-up"></i>
         </span>
@@ -144,11 +144,11 @@
         <ul>
           <li>
             <i class="fas fa-phone"></i>
-            <span id="phoneNumberContainer"></span>
+            <span id="phoneNumberContainer">{{phone}}</span>
           </li>
           <li>
             <i class="fas fa-envelope"></i>
-            <span id="mailContainer"></span>
+            <span id="mailContainer">{{mail}}</span>
           </li>
         </ul>
       </div>
@@ -158,12 +158,12 @@
       <div class="columns is-mobile">
         <div class="column is-half">
           <figure class="image is-64x64">
-            <img src="./../static/images/masterard.png" alt="Image" />
+            <img src="src/static/images/mastercard.png" alt="Image"/>
           </figure>
         </div>
         <div class="column is-half">
           <figure class="image is-64x64">
-            <img style="margin-top: 13px" src="./../static/images/visa.png" alt="Image" />
+            <img style="margin-top: 13px" src="./../static/images/visa.png" alt="Image"/>
           </figure>
         </div>
       </div>
@@ -177,11 +177,97 @@
 <script>
 // @ is an alias to /src
 
+
+import axios from 'axios';
+
+
 export default {
   name: 'Home',
-  components: {
+  withLimitation: false,
+  components: {},
+
+  // défini les variables de notre vue
+  data: function () {
+    return {
+      DOMAIN : "https://localhost:8080",
+      BASE_URL : this.DOMAIN + `/api/`,
+      phone : '0000000000',
+      mail : 'example@example.com',
+      accountId : '1',
+      accountBalance : '100',
+      bankName : 'banque_postale',
+      bankDescription : 'une desc',
+      connect : false,
+    }
+  },
+
+  mounted : function () {
+    this.initWebPageWithData();
+    // this.getAccount();
+  },
+
+  methods: {
+
+    deposit() {
+      //const defaultAmount = 200;
+      //const args = {amount: defaultAmount, withLimit: true};
+      const url = this.BASE_URL + "api/";
+      // TODO CHANGER 1
+      axios.get(url + "1").then(account => {
+        this.fillAccountData(account.id, account.balance)
+      })
+    },
+
+    withdraw() {
+      const defaultAmount = 200;
+      const args = {amount: defaultAmount};
+      const url = this.BASE_URL + "Withdraw/";
+      axios.get(url + "/" + args).then(account =>
+          this.fillAccountData(account.id, account.balance)
+      );
+    },
+
+    getAccount() {
+      const url = this.BASE_URL;
+      axios.get(url).then(account =>
+          this.fillAccountData(account.id, account.balance)
+      );
+    },
+
+    fillAccountData(accountIdTemp, accountBalance) {
+      this.accountId = accountIdTemp;
+      this.accountBalance = accountBalance;
+    },
+
+    limitationChanged(checkbox) {
+      this.withLimitation = checkbox.checked;
+    },
+
+    initWebPageWithData() {
+      let donnee = {
+        "name": "La Banque Postale",
+        "description": "La Banque postale est une banque publique française née le 1ᵉʳ janvier 2006, filiale à 100 % du groupe La Poste, dont elle a repris les services financiers. Son réseau de distribution s'appuie sur des bureaux de poste répartis sur le territoire, dont les agents opèrent au nom, et pour le compte de la banque.",
+        "phoneNumber": "09 69 39 99 98",
+        "mail": "laposte@laposte.net"
+      }
+      console.log("YO")
+      console.log(donnee)
+      this.populateWebpageWithData( donnee.name, donnee.description, donnee.phoneNumber, donnee.mail);
+    },
+
+    populateWebpageWithData(
+        bankName,
+        bankDescription,
+        phone,
+        mail
+    ) {
+      console.log(bankName + " " + bankDescription + " " + phone + " " + mail + " ");
+      this.bankName = bankName;
+      this.bankDescription = bankDescription;
+      this.phone = phone;
+      this.mail = mail;
+    }
   }
 }
-
 
 </script>

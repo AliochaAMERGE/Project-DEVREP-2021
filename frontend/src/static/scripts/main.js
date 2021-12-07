@@ -3,7 +3,7 @@
 window.addEventListener("load", (_) => init());
 
 function init() {
-  initWebPageWithData();
+  this.initWebPageWithData();
   getAccount();
 }
 
@@ -22,7 +22,7 @@ const ICONS = {
 
 let withLimitation = false;
 
-function deposit() {
+export function deposit() {
   const defaultAmount = 200;
   const args = { amount: defaultAmount, withLimit: true };
   const url = BASE_URL + "Deposit/";
@@ -31,7 +31,7 @@ function deposit() {
   );
 }
 
-function withdraw() {
+export function withdraw() {
   const defaultAmount = 200;
   const args = { amount: defaultAmount };
   const url = BASE_URL + "Withdraw/";
@@ -40,20 +40,20 @@ function withdraw() {
   );
 }
 
-function getAccount() {
+export function getAccount() {
   const url = BASE_URL;
   $.get(url, (account) =>
     fillAccountData(account.id, account.balance, account.currency)
   );
 }
 
-function fillAccountData(accountId, accountBalance, accountCurrency) {
+export function fillAccountData(accountId, accountBalance, accountCurrency) {
   const currencyIcon = ICONS[accountCurrency];
   $("#accountId").text(accountId);
   $("#accountBalance").text(accountBalance);
   $("#accountCurrency").html(currencyIcon);
 }
 
-function limitationChanged(checkbox) {
+export function limitationChanged(checkbox) {
   withLimitation = checkbox.checked;
 }
