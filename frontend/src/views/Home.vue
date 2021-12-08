@@ -48,13 +48,11 @@
         <!--<input id="v-model-account" class="button is-dark is-outlined" v-model="accountId" placeholder="What is your account ?">
         <p>Your account is now : {{ accountId }}</p>-->
 
-      <h1 v-if="accountId=-1" id="accountIdForm">
         <form>
           <span>Choose your account : </span>
           <input name="accountAlmostId" v-model="accountAlmostId">
           <a href="#" v-on:click="formOnSubmit">SUBMIT</a>
         </form>
-      </h1>
 
 
       </span>
@@ -298,9 +296,12 @@ export default {
     },
 
     fillAccountData(accountId, accountBalance, overdraft) {
+
+      console.log("fillAccountData")
       this.accountId = accountId;
       this.accountBalance = accountBalance;
       this.overdraft = overdraft;
+      console.log("accountId = " + this.accountId)
     },
 
     limitationChanged(checkbox) {
