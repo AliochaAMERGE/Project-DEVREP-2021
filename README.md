@@ -3,124 +3,51 @@
 MISTRY Namrata
 AMERGÉ Aliocha
 
-A faire avant le 9/12
+## Comment exécuter le projet ?
 
-## Resources :
+- Dépendances : 
+  
+    - java 11
+    - node 8.1.2
+    - maven 3.6.3
+    - mysql-server 8.0.27
+    - @vue/cli 4.5.15 (optionnel)
 
-- create spring boot app :
+### Connection à la base de donnée :
 
-https://spring.io/guides/gs/spring-boot/
+> Peut être modifier dans le fichier [application.properties](backend/src/main/resources/application.properties)
 
+- mysql lancée sur le port 3306 (port par défault)
+- Une base de donnée nommée `client_bankapp`
+- une connection username=root, password=password
 
+### Pour exécuter le projet : deux façons différentes
 
-## TODO : 
-
-### Services coté clients
-
-- [ ] Se connecter à son compte bancaire en utilisant plusieurs services d'authentification standards
-- [ ] Manipuler, une fois connecté, son compte bancaire avec les opérations classiques de retrait, dépot et de transfert
-- [ ] Utiliser des services de conversion de devise.
-
-### Fonctionnalité côté administrateur
-
-- [ ] Administrateur (uniquement un seul compte) possédent tout les droits possibles pour administrer l'ensemble du système (y compris créer des comptes pour les clients)
-- [ ] Possibilité de fixer des informations globales pour la gestion de compte. (ex : définition du montant de découvert)
-
-### Architecture de l'application
-
-- [ ] n-tiers : Base de données <-> Application <-> Client
-- [ ] microservices : à définir
-
-### Logging
-
-- [ ] Bibliothèque [LogBack](http://logback.qos.ch/index.html)
-
-### Restitution du projet
-
-- [ ] Code source (lien github)
-- [ ] Documentation utilisateur
-- [ ] Documentation administrateur
-- [ ] Documentation déploiement, démarrage et connexion à l'application (Docker ou Vagrant possible)
+L'adresse du projet est **localhost:8081**, l'adresse de l'api est **localhost:8082/api**
 
 
-## TODO with details :
+Soit en lançant mvn package dans le dossier racine du projet, 
+puis la `java -jar backend/target/bankapp.war` toujours dans le dossier racine.
 
-- [ ] creer un serveur Spring Boot
-- [ ] afficher une page de garde dummy
-- [ ] créer une base de donnnée mysql
-- [ ] creer une connection a une bases de donnée
-- [ ] lier la base de données et le serveur
-- [ ] creer une base de donne client solde (historique?)
-- [ ] ajouter un historique sur la base de donnée
-- [ ] afficher une vrai page de garde avec le front donné
-- [ ] Sevice d'authentification
-- [ ] admin page (password protected)
+Soit en lançant individuellement le backend (fichier [application.java](backend/src/main/java/fr/su/bankapp/Application.java))
+Puis dans le dossier `./frontend` lancer les commandes :
+- `npm install` (peut prendre un certain temps)
+- `npm run serve`
 
-## Limites actuelles :
+### fonctionnalitées
 
-- mysql database accéder par l'utilisateur root ayant tout les droits, et pas de protection de mot de passe
-- url admin "protégé" par un mot de passe en dur, et donc accessible par tous
+Au lancement du site, il faudra choisir un identifiant de compte.
+Une fois cela fait, vous aurez le droit de déposer (deposit) ou retirer de l'argent (withdraw) de votre compte.
 
+Coté Admin :
 
+Création d'un nouveau client :
 
+- `localhost:8082/api/secured/create/{lastName}/{firstName}/{email}/{balance}/{overdraft}`
+  
+- `localhost:8082/api/secured/create/{lastName}/{firstName}/{email}/{balance}/{overdraft}`
 
+En fonction des paramères nécéssaire.
 
-TODO with sources : 
-
-- register an account (if already logged in)
-https://www.codejava.net/frameworks/spring-boot/user-registration-and-login-tutorial
-
-
-
-
-@Question ❓
-
-- Faire deux bases de données (login & account data)
-
-
-TODO : 
-
-gérer les erreurs en cas de clients non existant
-
-
-
-
-
-routes : 
-
-REST : 
-    upon client connection
-    - get client id from email password
-    - get client account from id
-    upon secured connection
-    - create new account
-    - delete account
-    - change account informations (like overdraft)
-
-route : 
-    client side : 
-    - main page
-    secured :
-    - creation menu ??
-
-
-
-
-
-TODO
-
-LOGIN via AUTH  (firebase)
-LOGIN VIA MAIL ET MDP (ou pas) (route /login "simple")
-
-Lire le compte en fonction de l'adresse mail (puis l'id) 
-
-Faire le requete REST pour creer un utilisateur (ou modifier)
-
-docker de la bdd (docker start ?)
-
-README explication executer
-
-(lancer indepedemment :  ./mvnm spring-boot:run   puis npm run serve et url localhost:8081)
-
-lancer tout en meme temps :  creation du package et java -jar backend/target/bankapp.war
-
+le nom d'utilisateur est `user`
+le mot de passe est indiqué dans les logs au lancement du serveur.

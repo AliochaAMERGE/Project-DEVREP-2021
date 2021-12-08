@@ -3,5 +3,6 @@ target/
 # https://github.com/takari/maven-wrapper#usage-without-binary-jar
 .mvn/wrapper/maven-wrapper.jar
 **/.vscode/**
+**/.idea/**
 **/taget/
 ./frontend/node_modules
