@@ -45,8 +45,17 @@
           <span>Github login</span>
         </button>
 
-        <input class="button is-dark is-outlined" v-model="accountId" placeholder="What is your account ?">
-        <p>Your account is now : {{ accountId }}</p>
+        <!--<input id="v-model-account" class="button is-dark is-outlined" v-model="accountId" placeholder="What is your account ?">
+        <p>Your account is now : {{ accountId }}</p>-->
+
+      <h1 v-if="accountId=-1" id="accountIdForm">
+        <form>
+          <span>Choose your account : </span>
+          <input name="accountAlmostId" v-model="accountAlmostId">
+          <a href="#" v-on:click="formOnSubmit">SUBMIT</a>
+        </form>
+      </h1>
+
 
       </span>
       <span id="logout-button-container">
@@ -73,7 +82,7 @@
     </div>
   </section>
 
-  <div class="columns is-mobile">
+  <div v-if="accountId!=-1" class="columns is-mobile">
     <!-- Account displaying -->
     <div class="column is-4 is-offset-2">
       <div class="box">
@@ -118,29 +127,41 @@
   </div>
 
   <!-- The buttons -->
-  <div class="columns">
+  <div v-if="accountId!=-1" class="columns">
     <div class="column" style="text-align: start">
 
       <!-- withdraw button -->
-      <button v-on:click="this.withdraw" class="button primary-color">
+      <div id="WithdrawForm">
+        <form>
+          <label>Select an amount to withdraw </label>
+          <input name="amount" v-model="withdrawAmount">
+          <a href="#" v-on:click="withdraw">Withdraw</a>
+        </form>
+      </div>
+
+      <!--<button v-on:click="this.withdraw" class="button primary-color">
         <span class="icon">
           <i class="fas fa-arrow-down"></i>
         </span>
         <span>Withdraw</span>
-      </button>
-      <!--<label class="checkbox">
-          <input id="limit-checkbox" type="checkbox" onchange="limitationChanged(this)">
-          With limitation
-        </label>-->
+      </button>-->
+
     </div>
-    <div class="column" style="text-align: end">
+    <div id="DepositForm">
+      <form>
+        <label>Select an amount to deposit </label>
+        <input name="amount" v-model="depositAmount">
+        <a href="#" v-on:click="deposit">Deposit</a>
+      </form>
+    </div>
+    <!--<div class="column" style="text-align: end">
       <button v-on:click="this.deposit" class="button primary-color">
         <span class="icon">
           <i class="fas fa-arrow-down"></i>
         </span>
         <span>deposit</span>
       </button>
-    </div>
+    </div>-->
   </div>
 
   <div class="columns is-mobile">
@@ -198,12 +219,15 @@ export default {
       BASE_URL : `http://localhost:8082/api/`,
       phone : '0000000000',
       mail : 'example@example.com',
-      accountId : '0',
+      accountId : '-1',
       accountBalance : '100',
       overdraft : '0',
       bankName : 'banque_postale',
       bankDescription : 'une desc',
       connect : false,
+      accountAlmostId : '0',
+      depositAmount : '0',
+      withdrawAmount : '0',
     }
   },
 
@@ -212,34 +236,46 @@ export default {
     // this.getAccount();
   },
 
+  /*watch: {
+    accountAlmostId: function () {
+      this.accountId = this.accountAlmostId
+      this.getAccount()
+    }
+  },*/
+
   methods: {
 
+    formOnSubmit : function () {
+      console.log('formOnSubmit')
+      this.accountId = this.accountAlmostId
+      this.getAccount()
+    },
+
     deposit : function () {
-      const defaultAmount = 200.0;
+      //const defaultAmount = 200.0;
       const args = {
         accountId : this.accountId,
-        amount: defaultAmount
+        amount: this.depositAmount
       };
       const url = this.BASE_URL + "Deposit";
 
-      console.log("axios post at : " + url)
       axios.post(url, args, {headers: {
           'Access-Control-Allow-Origin': '*',
           'Content-type': 'application/json',
         }})
           .then(account => {
-        this.fillAccountData(account.id, account.balance, account.overdraft)
+        this.fillAccountData(account.data.id, account.data.balance, account.data.overdraft)
       })
           .catch(error => {console.log(error)})
     },
 
     withdraw : function () {
 
-      if( confirm("Do you really want to withdraw {{amount}} € ?")) {
+      if( confirm("Do you really want to withdraw " + this.withdrawAmount + " € from your account ?")) {
 
         console.log("Withdraw")
-        const defaultAmount = 200;
-        const args = {amount: defaultAmount};
+        //const defaultAmount = 200;
+        const args = {amount: this.withdrawAmount};
 
         if (this.accountBalance - args.amount < this.overdraft) {
           // Not enough money on your account
@@ -248,20 +284,21 @@ export default {
         const url = this.BASE_URL + "Withdraw/";
 
         axios.get(url + this.accountId + "/" + args).then(account =>
-            this.fillAccountData(account.id, account.balance, account.overdraft)
+            this.fillAccountData(account.data.id, account.data.balance, account.data.overdraft)
         );
       }
     },
 
     getAccount() {
-      const url = this.BASE_URL;
+      const url = this.BASE_URL + "client/" + this.accountId;
+      console.log("getAccount  ~~ " + url)
       axios.get(url).then(account =>
-          this.fillAccountData(account.id, account.balance, account.overdraft)
+          this.fillAccountData(account.data.id, account.data.balance, account.data.overdraft)
       );
     },
 
-    fillAccountData(accountIdTemp, accountBalance, overdraft) {
-      this.accountId = accountIdTemp;
+    fillAccountData(accountId, accountBalance, overdraft) {
+      this.accountId = accountId;
       this.accountBalance = accountBalance;
       this.overdraft = overdraft;
     },
