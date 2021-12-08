@@ -219,9 +219,14 @@ export default {
       const url = this.BASE_URL + "Deposit";
 
       console.log("axios post at : " + url)
-      axios.post(url, args).then(account => {
+      axios.post(url, args, {headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Content-type': 'application/json',
+        }})
+          .then(account => {
         this.fillAccountData(account.id, account.balance, account.overdraft)
       })
+          .catch(error => {console.log(error)})
     },
 
     withdraw : function () {

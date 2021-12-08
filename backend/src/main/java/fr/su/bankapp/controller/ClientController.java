@@ -104,6 +104,7 @@ public class ClientController {
     //@CrossOrigin
     @RequestMapping(path = "/Deposit", method = RequestMethod.POST)
     public Client deposit(@RequestBody Operation op) {
+
         Client c = clientRepository.findById(op.accountId).orElseThrow(() -> new ResourceNotFoundException(
                 "The client with the id " + op.accountId + " couldn't be found in the database."));
         c.setBalance(c.getBalance() + op.amount);
