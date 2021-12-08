@@ -88,13 +88,25 @@ public class ClientController {
         return c;
     }
 
+    public static class Operation {
+
+        Long accountId;
+        Double amount;
+
+        public Operation(Long accountId,Double amount) {
+            this.accountId = accountId;
+            this.amount = amount;
+        }
+    }
+
     /** Deposit */
     @ResponseBody
-    @RequestMapping(path = "/Deposit/{id}/{amount}")
-    public Client deposit(@PathVariable("id") Long id, @PathVariable("amount") Double amount) {
-        Client c = clientRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException(
-                "The client with the id " + id + " couldn't be found in the database."));
-        c.setBalance(c.getBalance()+amount);
+    //@CrossOrigin
+    @RequestMapping(path = "/Deposit", method = RequestMethod.POST)
+    public Client deposit(@RequestBody Operation op) {
+        Client c = clientRepository.findById(op.accountId).orElseThrow(() -> new ResourceNotFoundException(
+                "The client with the id " + op.accountId + " couldn't be found in the database."));
+        c.setBalance(c.getBalance() + op.amount);
         clientRepository.save(c);
         return c;
     }

@@ -191,7 +191,7 @@ export default {
   // défini les variables de notre vue
   data: function () {
     return {
-      BASE_URL : `https://localhost:8080/api/`,
+      BASE_URL : `https://localhost:8082/api/`,
       phone : '0000000000',
       mail : 'example@example.com',
       accountId : '1',
@@ -211,12 +211,15 @@ export default {
   methods: {
 
     deposit : function () {
-      const defaultAmount = 200;
-      const args = {amount: defaultAmount};
-      const url = this.BASE_URL + "Deposit/";
+      const defaultAmount = 200.0;
+      const args = {
+        accountId : this.accountId,
+        amount: defaultAmount
+      };
+      const url = this.BASE_URL + "Deposit";
 
-      console.log("axios get at : " + url)
-      axios.get(url + this.accountId + "/" + args.amount).then(account => {
+      console.log("axios post at : " + url)
+      axios.post(url, args).then(account => {
         this.fillAccountData(account.id, account.balance, account.overdraft)
       })
     },
