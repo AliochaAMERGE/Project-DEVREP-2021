@@ -44,6 +44,10 @@
           </span>
           <span>Github login</span>
         </button>
+
+        <input class="button is-dark is-outlined" v-model="accountId" placeholder="What is your account ?">
+        <p>Your account is now : {{ accountId }}</p>
+
       </span>
       <span id="logout-button-container">
         <button v-if='connect' class="button is-danger is-outlined" id="logout-button">
@@ -194,7 +198,7 @@ export default {
       BASE_URL : `http://localhost:8082/api/`,
       phone : '0000000000',
       mail : 'example@example.com',
-      accountId : '1',
+      accountId : '0',
       accountBalance : '100',
       overdraft : '0',
       bankName : 'banque_postale',

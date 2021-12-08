@@ -321,3 +321,6 @@ java.lang.IllegalArgumentException: The given id must not be null!
 	at java.base/java.lang.Thread.run(Thread.java:866)
 2021-12-08 18:06:59,426 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6]  account 1 depositing 200.0 from his account
 2021-12-08 18:07:55,111 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8]  account 1 depositing 200.0 from his account
+2021-12-08 18:24:59,282 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-08 18:24:59,285 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2021-12-08 18:24:59,291 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
