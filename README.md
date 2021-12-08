@@ -110,7 +110,7 @@ route :
 TODO
 
 LOGIN via AUTH  (firebase)
-LOIGN VIA MAIL ET MDP (ou pas) (route /login "simple")
+LOGIN VIA MAIL ET MDP (ou pas) (route /login "simple")
 
 Lire le compte en fonction de l'adresse mail (puis l'id) 
 

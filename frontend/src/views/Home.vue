@@ -90,7 +90,7 @@
               <p>
                 <strong>Account n°<span id="accountId">{{accountId}}</span></strong> <br/>
                 <small>Current balance : <span id="accountBalance">{{accountBalance}}</span>
-                  <span id="accountCurrency">Euros</span></small>
+                  <span id="accountCurrency"> €</span></small>
               </p>
             </div>
             <nav class="level is-mobile">
@@ -116,7 +116,9 @@
   <!-- The buttons -->
   <div class="columns">
     <div class="column" style="text-align: start">
-      <button id="withdraw-button" onclick="this.withdraw()" class="button primary-color">
+
+      <!-- withdraw button -->
+      <button v-on:click="this.withdraw" class="button primary-color">
         <span class="icon">
           <i class="fas fa-arrow-down"></i>
         </span>
@@ -128,11 +130,11 @@
         </label>-->
     </div>
     <div class="column" style="text-align: end">
-      <button id="deposit-button" onclick="this.deposit()" class="button secondary-color">
+      <button v-on:click="this.deposit" class="button primary-color">
         <span class="icon">
-          <i class="fas fa-arrow-up"></i>
+          <i class="fas fa-arrow-down"></i>
         </span>
-        <span>Deposit</span>
+        <span>deposit</span>
       </button>
     </div>
   </div>
@@ -158,7 +160,7 @@
       <div class="columns is-mobile">
         <div class="column is-half">
           <figure class="image is-64x64">
-            <img src="src/static/images/mastercard.png" alt="Image"/>
+            <img src="./../static/images/mastercard.png" alt="Image"/>
           </figure>
         </div>
         <div class="column is-half">
@@ -189,12 +191,12 @@ export default {
   // défini les variables de notre vue
   data: function () {
     return {
-      DOMAIN : "https://localhost:8080",
-      BASE_URL : this.DOMAIN + `/api/`,
+      BASE_URL : `https://localhost:8080/api/`,
       phone : '0000000000',
       mail : 'example@example.com',
       accountId : '1',
       accountBalance : '100',
+      overdraft : '0',
       bankName : 'banque_postale',
       bankDescription : 'une desc',
       connect : false,
@@ -208,35 +210,48 @@ export default {
 
   methods: {
 
-    deposit() {
-      //const defaultAmount = 200;
-      //const args = {amount: defaultAmount, withLimit: true};
-      const url = this.BASE_URL + "api/";
-      // TODO CHANGER 1
-      axios.get(url + "1").then(account => {
-        this.fillAccountData(account.id, account.balance)
+    deposit : function () {
+      const defaultAmount = 200;
+      const args = {amount: defaultAmount};
+      const url = this.BASE_URL + "Deposit/";
+
+      console.log("axios get at : " + url)
+      axios.get(url + this.accountId + "/" + args.amount).then(account => {
+        this.fillAccountData(account.id, account.balance, account.overdraft)
       })
     },
 
-    withdraw() {
-      const defaultAmount = 200;
-      const args = {amount: defaultAmount};
-      const url = this.BASE_URL + "Withdraw/";
-      axios.get(url + "/" + args).then(account =>
-          this.fillAccountData(account.id, account.balance)
-      );
+    withdraw : function () {
+
+      if( confirm("Do you really want to withdraw {{amount}} € ?")) {
+
+        console.log("Withdraw")
+        const defaultAmount = 200;
+        const args = {amount: defaultAmount};
+
+        if (this.accountBalance - args.amount < this.overdraft) {
+          // Not enough money on your account
+          console.log("not Enough money TODO")
+        }
+        const url = this.BASE_URL + "Withdraw/";
+
+        axios.get(url + this.accountId + "/" + args).then(account =>
+            this.fillAccountData(account.id, account.balance, account.overdraft)
+        );
+      }
     },
 
     getAccount() {
       const url = this.BASE_URL;
       axios.get(url).then(account =>
-          this.fillAccountData(account.id, account.balance)
+          this.fillAccountData(account.id, account.balance, account.overdraft)
       );
     },
 
-    fillAccountData(accountIdTemp, accountBalance) {
+    fillAccountData(accountIdTemp, accountBalance, overdraft) {
       this.accountId = accountIdTemp;
       this.accountBalance = accountBalance;
+      this.overdraft = overdraft;
     },
 
     limitationChanged(checkbox) {
@@ -250,8 +265,6 @@ export default {
         "phoneNumber": "09 69 39 99 98",
         "mail": "laposte@laposte.net"
       }
-      console.log("YO")
-      console.log(donnee)
       this.populateWebpageWithData( donnee.name, donnee.description, donnee.phoneNumber, donnee.mail);
     },
 
@@ -261,7 +274,6 @@ export default {
         phone,
         mail
     ) {
-      console.log(bankName + " " + bankDescription + " " + phone + " " + mail + " ");
       this.bankName = bankName;
       this.bankDescription = bankDescription;
       this.phone = phone;

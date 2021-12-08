@@ -14,9 +14,7 @@ import javax.persistence.UniqueConstraint;
  * Client model
  */
 @Entity
-@Table(name = "Client", uniqueConstraints = {
-        @UniqueConstraint(name = "firstname_lastname", columnNames = { "firstName", "lastName" })
-})
+@Table(name = "Client", uniqueConstraints = {})
 public class Client implements Serializable {
 
     @Id

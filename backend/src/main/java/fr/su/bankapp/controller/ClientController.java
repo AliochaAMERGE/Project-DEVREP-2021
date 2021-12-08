@@ -34,10 +34,8 @@ public class ClientController {
     @GetMapping(path = "/client/{id}")
     public Client getClientById(@PathVariable("id") long id) {
 
-        return clientRepository.findById(id).map(client -> {
-            // TODO logging : LOG.info("Reading client with id " + id + " from database.");
-            return client;
-        }).orElseThrow(() -> new ResourceNotFoundException(
+        // TODO logging : LOG.info("Reading client with id " + id + " from database.");
+        return clientRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException(
                 "The client with the id " + id + " couldn't be found in the database."));
     }
 
@@ -50,7 +48,6 @@ public class ClientController {
     }
 
 
-    // TODO : change route ! admin reserved
     /** Add a client to the database with firstname, lastname and email */
     @ResponseBody
     @RequestMapping(path = "/secured/create/{lastName}/{firstName}/{email}", method = RequestMethod.POST)
@@ -80,11 +77,25 @@ public class ClientController {
         return savedClient.getId();
     }
 
+    /** Withdraw */
     @ResponseBody
-    // Forwards all routes to FrontEnd except: '/', '/index.html', '/api', '/api/**', '/about.html'
-    @RequestMapping(value = "{_:^(?!index\\.html|api|about).$}")
-    public String redirectApi() {
-        // LOG.info("URL entered directly into the Browser, so we need to redirect...");
-        return "forward:/";
+    @RequestMapping(path = "/Withdraw/{id}/{amount}")
+    public Client withdraw(@PathVariable("id") Long id, @PathVariable("amount") Double amount) {
+        Client c = clientRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException(
+                "The client with the id " + id + " couldn't be found in the database."));
+        c.setBalance(c.getBalance()-amount);
+        clientRepository.save(c);
+        return c;
+    }
+
+    /** Deposit */
+    @ResponseBody
+    @RequestMapping(path = "/Deposit/{id}/{amount}")
+    public Client deposit(@PathVariable("id") Long id, @PathVariable("amount") Double amount) {
+        Client c = clientRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException(
+                "The client with the id " + id + " couldn't be found in the database."));
+        c.setBalance(c.getBalance()+amount);
+        clientRepository.save(c);
+        return c;
     }
 }
