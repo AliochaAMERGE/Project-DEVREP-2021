@@ -191,7 +191,7 @@ export default {
   // défini les variables de notre vue
   data: function () {
     return {
-      BASE_URL : `https://localhost:8082/api/`,
+      BASE_URL : `http://localhost:8082/api/`,
       phone : '0000000000',
       mail : 'example@example.com',
       accountId : '1',

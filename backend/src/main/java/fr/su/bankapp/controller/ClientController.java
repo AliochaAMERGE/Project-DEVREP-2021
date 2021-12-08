@@ -2,6 +2,8 @@ package fr.su.bankapp.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
@@ -14,6 +16,8 @@ import fr.su.bankapp.repository.ClientRepository;
 @Controller
 @RequestMapping("/api/")
 public class ClientController {
+
+    Logger logger = LoggerFactory.getLogger(ClientController.class);
 
     @Autowired
     private ClientRepository clientRepository;
@@ -34,7 +38,7 @@ public class ClientController {
     @GetMapping(path = "/client/{id}")
     public Client getClientById(@PathVariable("id") long id) {
 
-        // TODO logging : LOG.info("Reading client with id " + id + " from database.");
+        logger.info("Reading client with id " + id + " from database.");
         return clientRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException(
                 "The client with the id " + id + " couldn't be found in the database."));
     }
@@ -44,6 +48,7 @@ public class ClientController {
     public Client getClientName(@PathVariable("firstname") String firstname, @PathVariable("lastname") String lastname,
             @PathVariable("email") String email) {
 
+        logger.info("Reading client : " + firstname + " " + lastname + " " + email + " from database.");
         return clientRepository.findByIdentity(firstname, lastname, email);
     }
 
@@ -56,8 +61,7 @@ public class ClientController {
             @PathVariable("email") String email) {
         Client savedClient = clientRepository.save(new Client(firstName, lastName, email));
 
-        // TODO logging : LOG.info(savedClient.toString() + " successfully saved into
-        // DB");
+        logger.info(savedClient.toString() + " successfully saved into DB");
 
         return savedClient.getId();
     }
@@ -71,21 +75,9 @@ public class ClientController {
             @PathVariable("balance") Double balance, @PathVariable("overdraft") Double overdraft) {
         Client savedClient = clientRepository.save(new Client(firstName, lastName, email));
 
-        // TODO logging : LOG.info(savedClient.toString() + " successfully saved into
-        // DB");
+        logger.info(savedClient.toString() + " successfully saved into sDB");
 
         return savedClient.getId();
-    }
-
-    /** Withdraw */
-    @ResponseBody
-    @RequestMapping(path = "/Withdraw/{id}/{amount}")
-    public Client withdraw(@PathVariable("id") Long id, @PathVariable("amount") Double amount) {
-        Client c = clientRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException(
-                "The client with the id " + id + " couldn't be found in the database."));
-        c.setBalance(c.getBalance()-amount);
-        clientRepository.save(c);
-        return c;
     }
 
     public static class Operation {
@@ -99,9 +91,23 @@ public class ClientController {
         }
     }
 
+    /** Withdraw */
+    @ResponseBody
+    @RequestMapping(path = "/Withdraw", method = RequestMethod.POST)
+    public Client withdraw(@RequestBody Operation op) {
+
+        Client c = clientRepository.findById(op.accountId).orElseThrow(() -> new ResourceNotFoundException(
+                "The client with the id " + op.accountId + " couldn't be found in the database."));
+        c.setBalance(c.getBalance()-op.amount);
+        clientRepository.save(c);
+
+        logger.info(" account " + op.accountId + " withdrawing " + op.amount + " from his account" );
+
+        return c;
+    }
+
     /** Deposit */
     @ResponseBody
-    //@CrossOrigin
     @RequestMapping(path = "/Deposit", method = RequestMethod.POST)
     public Client deposit(@RequestBody Operation op) {
 
@@ -109,6 +115,9 @@ public class ClientController {
                 "The client with the id " + op.accountId + " couldn't be found in the database."));
         c.setBalance(c.getBalance() + op.amount);
         clientRepository.save(c);
+
+        logger.info(" account " + op.accountId + " depositing " + op.amount + " from his account" );
+
         return c;
     }
 }
