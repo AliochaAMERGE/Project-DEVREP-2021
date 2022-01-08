@@ -15,6 +15,7 @@ import fr.su.bankapp.repository.ClientRepository;
 
 @Controller
 @RequestMapping("/api/")
+@CrossOrigin(origins="http://localhost:8081")
 public class ClientController {
 
     Logger logger = LoggerFactory.getLogger(ClientController.class);

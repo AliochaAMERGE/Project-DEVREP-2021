@@ -25,14 +25,15 @@ AMERGÉ Aliocha
 
 L'adresse du projet est **localhost:8081**, l'adresse de l'api est **localhost:8082/api**
 
-
 Soit en lançant mvn package dans le dossier racine du projet, 
-puis la `java -jar backend/target/bankapp.war` toujours dans le dossier racine.
+puis `java -jar backend/target/bankapp.war` toujours dans le dossier racine.
 
 Soit en lançant individuellement le backend (fichier [application.java](backend/src/main/java/fr/su/bankapp/Application.java))
 Puis dans le dossier `./frontend` lancer les commandes :
 - `npm install` (peut prendre un certain temps)
 - `npm run serve`
+
+NB : il peut être nécessaire de lancer la commande `mvn clean install` dans le dossier backend en cas d'erreur avec frontend-maven-plugin
 
 ### fonctionnalitées
 
