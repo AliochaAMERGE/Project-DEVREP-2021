@@ -413,57 +413,59 @@ const DEFAULT_PROVIDER = "NO_PROVIDER";
 
 // const googleLib = "../google-lib/";
 
-// let token = DEFAULT_TOKEN;
-// let oauthProvider = DEFAULT_PROVIDER;
+let token = DEFAULT_TOKEN;
+let oauthProvider = DEFAULT_PROVIDER;
 // let logged = false;
 
 // window.addEventListener("load", (_) => checkLoggedStatus());
 
-// function appearsAsLogged() {
-// $("#logout-button-container").show();
-// $("#logged-tag").show();
-// $("#not-logged-tag").hide();
-// $("#login-buttons-container").hide();
-// $("#deposit-button").prop("disabled", false);
-// $("#withdraw-button").prop("disabled", false);
-// $("#limit-checkbox").prop("disabled", false);
-// }
-
-// function appearsNotLogged() {
-// $("#login-buttons-container").show();
-// $("#not-logged-tag").show();
-// $("#logged-tag").hide();
-// $("#logout-button-container").hide();
-// $("#deposit-button").prop("disabled", true);
-// $("#withdraw-button").prop("disabled", true);
-// $("#limit-checkbox").prop("disabled", true);
-// }
-
-// function checkLoggedStatus() {
-//   const user = firebase.auth().currentUser;
-//   if (user !== null) {
-//     user
-//       .getIdToken()
-//       .then((value) => {
-//         token = value;
-//         appearsAsLogged();
-//       })
-//       .catch((_) => appearsNotLogged());
-//   } else {
-//     appearsNotLogged();
-//   }
-// }
-
-function logout() {
-  main.firebase
-    .auth()
-    .signOut()
-    .finally(() => {
-      token = DEFAULT_TOKEN;
-      oauthProvider = DEFAULT_PROVIDER;
-      appearsNotLogged();
-    });
+function appearsAsLogged() {
+  // $("#logout-button-container").show();
+  // $("#logged-tag").show();
+  // $("#not-logged-tag").hide();
+  // $("#login-buttons-container").hide();
+  // $("#deposit-button").prop("disabled", false);
+  // $("#withdraw-button").prop("disabled", false);
+  // $("#limit-checkbox").prop("disabled", false);
+  this.connect = true;
 }
+
+function appearsNotLogged() {
+  // $("#login-buttons-container").show();
+  // $("#not-logged-tag").show();
+  // $("#logged-tag").hide();
+  // $("#logout-button-container").hide();
+  // $("#deposit-button").prop("disabled", true);
+  // $("#withdraw-button").prop("disabled", true);
+  // $("#limit-checkbox").prop("disabled", true);
+  this.connect = false;
+}
+
+function checkLoggedStatus() {
+  const user = firebase.auth().currentUser;
+  if (user !== null) {
+    user
+      .getIdToken()
+      .then((value) => {
+        token = value;
+        appearsAsLogged();
+      })
+      .catch(() => appearsNotLogged());
+  } else {
+    appearsNotLogged();
+  }
+}
+
+// function logout() {
+//   main.firebase
+//     .auth()
+//     .signOut()
+//     .finally(() => {
+//       token = DEFAULT_TOKEN;
+//       oauthProvider = DEFAULT_PROVIDER;
+//       appearsNotLogged();
+//     });
+// }
 //////////////////////////////////////
 ////////////// GOOGLE ////////////////
 //////////////////////////////////////
