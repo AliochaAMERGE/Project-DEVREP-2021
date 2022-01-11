@@ -323,7 +323,12 @@ export default {
       ) {
         console.log("Withdraw");
         //const defaultAmount = 200;
-        const args = { amount: this.withdrawAmount };
+        const args = {
+          acountId: this.accountId,
+          amount: this.withdrawAmount,
+        };
+
+        const url = this.BASE_URL + "Withdraw";
 
         if (this.accountBalance - args.amount < this.overdraft) {
           // Not enough money on your account
@@ -331,14 +336,22 @@ export default {
         }
 
         axios
-          .get(url + this.accountId + "/" + args)
-          .then((account) =>
+          .post(url, args, {
+            headers: {
+              "Access-Control-Allow-Origin": "*",
+              "Content-type": "application/json",
+            },
+          })
+          .then((account) => {
             this.fillAccountData(
               account.data.id,
               account.data.balance,
               account.data.overdraft
-            )
-          );
+            );
+          })
+          .catch((error) => {
+            console.log(error);
+          });
       }
     },
 
