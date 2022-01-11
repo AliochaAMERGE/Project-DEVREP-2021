@@ -37,20 +37,14 @@
               <i class="fab fa-google"></i>
             </span>
             <span>Google login</span>
-<<<<<<< HEAD
             <a href="#" v-on:click="googleLogin">googleLogin</a>
-=======
->>>>>>> 26f82116 (break)
           </button>
           <button
             class="button is-link is-outlined"
             id="microsoft-login-button"
           >
-<<<<<<< HEAD
             <a href="#" v-on:click="microsoftLogin">microsoftLogin</a>
 
-=======
->>>>>>> 26f82116 (break)
             <span class="icon">
               <i class="fab fa-microsoft"></i>
             </span>
@@ -61,10 +55,7 @@
               <i class="fab fa-github"></i>
             </span>
             <span>Github login</span>
-<<<<<<< HEAD
             <a href="#" v-on:click="githubLogin">githubLogin</a>
-=======
->>>>>>> 26f82116 (break)
           </button>
 
           <!--<input id="v-model-account" class="button is-dark is-outlined" v-model="accountId" placeholder="What is your account ?">
@@ -86,10 +77,7 @@
               <i class="fas fa-sign-out-alt"></i>
             </span>
             <span>Logout</span>
-<<<<<<< HEAD
             <a href="#" v-on:click="logout">logout</a>
-=======
->>>>>>> 26f82116 (break)
           </button>
         </span>
       </div>
@@ -139,15 +127,9 @@
               <div class="content">
                 <p>
                   <strong
-<<<<<<< HEAD
                     >Account n°<span id="accountId">
                       {{ accountId }}
                     </span></strong
-=======
-                    >Account n°<span id="accountId">{{
-                      accountId
-                    }}</span></strong
->>>>>>> 26f82116 (break)
                   >
                   <br />
                   <small
@@ -260,10 +242,7 @@
 // @ is an alias to /src
 
 import axios from "axios";
-<<<<<<< HEAD
 import firebase from "main";
-=======
->>>>>>> 26f82116 (break)
 
 export default {
   name: "Home",
@@ -343,17 +322,8 @@ export default {
         )
       ) {
         console.log("Withdraw");
-<<<<<<< HEAD
         //const defaultAmount = 200;
         const args = { amount: this.withdrawAmount };
-=======
-
-        const args = {
-          accountId: this.accountId,
-          amount: this.withdrawAmount,
-        };
-        const url = this.BASE_URL + "Withdraw";
->>>>>>> 26f82116 (break)
 
         if (this.accountBalance - args.amount < this.overdraft) {
           // Not enough money on your account
@@ -361,31 +331,14 @@ export default {
         }
 
         axios
-<<<<<<< HEAD
           .get(url + this.accountId + "/" + args)
           .then((account) =>
-=======
-          .post(url, args, {
-            headers: {
-              "Access-Control-Allow-Origin": "*",
-              "Content-type": "application/json",
-            },
-          })
-          .then((account) => {
->>>>>>> 26f82116 (break)
             this.fillAccountData(
               account.data.id,
               account.data.balance,
               account.data.overdraft
-<<<<<<< HEAD
             )
           );
-=======
-            );
-          }).catch((error) => {
-          console.log(error);
-        });
->>>>>>> 26f82116 (break)
       }
     },
 
@@ -439,7 +392,6 @@ export default {
     },
   },
 };
-<<<<<<< HEAD
 
 // todo edit
 
@@ -575,6 +527,4 @@ function onGithubErrorLogin(error) {
 
 const googleButton = document.getElementById("google-login-button");
 googleButton.onclick = googleLogin;
-=======
->>>>>>> 26f82116 (break)
 </script>
