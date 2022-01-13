@@ -24,73 +24,9 @@
 
   <body class="container" style="margin-top: 5%">
     <!-- Columns for login functions -->
-    <div class="columns">
-      <!-- Buttons -->
-      <div class="column">
-        <span id="login-buttons-container">
-          <button
-            class="button is-link is-outlined"
-            id="google-login-button"
-            style="display: contents"
-          >
-            <span class="icon">
-              <i class="fab fa-google"></i>
-            </span>
-            <span>Google login</span>
-            <!-- <a href="#" v-on:click="googleLogin">googleLogin</a> -->
-          </button>
-          <button
-            class="button is-link is-outlined"
-            id="microsoft-login-button"
-          >
-            <span class="icon">
-              <i class="fab fa-microsoft"></i>
-            </span>
-            <span>Microsoft login</span>
-            <!-- <a href="#" v-on:click="microsoftLogin">microsoftLogin</a> -->
-          </button>
-          <button class="button is-dark is-outlined" id="github-login-button">
-            <span class="icon">
-              <i class="fab fa-github"></i>
-            </span>
-            <span>Github login</span>
-            <!-- <a href="#" v-on:click="githubLogin">githubLogin</a> -->
-          </button>
-
-          <!--<input id="v-model-account" class="button is-dark is-outlined" v-model="accountId" placeholder="What is your account ?">
-        <p>Your account is now : {{ accountId }}</p>-->
-
-          <form>
-            <span>Choose your account : </span>
-            <input name="accountAlmostId" v-model="accountAlmostId" />
-            <a href="#" v-on:click="formOnSubmit">SUBMIT</a>
-          </form>
-        </span>
-        <span id="logout-button-container">
-          <button
-            v-if="connect"
-            class="button is-danger is-outlined"
-            id="logout-button"
-          >
-            <span class="icon">
-              <i class="fas fa-sign-out-alt"></i>
-            </span>
-            <span>Logout</span>
-            <!-- <a href="#" v-on:click="logout">logout</a> -->
-          </button>
-        </span>
-      </div>
-      <!-- Column that contains log states tags -->
-      <div class="column" style="text-align: right">
-        <span v-if="connect" id="logged-tag" class="tag is-success is-medium"
-          >Connected</span
-        >
-        <span v-else id="not-logged-tag" class="tag is-warning is-medium"
-          >Not connected</span
-        >
-      </div>
-    </div>
-
+    <div id="sign-in-status"></div>
+    <div id="sign-in"></div>
+    <pre id="account-details"></pre>
     <!-- The name and description -->
     <section class="section">
       <div class="container">
@@ -242,6 +178,8 @@
 
 import axios from "axios";
 
+import firebase from "firebase/compat/app";
+
 export default {
   name: "Home",
   withLimitation: false,
@@ -267,7 +205,7 @@ export default {
 
   mounted: function () {
     this.initWebPageWithData();
-    // this.getAccount();
+    this.initApp();
   },
 
   /*watch: {
@@ -401,156 +339,53 @@ export default {
       this.phone = phone;
       this.mail = mail;
     },
+    // Firebase
+
+    initApp: function () {
+      firebase.auth().onAuthStateChanged(
+        function (user) {
+          if (user) {
+            // User is signed in.
+            var displayName = user.displayName;
+            var email = user.email;
+            var emailVerified = user.emailVerified;
+            var photoURL = user.photoURL;
+            var uid = user.uid;
+            var phoneNumber = user.phoneNumber;
+            var providerData = user.providerData;
+            user.getIdToken().then(function (accessToken) {
+              document.getElementById("sign-in-status").textContent =
+                "Signed in";
+              document.getElementById("sign-in").textContent = "Sign out";
+              document.getElementById("account-details").textContent =
+                JSON.stringify(
+                  {
+                    displayName: displayName,
+                    email: email,
+                    emailVerified: emailVerified,
+                    phoneNumber: phoneNumber,
+                    photoURL: photoURL,
+                    uid: uid,
+                    accessToken: accessToken,
+                    providerData: providerData,
+                  },
+                  null,
+                  "  "
+                );
+            });
+          } else {
+            // User is signed out.
+            document.getElementById("sign-in-status").textContent =
+              "Signed out";
+            document.getElementById("sign-in").textContent = "Sign in";
+            document.getElementById("account-details").textContent = "null";
+          }
+        },
+        function (error) {
+          console.log(error);
+        }
+      );
+    },
   },
 };
-
-////////////////// LOGIN //////////////////////
-
-// import firebase from "main";
-
-// const DEFAULT_TOKEN = "NO_TOKEN";
-// const DEFAULT_PROVIDER = "NO_PROVIDER";
-
-// // const googleLib = "../google-lib/";
-
-// let token = DEFAULT_TOKEN;
-// let oauthProvider = DEFAULT_PROVIDER;
-// // let logged = false;
-
-// window.addEventListener("load", () => checkLoggedStatus());
-
-// function appearsAsLogged() {
-//   // $("#logout-button-container").show();
-//   // $("#logged-tag").show();
-//   // $("#not-logged-tag").hide();
-//   // $("#login-buttons-container").hide();
-//   // $("#deposit-button").prop("disabled", false);
-//   // $("#withdraw-button").prop("disabled", false);
-//   // $("#limit-checkbox").prop("disabled", false);
-//   console.log(token);
-//   console.log(oauthProvider);
-//   this.connect = true;
-// }
-
-// function appearsNotLogged() {
-//   // $("#login-buttons-container").show();
-//   // $("#not-logged-tag").show();
-//   // $("#logged-tag").hide();
-//   // $("#logout-button-container").hide();
-//   // $("#deposit-button").prop("disabled", true);
-//   // $("#withdraw-button").prop("disabled", true);
-//   // $("#limit-checkbox").prop("disabled", true);
-//   this.connect = false;
-// }
-
-// function checkLoggedStatus() {
-//   const user = firebase.auth().currentUser;
-//   if (user !== null) {
-//     user
-//       .getIdToken()
-//       .then((value) => {
-//         token = value;
-//         appearsAsLogged();
-//       })
-//       .catch(() => appearsNotLogged());
-//   } else {
-//     appearsNotLogged();
-//   }
-// }
-
-// function logout() {
-//   firebase
-//     .auth()
-//     .signOut()
-//     .finally(() => {
-//       token = DEFAULT_TOKEN;
-//       oauthProvider = DEFAULT_PROVIDER;
-//       appearsNotLogged();
-//     });
-// }
-// //////////////////////////////////////
-// ////////////// GOOGLE ////////////////
-// //////////////////////////////////////
-// function googleLogin() {
-//   const provider = new firebase.auth.GoogleAuthProvider();
-//   const auth = firebase.auth();
-//   auth.useDeviceLanguage();
-//   auth
-//     .signInWithPopup(provider)
-//     .then(onGoogleSuccessLogin)
-//     .catch(onGoogleErrorLogin);
-// }
-
-// function onGoogleSuccessLogin(result) {
-//   token = result.credential.accessToken;
-//   oauthProvider = "Google";
-//   appearsAsLogged();
-// }
-
-// function onGoogleErrorLogin(error) {
-//   console.error("Google error ", error);
-//   appearsNotLogged();
-// }
-
-// //////////////////////////////////////
-// ///////////// MICROSOFT //////////////
-// //////////////////////////////////////
-// function microsoftLogin() {
-//   const provider = new firebase.auth.OAuthProvider("microsoft.com");
-//   const auth = firebase.auth();
-//   auth.useDeviceLanguage();
-//   auth
-//     .signInWithPopup(provider)
-//     .then(onMicrosoftSuccessLogin)
-//     .catch(onMicrosoftErrorLogin);
-// }
-
-// function onMicrosoftSuccessLogin(result) {
-//   console.log(result);
-//   token = result.credential.accessToken;
-//   oauthProvider = "Microsoft";
-//   appearsAsLogged();
-// }
-
-// function onMicrosoftErrorLogin(error) {
-//   console.error("Microsoft error ", error);
-//   appearsNotLogged();
-// }
-
-// //////////////////////////////////////
-// /////////////// GITHUB ///////////////
-// //////////////////////////////////////
-// function githubLogin() {
-//   const provider = new firebase.auth.GithubAuthProvider();
-//   const auth = firebase.auth();
-//   auth.useDeviceLanguage();
-//   auth
-//     .signInWithPopup(provider)
-//     .then(onGithubSuccessLogin)
-//     .catch(onGithubErrorLogin);
-// }
-
-// function onGithubSuccessLogin(result) {
-//   console.log(result);
-//   token = result.credential.accessToken;
-//   oauthProvider = "Github";
-//   appearsAsLogged();
-// }
-
-// function onGithubErrorLogin(error) {
-//   console.error("Github error ", error);
-//   appearsNotLogged();
-// }
-
-// const googleButton = document.getElementById("google-login-button");
-// googleButton.onclick = googleLogin;
-
-// const microsoftButton = document.getElementById("microsoft-login-button");
-// microsoftButton.onclick = microsoftLogin;
-
-// const githubButton = document.getElementById("github-login-button");
-// githubButton.onclick = githubLogin;
-
-// const logoutButton = document.getElementById("logout-button");
-// logoutButton.onclick = logout;
 </script>
