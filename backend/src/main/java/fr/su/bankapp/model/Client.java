@@ -31,7 +31,6 @@ public class Client implements Serializable {
     private Double overdraft;
 
     public Client() {
-
     }
 
     public Client(String firstName, String lastName, String email, Double balance, Double overdraft) {
@@ -47,6 +46,15 @@ public class Client implements Serializable {
         super();
         this.firstName = firstName;
         this.lastName = lastName;
+        this.email = email;
+        this.balance = 0.0;
+        this.overdraft = 0.0;
+    }
+
+    public Client(String name, String email) {
+        super();
+        this.firstName = name;
+        this.lastName = "";
         this.email = email;
         this.balance = 0.0;
         this.overdraft = 0.0;

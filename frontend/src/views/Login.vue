@@ -1,6 +1,6 @@
 <template>
   <section>
-    <navigation></navigation>
+    <!-- <navigation></navigation> -->
     <h5 class="center-align"></h5>
     <section id="firebaseui-auth-container"></section>
   </section>

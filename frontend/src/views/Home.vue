@@ -24,14 +24,15 @@
 
   <body class="container" style="margin-top: 5%">
     <!-- Columns for login functions -->
-    <div id="sign-in-status"></div>
-    <div id="sign-in"></div>
-    <pre id="account-details"></pre>
+    <div v-show="false" id="sign-in-status"></div>
+    <div v-show="false" id="sign-in"></div>
+    <pre v-show="false" id="account-details"></pre>
+
     <!-- The name and description -->
     <section class="section">
       <div class="container">
         <h1 class="title primary-color-text" id="bankNameContainer">
-          {{ bankName }}
+          {{  bankName }}
         </h1>
         <h2 class="subtitle secondary-color-text" id="bankDescriptionContainer">
           {{ bankDescription }}
@@ -39,7 +40,7 @@
       </div>
     </section>
 
-    <div v-if="accountId != -1" class="columns is-mobile">
+    <div v-show="!!user" class="columns is-mobile">
       <!-- Account displaying -->
       <div class="column is-4 is-offset-2">
         <div class="box">
@@ -62,8 +63,9 @@
               <div class="content">
                 <p>
                   <strong
-                    >Account n°<span id="accountId">
-                      {{ accountId }}
+                    >Bonjour
+                    <span id="userName">
+                      {{ user.displayName }}
                     </span></strong
                   >
                   <br />
@@ -99,7 +101,7 @@
     </div>
 
     <!-- The buttons -->
-    <div v-if="accountId != -1" class="columns">
+    <div v-show="!!user" class="columns">
       <div class="column" style="text-align: start">
         <!-- withdraw button -->
         <div id="WithdrawForm">
@@ -170,6 +172,12 @@
         </div>
       </div>
     </div>
+
+    <div v-show="!!user" id="Logout">
+      <button>
+        <a href="#" v-on:click="signOut">Logout</a>
+      </button>
+    </div>
   </body>
 </template>
 
@@ -200,6 +208,7 @@ export default {
       accountAlmostId: "0",
       depositAmount: "0",
       withdrawAmount: "0",
+      user: null,
     };
   },
 
@@ -208,12 +217,16 @@ export default {
     this.initApp();
   },
 
-  /*watch: {
-    accountAlmostId: function () {
-      this.accountId = this.accountAlmostId
-      this.getAccount()
-    }
-  },*/
+  created() {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        this.user = user;
+        this.accountId = user.uid;
+        this.getAccount();
+        console.log(user);
+      }
+    });
+  },
 
   methods: {
     formOnSubmit: function () {
@@ -260,49 +273,63 @@ export default {
         console.log("Withdraw");
         //const defaultAmount = 200;
         const args = {
-          acountId: this.accountId,
+          accountId: this.accountId,
           amount: this.withdrawAmount,
         };
 
-        const url = this.BASE_URL + "Withdraw";
+        console.log(this.accountId);
+
+        const url = this.BASE_URL + "Withdraw/";
 
         if (this.accountBalance - args.amount < this.overdraft) {
           // Not enough money on your account
           console.log("not Enough money TODO");
+        } else {
+          axios
+            .post(url, args, {
+              headers: {
+                "Access-Control-Allow-Origin": "*",
+                "Content-type": "application/json",
+              },
+            })
+            .then((account) => {
+              this.fillAccountData(
+                account.data.id,
+                account.data.balance,
+                account.data.overdraft
+              );
+            })
+            .catch((error) => {
+              console.log(error);
+            });
         }
-
-        axios
-          .post(url, args, {
-            headers: {
-              "Access-Control-Allow-Origin": "*",
-              "Content-type": "application/json",
-            },
-          })
-          .then((account) => {
-            this.fillAccountData(
-              account.data.id,
-              account.data.balance,
-              account.data.overdraft
-            );
-          })
-          .catch((error) => {
-            console.log(error);
-          });
       }
     },
 
     getAccount() {
-      const url = this.BASE_URL + "client/" + this.accountId;
-      console.log("getAccount  ~~ " + url);
+      const url = this.BASE_URL + "client";
+      const args = {
+        name: this.user.displayName,
+        email: this.user.email,
+      };
+      console.log("getAccount" + url);
       axios
-        .get(url)
-        .then((account) =>
+        .post(url, args, {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Content-type": "application/json",
+          },
+        })
+        .then((account) => {
           this.fillAccountData(
             account.data.id,
             account.data.balance,
             account.data.overdraft
-          )
-        );
+          );
+        })
+        .catch((error) => {
+          console.log(error);
+        });
     },
 
     fillAccountData(accountId, accountBalance, overdraft) {
@@ -385,6 +412,13 @@ export default {
           console.log(error);
         }
       );
+    },
+    signOut(e) {
+      e.stopPropagation();
+      firebase.auth().signOut();
+      this.$router.push({
+        name: "Login",
+      });
     },
   },
 };
