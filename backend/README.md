@@ -19,3 +19,5 @@ cd backend
 mvn spring-boot:run
 ```
 *Ou exécuter le fichier `backend/src/main/java/fr/su/bankapp/Application.java`*
+
+NB : You might need to run `mvn clean install` if you encounter any issues with maven-frontend-plugin

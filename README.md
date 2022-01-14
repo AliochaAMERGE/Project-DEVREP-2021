@@ -1,54 +1,37 @@
-# Projet DEVREP 2021
+# SU – Master 2 – UE DEVREP
+
+## JEE – Projet : application web de services bancaires (web application for banking services)
 
 MISTRY Namrata
 AMERGÉ Aliocha
 
-## Comment exécuter le projet ?
+The objective of this project is to develop a simple banking services application, using
+using Spring technologies. This project is to be done in pairs, but it can also be done
+be done alone.
 
-- Dépendances : 
-  
+## Frameworks used
+
     - java 11
     - node 8.1.2
     - maven 3.6.3
     - mysql-server 8.0.27
-    - @vue/cli 4.5.15 (optionnel)
 
-### Connection à la base de donnée :
 
-> Peut être modifier dans le fichier [application.properties](backend/src/main/resources/application.properties)
+## Database
 
-- mysql lancée sur le port 3306 (port par défault)
-- Une base de donnée nommée `client_bankapp`
-- une connection username=root, password=password
+- mysql
+- Database name : `client_bankapp`
 
-### Pour exécuter le projet : deux façons différentes
+## Connection
 
-L'adresse du projet est **localhost:8081**, l'adresse de l'api est **localhost:8082/api**
+- localhost:8082/api :  backend route
+- localhost:8081     :  frontend route
 
-Soit en lançant mvn package dans le dossier racine du projet, 
-puis `java -jar backend/target/bankapp.war` toujours dans le dossier racine.
+## Divers informations
 
-Soit en lançant individuellement le backend (fichier [application.java](backend/src/main/java/fr/su/bankapp/Application.java))
-Puis dans le dossier `./frontend` lancer les commandes :
-- `npm install` (peut prendre un certain temps)
-- `npm run serve`
+The account creation are handled upon authentication.
+For test purpose, you can create a new account with mysql, or by sending a request to 
+`localhost:8082/secured/create/{lastName}/{firstName}/{email}`
+`localhost:8082/secured/create/{lastName}/{firstName}/{email}/{balance}/{overdraft}`
+The request need to be authenticated (username : user, password : display on console upon server start)
 
-NB : il peut être nécessaire de lancer la commande `mvn clean install` dans le dossier backend en cas d'erreur avec frontend-maven-plugin
-
-### fonctionnalitées
-
-Au lancement du site, il faudra choisir un identifiant de compte.
-Une fois cela fait, vous aurez le droit de déposer (deposit) ou retirer de l'argent (withdraw) de votre compte.
-
-Coté Admin :
-
-Création d'un nouveau client :
-
-- `localhost:8082/api/secured/create/{lastName}/{firstName}/{email}/{balance}/{overdraft}`
-  
-- `localhost:8082/api/secured/create/{lastName}/{firstName}/{email}/{balance}/{overdraft}`
-
-En fonction des paramères nécéssaire.
-
-le nom d'utilisateur est `user`
-le mot de passe est indiqué dans les logs au lancement du serveur.
