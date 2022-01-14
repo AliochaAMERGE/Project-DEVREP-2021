@@ -3,14 +3,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bank Web Application</title>
-    <link rel="apple-touch-icon" href="./../static/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" href="@/static/apple-touch-icon.png" />
     <!-- Place favicon.ico in the root directory -->
     <!--<link href="bulma.min.css" /> -->
     <link
       rel="stylesheet"
+      type="text/html"
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
     />
-    <link rel="stylesheet" href="./../static/styles/main.css" />
+    <link rel="stylesheet" type="text/html" href="@/static/styles/main.css" />
 
     <!-- Choose the icon between :
         - "./styles/banks/banque_postale.css"
@@ -19,7 +20,11 @@
 
         ./styles/banks/banque_postale.css ./styles/banks/cic.css ./styles/banks/societe_generale.css
       -->
-    <link rel="stylesheet" href="./../static/styles/banks/banque_postale.css" />
+    <link
+      rel="stylesheet"
+      type="text/html"
+      href="@/static/styles/banks/banque_postale.css"
+    />
   </head>
 
   <body class="container" style="margin-top: 5%">
@@ -32,7 +37,7 @@
     <section class="section">
       <div class="container">
         <h1 class="title primary-color-text" id="bankNameContainer">
-          {{  bankName }}
+          {{ bankName }}
         </h1>
         <h2 class="subtitle secondary-color-text" id="bankDescriptionContainer">
           {{ bankDescription }}
@@ -40,9 +45,9 @@
       </div>
     </section>
 
-    <div v-show="!!user" class="columns is-mobile">
+    <div v-if="user" class="columns is-mobile">
       <!-- Account displaying -->
-      <div class="column is-4 is-offset-2">
+      <div class="column is-4 is-offset-2" style="width: 50%; float: left">
         <div class="box">
           <article class="media">
             <div class="media-left">
@@ -54,14 +59,14 @@
                   ./images/bank_icons/banque_postale.png ./images/bank_icons/cic.png ./images/bank_icons/societe_generale.png
                 -->
                 <img
-                  src="./../static/images/bank_icons/banque_postale.png"
+                  src="@/static/images/bank_icons/banque_postale.png"
                   alt="Image"
                 />
               </figure>
             </div>
             <div class="media-content">
               <div class="content">
-                <p>
+                <p style="font-size: 25px">
                   <strong
                     >Bonjour
                     <span id="userName">
@@ -89,94 +94,54 @@
           </article>
         </div>
       </div>
-      <div class="column is-4 is-offset-1">
+      <div
+        class="column is-4 is-offset-1"
+        style="width: 50%; float: left; margin-top: 5%"
+      >
         <iframe
           title="Converter"
           src="https://xeconvert.com/widget1?from=usd&to=eur&lang=&theme=blue&font=12"
-          width="100%"
+          width="75%"
           height="100%"
         ></iframe>
       </div>
-      <!-- Column that contains the Account box-->
-    </div>
 
-    <!-- The buttons -->
-    <div v-show="!!user" class="columns">
-      <div class="column" style="text-align: start">
+      <!-- The buttons (form) (Withdraw & Deposit) -->
+      <div
+        v-show="user"
+        class="column is-5 is-offset-1"
+        style="display: inline-block"
+      >
         <!-- withdraw button -->
-        <div id="WithdrawForm">
+        <div class="column" style="float: left; margin: 50px" id="WithdrawForm">
           <form>
             <label>Select an amount to withdraw </label>
-            <input name="amount" v-model="withdrawAmount" />
-            <a href="#" v-on:click="withdraw">Withdraw</a>
+            <input name="amount" v-model="withdrawAmount" size="5" />
+            <button v-on:click="withdraw">Withdraw</button>
           </form>
         </div>
-
-        <!--<button v-on:click="this.withdraw" class="button primary-color">
-        <span class="icon">
-          <i class="fas fa-arrow-down"></i>
-        </span>
-        <span>Withdraw</span>
-      </button>-->
-      </div>
-      <div id="DepositForm">
-        <form>
-          <label>Select an amount to deposit </label>
-          <input name="amount" v-model="depositAmount" />
-          <a href="#" v-on:click="deposit">Deposit</a>
-        </form>
-      </div>
-      <!--<div class="column" style="text-align: end">
-      <button v-on:click="this.deposit" class="button primary-color">
-        <span class="icon">
-          <i class="fas fa-arrow-down"></i>
-        </span>
-        <span>deposit</span>
-      </button>
-    </div>-->
-    </div>
-
-    <div class="columns is-mobile">
-      <div class="column is-6">
-        <div class="content secondary-color-text">
-          Contact
-          <ul>
-            <li>
-              <i class="fas fa-phone"></i>
-              <span id="phoneNumberContainer">{{ phone }}</span>
-            </li>
-            <li>
-              <i class="fas fa-envelope"></i>
-              <span id="mailContainer">{{ mail }}</span>
-            </li>
-          </ul>
+        <div class="column" style="float: right; margin: 50px" id="DepositForm">
+          <form>
+            <label>Select an amount to deposit </label>
+            <input name="amount" v-model="depositAmount" size="5" />
+            <button v-on:click="deposit">Deposit</button>
+          </form>
         </div>
       </div>
 
-      <div class="column is-offset-4 is-2">
-        <div class="columns is-mobile">
-          <div class="column is-half">
-            <figure class="image is-64x64">
-              <img src="./../static/images/mastercard.png" alt="Image" />
-            </figure>
-          </div>
-          <div class="column is-half">
-            <figure class="image is-64x64">
-              <img
-                style="margin-top: 13px"
-                src="./../static/images/visa.png"
-                alt="Image"
-              />
-            </figure>
-          </div>
-        </div>
+      <!-- Logout button which send to the login page -->
+      <div
+        class="column is-6 is-offset-1"
+        style="margin-top: 5%"
+        v-show="user"
+        id="Logout"
+      >
+        <button class="btn-logout" style="vertical-align: middle">
+          <a v-on:click="signOut">
+            <span>Logout</span>
+          </a>
+        </button>
       </div>
-    </div>
-
-    <div v-show="!!user" id="Logout">
-      <button>
-        <a href="#" v-on:click="signOut">Logout</a>
-      </button>
     </div>
   </body>
 </template>
@@ -185,7 +150,6 @@
 // @ is an alias to /src
 
 import axios from "axios";
-
 import firebase from "firebase/compat/app";
 
 export default {
@@ -200,15 +164,17 @@ export default {
       phone: "0000000000",
       mail: "example@example.com",
       accountId: "-1",
-      accountBalance: "100",
-      overdraft: "0",
-      bankName: "banque_postale",
-      bankDescription: "une desc",
-      connect: false,
-      accountAlmostId: "0",
-      depositAmount: "0",
-      withdrawAmount: "0",
+      accountBalance: "-1",
+      overdraft: "-1",
+      bankName: "myBankName",
+      bankDescription: "myBankDescription",
+      depositAmount: "-1",
+      withdrawAmount: "-1",
       user: null,
+      headers: {
+        "Access-Control-Allow-Origin": "*",
+        "Content-type": "application/json",
+      },
     };
   },
 
@@ -229,39 +195,43 @@ export default {
   },
 
   methods: {
-    formOnSubmit: function () {
-      console.log("formOnSubmit");
-      this.accountId = this.accountAlmostId;
-      this.getAccount();
-    },
-
+    /**
+     * Deposit function
+     * send a POST to BASE_URL/Deposit
+     * the request contains the account id and the amount to deposit
+     * then update the displayed information
+     */
     deposit: function () {
-      //const defaultAmount = 200.0;
       const args = {
         accountId: this.accountId,
         amount: this.depositAmount,
       };
       const url = this.BASE_URL + "Deposit";
 
-      axios
-        .post(url, args, {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Content-type": "application/json",
-          },
-        })
-        .then((account) => {
-          this.fillAccountData(
-            account.data.id,
-            account.data.balance,
-            account.data.overdraft
-          );
-        })
-        .catch((error) => {
-          console.log(error);
-        });
+      if (this.amount > 0) {
+        axios
+          .post(url, args, this.headers)
+          .then((account) => {
+            this.fillAccountData(
+              account.data.id,
+              account.data.balance,
+              account.data.overdraft
+            );
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      }
     },
 
+    /**
+     * Withdraw function
+     * send a POST to BASE_URL/Withdraw
+     * the request contains the account id and the amount to withdraw
+     * ONLY IF the local balance contains enough funds (overdraft included)
+     * It won't be checked again (several requests can break the limit)
+     * then update the displayed information
+     */
     withdraw: function () {
       if (
         confirm(
@@ -270,28 +240,21 @@ export default {
             " € from your account ?"
         )
       ) {
-        console.log("Withdraw");
-        //const defaultAmount = 200;
         const args = {
           accountId: this.accountId,
           amount: this.withdrawAmount,
         };
 
-        console.log(this.accountId);
-
         const url = this.BASE_URL + "Withdraw/";
 
-        if (this.accountBalance - args.amount < this.overdraft) {
+        if (
+          this.amount > 0 &&
+          this.accountBalance - args.amount < this.overdraft
+        ) {
           // Not enough money on your account
-          console.log("not Enough money TODO");
         } else {
           axios
-            .post(url, args, {
-              headers: {
-                "Access-Control-Allow-Origin": "*",
-                "Content-type": "application/json",
-              },
-            })
+            .post(url, args, this.headers)
             .then((account) => {
               this.fillAccountData(
                 account.data.id,
@@ -306,6 +269,12 @@ export default {
       }
     },
 
+    /**
+     * Get the account data from an email,
+     * If it doesn't exists, it will be created.
+     * Once the account data is retrieved,
+     * local data will be updated.
+     */
     getAccount() {
       const url = this.BASE_URL + "client";
       const args = {
@@ -314,12 +283,7 @@ export default {
       };
       console.log("getAccount" + url);
       axios
-        .post(url, args, {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Content-type": "application/json",
-          },
-        })
+        .post(url, args, this.headers)
         .then((account) => {
           this.fillAccountData(
             account.data.id,
@@ -332,6 +296,9 @@ export default {
         });
     },
 
+    /**
+     * Set the local account data.
+     */
     fillAccountData(accountId, accountBalance, overdraft) {
       console.log("fillAccountData");
       this.accountId = accountId;
@@ -340,34 +307,21 @@ export default {
       console.log("accountId = " + this.accountId);
     },
 
-    limitationChanged(checkbox) {
-      this.withLimitation = checkbox.checked;
-    },
-
+    /**
+     * Init the bank information on page load
+     */
     initWebPageWithData() {
-      let donnee = {
-        name: "La Banque Postale",
-        description:
-          "La Banque postale est une banque publique française née le 1ᵉʳ janvier 2006, filiale à 100 % du groupe La Poste, dont elle a repris les services financiers. Son réseau de distribution s'appuie sur des bureaux de poste répartis sur le territoire, dont les agents opèrent au nom, et pour le compte de la banque.",
-        phoneNumber: "09 69 39 99 98",
-        mail: "laposte@laposte.net",
-      };
-      this.populateWebpageWithData(
-        donnee.name,
-        donnee.description,
-        donnee.phoneNumber,
-        donnee.mail
-      );
+      let donnee = require("@/static/data/banque_postale.json");
+      this.bankName = donnee.name;
+      this.bankDescription = donnee.description;
+      this.phone = donnee.phoneNumber;
+      this.mail = donnee.mail;
     },
 
-    populateWebpageWithData(bankName, bankDescription, phone, mail) {
-      this.bankName = bankName;
-      this.bankDescription = bankDescription;
-      this.phone = phone;
-      this.mail = mail;
-    },
-    // Firebase
-
+    /**
+     * Firebase initialization
+     * -> set the user data
+     */
     initApp: function () {
       firebase.auth().onAuthStateChanged(
         function (user) {
@@ -413,6 +367,11 @@ export default {
         }
       );
     },
+
+    /**
+     * Firebase signout function.
+     * Then return to Login view
+     */
     signOut(e) {
       e.stopPropagation();
       firebase.auth().signOut();
@@ -423,3 +382,51 @@ export default {
   },
 };
 </script>
+
+<style>
+.btn-logout {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #eb8f8f;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-logout:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+.btn-logout span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.btn-logout span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.btn-logout:hover span {
+  padding-right: 25px;
+}
+
+.btn-logout:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>

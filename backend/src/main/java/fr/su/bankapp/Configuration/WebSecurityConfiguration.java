@@ -26,15 +26,9 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .antMatchers("/api/clients").permitAll() // allow every URI, that begins with '/api/user/'
                 .antMatchers("/api/client/**").permitAll()
                 .antMatchers("/api/secured/**").authenticated()
-                //.anyRequest().authenticated() // protect all other requests
         .and()
             .csrf().disable(); // disable cross site request forgery, as we don't use cookies - otherwise ALL PUT, POST, DELETE will get HTTP 403!
     }
 
 
-    //@Override
-    //protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-    //    auth.inMemoryAuthentication()
-    //            .withUser("foo").password("{noop}bar").roles("USER");
-    //}
 }
