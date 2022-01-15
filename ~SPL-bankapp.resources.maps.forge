@@ -163,9 +163,9 @@
                     "id": "a4513a05-0b7d-49f8-84e5-e337e25146e7",
                     "analyzer": "Resource Analyzer",
                     "featureKey": "a97d36a3-8528-487c-870c-1ae2742b2641",
-                    "startLine": 313,
+                    "startLine": 310,
                     "startColumn": 28,
-                    "endLine": 313,
+                    "endLine": 310,
                     "endColumn": 61,
                     "type": "Deletion",
                     "isValidated": true

@@ -183,7 +183,7 @@ export default {
     this.initApp();
   },
 
-  created() {
+  created: function () {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         this.user = user;
@@ -281,7 +281,6 @@ export default {
         name: this.user.displayName,
         email: this.user.email,
       };
-      console.log("getAccount" + url);
       axios
         .post(url, args, this.headers)
         .then((account) => {
@@ -300,11 +299,9 @@ export default {
      * Set the local account data.
      */
     fillAccountData(accountId, accountBalance, overdraft) {
-      console.log("fillAccountData");
       this.accountId = accountId;
       this.accountBalance = accountBalance;
       this.overdraft = overdraft;
-      console.log("accountId = " + this.accountId);
     },
 
     /**
