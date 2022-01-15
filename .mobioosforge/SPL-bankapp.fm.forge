@@ -1,0 +1,2520 @@
+{
+    "cells": [
+        {
+            "type": "app.FeatureShapeModel",
+            "feature": {
+                "key": "e38533fb-1158-4309-b667-b2a5abd5eb0d",
+                "name": "SPL-bankapp",
+                "type": "Core",
+                "parent": "-1",
+                "parentRelation": "Normal",
+                "presence": "Mandatory",
+                "lgFile": "",
+                "role": "",
+                "hexColor": "",
+                "help": "",
+                "nodeWeight": -1,
+                "referenceType": "not a reference",
+                "fullName": "SPL-bankapp"
+            },
+            "size": {
+                "width": 180,
+                "height": 51
+            },
+            "hidden": false,
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "headerText"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "bodyText"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "relationType"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "deadFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "commonFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "falseOptionalFeature"
+                },
+                {
+                    "tagName": "circle",
+                    "selector": "markerColorRect"
+                }
+            ],
+            "id": "becccc57-1fdb-47fc-9e78-613163056044",
+            "position": {
+                "x": 560,
+                "y": 30
+            },
+            "attrs": {
+                "body": {
+                    "refWidth": "100%",
+                    "refHeight": "100%",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "stroke": "#E7E7E7",
+                    "style": {
+                        "transition": "0.3s ease-in-out"
+                    },
+                    "rx": 8,
+                    "ry": 8
+                },
+                "header": {
+                    "refWidth": "100%",
+                    "height": 0,
+                    "stroke": "#E7E7E7",
+                    "strokeWidth": 0,
+                    "fill": "#E7E7E7"
+                },
+                "headerText": {
+                    "text": ""
+                },
+                "bodyText": {
+                    "text": "SPL-bankapp",
+                    "refX": "50%",
+                    "refY": "50%",
+                    "textWrap": {
+                        "ellipsis": true,
+                        "width": -10
+                    },
+                    "textVerticalAnchor": "middle",
+                    "textAnchor": "middle",
+                    "fontSize": 14,
+                    "fontWeight": 700,
+                    "fontFamily": "Inter"
+                },
+                "relationType": {
+                    "refX": "50%",
+                    "refY": "100%",
+                    "stroke": "#A0A0A0",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "strokeLinejoin": "round",
+                    "d": "M 0 0 l -10 10 q 10 10 20 0 z",
+                    "height": 20,
+                    "width": 30,
+                    "display": "none"
+                },
+                "deadFeature": {
+                    "refX": "68%",
+                    "refY": "65%",
+                    "fill": "#E63757",
+                    "d": "M 9.426 4.974 a 0.6 0.6 90 0 0 -0.852 0 L 7.2 6.354 L 5.826 4.974 A 0.6 0.6 90 0 0 4.974 5.826 L 6.354 7.2 l -1.38 1.374 a 0.6 0.6 90 0 0 0 0.852 a 0.6 0.6 90 0 0 0.852 0 L 7.2 8.046 l 1.374 1.38 a 0.6 0.6 90 0 0 0.852 0 a 0.6 0.6 90 0 0 0 -0.852 L 8.046 7.2 l 1.38 -1.374 A 0.6 0.6 90 0 0 9.426 4.974 Z m 2.016 -2.016 A 6 6 90 1 0 2.958 11.442 A 6 6 90 1 0 11.442 2.958 Z M 10.596 10.596 A 4.8 4.8 90 1 1 12 7.2 A 4.77 4.77 90 0 1 10.596 10.596 Z",
+                    "title": "Dead Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "commonFeature": {
+                    "refX": "88%",
+                    "refY": "65%",
+                    "fill": "#0d6efd",
+                    "strokeLinejoin": "round",
+                    "d": "M 6.912 1.152 A 5.76 5.76 90 1 0 12.672 6.912 A 5.7664 5.7664 90 0 0 6.912 1.152 Z m 0 10.368 a 4.608 4.608 90 1 1 4.608 -4.608 A 4.6133 4.6133 90 0 1 6.912 11.52 Z m 0 -4.896 a 0.576 0.576 90 0 0 -0.576 0.576 v 1.728 a 0.576 0.576 90 0 0 1.152 0 v -1.728 A 0.576 0.576 90 0 0 6.912 6.624 Z m 0 -2.304 a 0.72 0.72 90 1 0 0.72 0.72 A 0.72 0.72 90 0 0 6.912 4.32 Z",
+                    "title": "Common Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "falseOptionalFeature": {
+                    "refX": "78%",
+                    "refY": "65%",
+                    "fill": "#CA9704",
+                    "d": "M 7.2 9.6 a 0.6 0.6 90 1 0 0.6 0.6 A 0.6 0.6 90 0 0 7.2 9.6 Z m 6.402 0.882 l -4.83 -8.4 a 1.8 1.8 90 0 0 -3.144 0 l -4.8 8.4 A 1.8 1.8 90 0 0 2.364 13.2 H 12.036 a 1.8 1.8 90 0 0 1.566 -2.718 Z m -1.038 1.2 a 0.6 0.6 90 0 1 -0.528 0.306 H 2.364 a 0.6 0.6 90 0 1 -0.528 -0.306 a 0.6 0.6 90 0 1 0 -0.6 l 4.8 -8.4 a 0.6 0.6 90 0 1 1.068 0 l 4.83 8.4 A 0.6 0.6 90 0 1 12.564 11.694 Z M 7.2 4.8 a 0.6 0.6 90 0 0 -0.6 0.6 v 2.4 a 0.6 0.6 90 0 0 1.2 0 V 5.4 A 0.6 0.6 90 0 0 7.2 4.8 Z",
+                    "title": "False Optional Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "markerColorRect": {
+                    "refX": 12,
+                    "refY": 10,
+                    "fill": "#ffffff",
+                    "stroke": "none",
+                    "r": 6,
+                    "title": "Marker color",
+                    "cursor": "pointer",
+                    "display": "none"
+                }
+            }
+        },
+        {
+            "type": "app.FeatureShapeModel",
+            "feature": {
+                "key": "a6e8bd5d-2b21-4dc5-ae2d-d7413d295fe6",
+                "name": "overdraft",
+                "type": "Functionality feature",
+                "parent": "e38533fb-1158-4309-b667-b2a5abd5eb0d",
+                "parentRelation": "Normal",
+                "presence": "Optional",
+                "lgFile": "",
+                "role": "",
+                "hexColor": "#E4EEDC",
+                "help": "",
+                "nodeWeight": 0,
+                "nodeType": "feature",
+                "referenceType": "not a reference",
+                "fullName": "overdraft"
+            },
+            "size": {
+                "width": 180,
+                "height": 51
+            },
+            "hidden": false,
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "headerText"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "bodyText"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "relationType"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "deadFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "commonFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "falseOptionalFeature"
+                },
+                {
+                    "tagName": "circle",
+                    "selector": "markerColorRect"
+                }
+            ],
+            "id": "b4fb1c5c-0bab-4c67-b5f9-740e680dff92",
+            "position": {
+                "x": 470,
+                "y": 120
+            },
+            "attrs": {
+                "body": {
+                    "refWidth": "100%",
+                    "refHeight": "100%",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "stroke": "#adc949",
+                    "style": {
+                        "transition": "0.3s ease-in-out"
+                    },
+                    "rx": 8,
+                    "ry": 8
+                },
+                "header": {
+                    "refWidth": "100%",
+                    "height": 0,
+                    "stroke": "#adc949",
+                    "strokeWidth": 0,
+                    "fill": "#adc949"
+                },
+                "headerText": {
+                    "text": ""
+                },
+                "bodyText": {
+                    "text": "overdraft",
+                    "refX": "50%",
+                    "refY": "50%",
+                    "textWrap": {
+                        "ellipsis": true,
+                        "width": -10
+                    },
+                    "textVerticalAnchor": "middle",
+                    "textAnchor": "middle",
+                    "fontSize": 14,
+                    "fontWeight": 700,
+                    "fontFamily": "Inter"
+                },
+                "relationType": {
+                    "refX": "50%",
+                    "refY": "100%",
+                    "stroke": "#A0A0A0",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "strokeLinejoin": "round",
+                    "d": "M 0 0 l -10 10 q 10 10 20 0 z",
+                    "height": 20,
+                    "width": 30,
+                    "display": "none"
+                },
+                "deadFeature": {
+                    "refX": "68%",
+                    "refY": "65%",
+                    "fill": "#E63757",
+                    "d": "M 9.426 4.974 a 0.6 0.6 90 0 0 -0.852 0 L 7.2 6.354 L 5.826 4.974 A 0.6 0.6 90 0 0 4.974 5.826 L 6.354 7.2 l -1.38 1.374 a 0.6 0.6 90 0 0 0 0.852 a 0.6 0.6 90 0 0 0.852 0 L 7.2 8.046 l 1.374 1.38 a 0.6 0.6 90 0 0 0.852 0 a 0.6 0.6 90 0 0 0 -0.852 L 8.046 7.2 l 1.38 -1.374 A 0.6 0.6 90 0 0 9.426 4.974 Z m 2.016 -2.016 A 6 6 90 1 0 2.958 11.442 A 6 6 90 1 0 11.442 2.958 Z M 10.596 10.596 A 4.8 4.8 90 1 1 12 7.2 A 4.77 4.77 90 0 1 10.596 10.596 Z",
+                    "title": "Dead Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "commonFeature": {
+                    "refX": "88%",
+                    "refY": "65%",
+                    "fill": "#0d6efd",
+                    "strokeLinejoin": "round",
+                    "d": "M 6.912 1.152 A 5.76 5.76 90 1 0 12.672 6.912 A 5.7664 5.7664 90 0 0 6.912 1.152 Z m 0 10.368 a 4.608 4.608 90 1 1 4.608 -4.608 A 4.6133 4.6133 90 0 1 6.912 11.52 Z m 0 -4.896 a 0.576 0.576 90 0 0 -0.576 0.576 v 1.728 a 0.576 0.576 90 0 0 1.152 0 v -1.728 A 0.576 0.576 90 0 0 6.912 6.624 Z m 0 -2.304 a 0.72 0.72 90 1 0 0.72 0.72 A 0.72 0.72 90 0 0 6.912 4.32 Z",
+                    "title": "Common Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "falseOptionalFeature": {
+                    "refX": "78%",
+                    "refY": "65%",
+                    "fill": "#CA9704",
+                    "d": "M 7.2 9.6 a 0.6 0.6 90 1 0 0.6 0.6 A 0.6 0.6 90 0 0 7.2 9.6 Z m 6.402 0.882 l -4.83 -8.4 a 1.8 1.8 90 0 0 -3.144 0 l -4.8 8.4 A 1.8 1.8 90 0 0 2.364 13.2 H 12.036 a 1.8 1.8 90 0 0 1.566 -2.718 Z m -1.038 1.2 a 0.6 0.6 90 0 1 -0.528 0.306 H 2.364 a 0.6 0.6 90 0 1 -0.528 -0.306 a 0.6 0.6 90 0 1 0 -0.6 l 4.8 -8.4 a 0.6 0.6 90 0 1 1.068 0 l 4.83 8.4 A 0.6 0.6 90 0 1 12.564 11.694 Z M 7.2 4.8 a 0.6 0.6 90 0 0 -0.6 0.6 v 2.4 a 0.6 0.6 90 0 0 1.2 0 V 5.4 A 0.6 0.6 90 0 0 7.2 4.8 Z",
+                    "title": "False Optional Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "markerColorRect": {
+                    "refX": 12,
+                    "refY": 10,
+                    "fill": "#E4EEDC",
+                    "stroke": "none",
+                    "r": 6,
+                    "title": "Marker color",
+                    "cursor": "pointer"
+                }
+            }
+        },
+        {
+            "source": {
+                "connectionPoint": {
+                    "name": "anchor",
+                    "args": {}
+                },
+                "anchor": {
+                    "name": "bottom",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "becccc57-1fdb-47fc-9e78-613163056044"
+            },
+            "target": {
+                "connectionPoint": {
+                    "name": "boundary",
+                    "args": {
+                        "offset": 0,
+                        "insideout": false,
+                        "extrapolate": true,
+                        "sticky": true,
+                        "precision": 3,
+                        "stroke": true
+                    }
+                },
+                "anchor": {
+                    "name": "top",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "b4fb1c5c-0bab-4c67-b5f9-740e680dff92"
+            },
+            "z": 100,
+            "type": "standard.Link",
+            "id": "b08149bf-e27c-4da8-9170-8a124108f361",
+            "attrs": {
+                "line": {
+                    "stroke": "#adc949",
+                    "strokeWidth": 1,
+                    "targetMarker": {
+                        "type": "circle",
+                        "r": 7,
+                        "cx": 7,
+                        "d": "M 10 -5 0 0 10 5 z",
+                        "fill": "white"
+                    },
+                    "connection": true,
+                    "strokeLinejoin": "round"
+                },
+                "wrapper": {
+                    "connection": true,
+                    "strokeWidth": 10,
+                    "strokeLinejoin": "round"
+                }
+            }
+        },
+        {
+            "source": {
+                "connectionPoint": {
+                    "name": "anchor",
+                    "args": {}
+                },
+                "anchor": {
+                    "name": "bottom",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "becccc57-1fdb-47fc-9e78-613163056044"
+            },
+            "target": {
+                "connectionPoint": {
+                    "name": "boundary",
+                    "args": {
+                        "offset": 0,
+                        "insideout": false,
+                        "extrapolate": true,
+                        "sticky": true,
+                        "precision": 3,
+                        "stroke": true
+                    }
+                },
+                "anchor": {
+                    "name": "top",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "c41edead-a873-4c78-870b-26f224989439"
+            },
+            "z": 100,
+            "type": "standard.Link",
+            "id": "4ba90b3d-0794-4076-9bdb-7949cce03a45",
+            "attrs": {
+                "line": {
+                    "stroke": "#b745bb",
+                    "strokeWidth": 1,
+                    "targetMarker": {
+                        "type": "circle",
+                        "r": 7,
+                        "cx": 7,
+                        "d": "M 10 -5 0 0 10 5 z",
+                        "fill": "white"
+                    },
+                    "connection": true,
+                    "strokeLinejoin": "round"
+                },
+                "wrapper": {
+                    "connection": true,
+                    "strokeWidth": 10,
+                    "strokeLinejoin": "round"
+                }
+            }
+        },
+        {
+            "source": {
+                "connectionPoint": {
+                    "name": "anchor",
+                    "args": {}
+                },
+                "anchor": {
+                    "name": "bottom",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "c41edead-a873-4c78-870b-26f224989439"
+            },
+            "target": {
+                "connectionPoint": {
+                    "name": "boundary",
+                    "args": {
+                        "offset": 0,
+                        "insideout": false,
+                        "extrapolate": true,
+                        "sticky": true,
+                        "precision": 3,
+                        "stroke": true
+                    }
+                },
+                "anchor": {
+                    "name": "top",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "6fc1e782-b3a1-4055-9daa-01b5ee9fdd93"
+            },
+            "z": 100,
+            "type": "standard.Link",
+            "id": "9f76e537-2fbb-4f5f-ba07-29473839df51",
+            "attrs": {
+                "line": {
+                    "stroke": "#adc949",
+                    "strokeWidth": 1,
+                    "targetMarker": {
+                        "type": "circle",
+                        "r": 0,
+                        "cx": 7,
+                        "d": "M 10 -5 0 0 10 5 z",
+                        "fill": "white"
+                    },
+                    "connection": true,
+                    "strokeLinejoin": "round"
+                },
+                "wrapper": {
+                    "connection": true,
+                    "strokeWidth": 10,
+                    "strokeLinejoin": "round"
+                }
+            }
+        },
+        {
+            "source": {
+                "connectionPoint": {
+                    "name": "anchor",
+                    "args": {}
+                },
+                "anchor": {
+                    "name": "bottom",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "c41edead-a873-4c78-870b-26f224989439"
+            },
+            "target": {
+                "connectionPoint": {
+                    "name": "boundary",
+                    "args": {
+                        "offset": 0,
+                        "insideout": false,
+                        "extrapolate": true,
+                        "sticky": true,
+                        "precision": 3,
+                        "stroke": true
+                    }
+                },
+                "anchor": {
+                    "name": "top",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "0f1da605-621d-43fa-a6c2-2b9037f7796b"
+            },
+            "z": 100,
+            "type": "standard.Link",
+            "id": "5789547a-db51-47c5-b9bd-d070a7c83180",
+            "attrs": {
+                "line": {
+                    "stroke": "#adc949",
+                    "strokeWidth": 1,
+                    "targetMarker": {
+                        "type": "circle",
+                        "r": 0,
+                        "cx": 7,
+                        "d": "M 10 -5 0 0 10 5 z",
+                        "fill": "white"
+                    },
+                    "connection": true,
+                    "strokeLinejoin": "round"
+                },
+                "wrapper": {
+                    "connection": true,
+                    "strokeWidth": 10,
+                    "strokeLinejoin": "round"
+                }
+            }
+        },
+        {
+            "source": {
+                "connectionPoint": {
+                    "name": "anchor",
+                    "args": {}
+                },
+                "anchor": {
+                    "name": "bottom",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "c41edead-a873-4c78-870b-26f224989439"
+            },
+            "target": {
+                "connectionPoint": {
+                    "name": "boundary",
+                    "args": {
+                        "offset": 0,
+                        "insideout": false,
+                        "extrapolate": true,
+                        "sticky": true,
+                        "precision": 3,
+                        "stroke": true
+                    }
+                },
+                "anchor": {
+                    "name": "top",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "c2da34cb-da2f-4d51-bf69-aa2486cbf1bb"
+            },
+            "z": 100,
+            "type": "standard.Link",
+            "id": "54eda0bc-f7d0-449f-a15d-b4f8b2a23756",
+            "attrs": {
+                "line": {
+                    "stroke": "#adc949",
+                    "strokeWidth": 1,
+                    "targetMarker": {
+                        "type": "circle",
+                        "r": 0,
+                        "cx": 7,
+                        "d": "M 10 -5 0 0 10 5 z",
+                        "fill": "white"
+                    },
+                    "connection": true,
+                    "strokeLinejoin": "round"
+                },
+                "wrapper": {
+                    "connection": true,
+                    "strokeWidth": 10,
+                    "strokeLinejoin": "round"
+                }
+            }
+        },
+        {
+            "source": {
+                "connectionPoint": {
+                    "name": "anchor",
+                    "args": {}
+                },
+                "anchor": {
+                    "name": "bottom",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "c41edead-a873-4c78-870b-26f224989439"
+            },
+            "target": {
+                "connectionPoint": {
+                    "name": "boundary",
+                    "args": {
+                        "offset": 0,
+                        "insideout": false,
+                        "extrapolate": true,
+                        "sticky": true,
+                        "precision": 3,
+                        "stroke": true
+                    }
+                },
+                "anchor": {
+                    "name": "top",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "054ac809-c5c2-4530-b098-5e8cb1bd1801"
+            },
+            "z": 100,
+            "type": "standard.Link",
+            "id": "4443d27c-f337-409a-976a-2c6eb0c0317e",
+            "attrs": {
+                "line": {
+                    "stroke": "#adc949",
+                    "strokeWidth": 1,
+                    "targetMarker": {
+                        "type": "circle",
+                        "r": 0,
+                        "cx": 7,
+                        "d": "M 10 -5 0 0 10 5 z",
+                        "fill": "white"
+                    },
+                    "connection": true,
+                    "strokeLinejoin": "round"
+                },
+                "wrapper": {
+                    "connection": true,
+                    "strokeWidth": 10,
+                    "strokeLinejoin": "round"
+                }
+            }
+        },
+        {
+            "source": {
+                "connectionPoint": {
+                    "name": "anchor",
+                    "args": {}
+                },
+                "anchor": {
+                    "name": "bottom",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "c41edead-a873-4c78-870b-26f224989439"
+            },
+            "target": {
+                "connectionPoint": {
+                    "name": "boundary",
+                    "args": {
+                        "offset": 0,
+                        "insideout": false,
+                        "extrapolate": true,
+                        "sticky": true,
+                        "precision": 3,
+                        "stroke": true
+                    }
+                },
+                "anchor": {
+                    "name": "top",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "10eaff41-4125-4229-9cd6-202e2cac5e93"
+            },
+            "z": 100,
+            "type": "standard.Link",
+            "id": "7fab0078-d757-4440-a1d1-24750bf7d12e",
+            "attrs": {
+                "line": {
+                    "stroke": "#adc949",
+                    "strokeWidth": 1,
+                    "targetMarker": {
+                        "type": "circle",
+                        "r": 0,
+                        "cx": 7,
+                        "d": "M 10 -5 0 0 10 5 z",
+                        "fill": "white"
+                    },
+                    "connection": true,
+                    "strokeLinejoin": "round"
+                },
+                "wrapper": {
+                    "connection": true,
+                    "strokeWidth": 10,
+                    "strokeLinejoin": "round"
+                }
+            }
+        },
+        {
+            "source": {
+                "connectionPoint": {
+                    "name": "anchor",
+                    "args": {}
+                },
+                "anchor": {
+                    "name": "bottom",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "c41edead-a873-4c78-870b-26f224989439"
+            },
+            "target": {
+                "connectionPoint": {
+                    "name": "boundary",
+                    "args": {
+                        "offset": 0,
+                        "insideout": false,
+                        "extrapolate": true,
+                        "sticky": true,
+                        "precision": 3,
+                        "stroke": true
+                    }
+                },
+                "anchor": {
+                    "name": "top",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "a847b2e7-9c9f-4a7f-907a-17fb8da33edf"
+            },
+            "z": 100,
+            "type": "standard.Link",
+            "id": "a6e69b0b-5a06-4477-9c37-4707745bb2af",
+            "attrs": {
+                "line": {
+                    "stroke": "#CDCDCD",
+                    "strokeWidth": 1,
+                    "targetMarker": {
+                        "type": "circle",
+                        "r": 0,
+                        "cx": 7,
+                        "d": "M 10 -5 0 0 10 5 z",
+                        "fill": "white"
+                    },
+                    "connection": true,
+                    "strokeLinejoin": "round"
+                },
+                "wrapper": {
+                    "connection": true,
+                    "strokeWidth": 10,
+                    "strokeLinejoin": "round"
+                }
+            }
+        },
+        {
+            "source": {
+                "connectionPoint": {
+                    "name": "anchor",
+                    "args": {}
+                },
+                "anchor": {
+                    "name": "bottom",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "c41edead-a873-4c78-870b-26f224989439"
+            },
+            "target": {
+                "connectionPoint": {
+                    "name": "boundary",
+                    "args": {
+                        "offset": 0,
+                        "insideout": false,
+                        "extrapolate": true,
+                        "sticky": true,
+                        "precision": 3,
+                        "stroke": true
+                    }
+                },
+                "anchor": {
+                    "name": "top",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "b6f98059-0c75-4ddd-b4d3-bac33e6fce56"
+            },
+            "z": 100,
+            "type": "standard.Link",
+            "id": "81c8a952-ddea-46be-892b-fff45af7789b",
+            "attrs": {
+                "line": {
+                    "stroke": "#CDCDCD",
+                    "strokeWidth": 1,
+                    "targetMarker": {
+                        "type": "circle",
+                        "r": 0,
+                        "cx": 7,
+                        "d": "M 10 -5 0 0 10 5 z",
+                        "fill": "white"
+                    },
+                    "connection": true,
+                    "strokeLinejoin": "round"
+                },
+                "wrapper": {
+                    "connection": true,
+                    "strokeWidth": 10,
+                    "strokeLinejoin": "round"
+                }
+            }
+        },
+        {
+            "source": {
+                "connectionPoint": {
+                    "name": "anchor",
+                    "args": {}
+                },
+                "anchor": {
+                    "name": "bottom",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "c41edead-a873-4c78-870b-26f224989439"
+            },
+            "target": {
+                "connectionPoint": {
+                    "name": "boundary",
+                    "args": {
+                        "offset": 0,
+                        "insideout": false,
+                        "extrapolate": true,
+                        "sticky": true,
+                        "precision": 3,
+                        "stroke": true
+                    }
+                },
+                "anchor": {
+                    "name": "top",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "bcc94b6f-ceab-4f1c-87ea-d85c47e4af67"
+            },
+            "z": 100,
+            "type": "standard.Link",
+            "id": "4743ac49-e888-41f5-ae36-bb5c27913a4b",
+            "attrs": {
+                "line": {
+                    "stroke": "#adc949",
+                    "strokeWidth": 1,
+                    "targetMarker": {
+                        "type": "circle",
+                        "r": 0,
+                        "cx": 7,
+                        "d": "M 10 -5 0 0 10 5 z",
+                        "fill": "white"
+                    },
+                    "connection": true,
+                    "strokeLinejoin": "round"
+                },
+                "wrapper": {
+                    "connection": true,
+                    "strokeWidth": 10,
+                    "strokeLinejoin": "round"
+                }
+            }
+        },
+        {
+            "source": {
+                "connectionPoint": {
+                    "name": "anchor",
+                    "args": {}
+                },
+                "anchor": {
+                    "name": "bottom",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "c41edead-a873-4c78-870b-26f224989439"
+            },
+            "target": {
+                "connectionPoint": {
+                    "name": "boundary",
+                    "args": {
+                        "offset": 0,
+                        "insideout": false,
+                        "extrapolate": true,
+                        "sticky": true,
+                        "precision": 3,
+                        "stroke": true
+                    }
+                },
+                "anchor": {
+                    "name": "top",
+                    "args": {
+                        "rotate": true
+                    }
+                },
+                "id": "97c9394c-a001-43a5-941e-b2621e76cd6c"
+            },
+            "z": 100,
+            "type": "standard.Link",
+            "id": "b27a4bff-3406-4143-81a9-2b6043fd60cf",
+            "attrs": {
+                "line": {
+                    "stroke": "#adc949",
+                    "strokeWidth": 1,
+                    "targetMarker": {
+                        "type": "circle",
+                        "r": 0,
+                        "cx": 7,
+                        "d": "M 10 -5 0 0 10 5 z",
+                        "fill": "white"
+                    },
+                    "connection": true,
+                    "strokeLinejoin": "round"
+                },
+                "wrapper": {
+                    "connection": true,
+                    "strokeWidth": 10,
+                    "strokeLinejoin": "round"
+                }
+            }
+        },
+        {
+            "type": "app.FeatureShapeModel",
+            "feature": {
+                "key": "c41edead-a873-4c78-870b-26f224989439",
+                "name": "Authentification",
+                "nodeType": "resourceText",
+                "type": "Resource feature",
+                "parent": "e38533fb-1158-4309-b667-b2a5abd5eb0d",
+                "parentRelation": "Normal",
+                "presence": "Optional",
+                "lgFile": "",
+                "role": "",
+                "hexColor": "#f893c8",
+                "help": "",
+                "nodeWeight": -1,
+                "isPropagated": false,
+                "filePath": "",
+                "referenceType": "not a reference"
+            },
+            "size": {
+                "width": 180,
+                "height": 51
+            },
+            "hidden": false,
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "headerText"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "bodyText"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "relationType"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "deadFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "commonFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "falseOptionalFeature"
+                },
+                {
+                    "tagName": "circle",
+                    "selector": "markerColorRect"
+                }
+            ],
+            "id": "c41edead-a873-4c78-870b-26f224989439",
+            "position": {
+                "x": 170,
+                "y": 80
+            },
+            "z": 101,
+            "attrs": {
+                "body": {
+                    "refWidth": "100%",
+                    "refHeight": "100%",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "stroke": "#b745bb",
+                    "style": {
+                        "transition": "0.3s ease-in-out"
+                    },
+                    "rx": 8,
+                    "ry": 8
+                },
+                "header": {
+                    "refWidth": "100%",
+                    "height": 0,
+                    "stroke": "#b745bb",
+                    "strokeWidth": 0,
+                    "fill": "#b745bb"
+                },
+                "headerText": {
+                    "text": ""
+                },
+                "bodyText": {
+                    "text": "Authentification",
+                    "refX": "50%",
+                    "refY": "50%",
+                    "textWrap": {
+                        "ellipsis": true,
+                        "width": -10
+                    },
+                    "textVerticalAnchor": "middle",
+                    "textAnchor": "middle",
+                    "fontSize": 14,
+                    "fontWeight": 700,
+                    "fontFamily": "Inter"
+                },
+                "relationType": {
+                    "refX": "50%",
+                    "refY": "100%",
+                    "stroke": "#A0A0A0",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "strokeLinejoin": "round",
+                    "d": "M 0 0 l -10 10 q 10 10 20 0 z",
+                    "height": 20,
+                    "width": 30,
+                    "display": "block"
+                },
+                "deadFeature": {
+                    "refX": "68%",
+                    "refY": "65%",
+                    "fill": "#E63757",
+                    "d": "M 9.426 4.974 a 0.6 0.6 90 0 0 -0.852 0 L 7.2 6.354 L 5.826 4.974 A 0.6 0.6 90 0 0 4.974 5.826 L 6.354 7.2 l -1.38 1.374 a 0.6 0.6 90 0 0 0 0.852 a 0.6 0.6 90 0 0 0.852 0 L 7.2 8.046 l 1.374 1.38 a 0.6 0.6 90 0 0 0.852 0 a 0.6 0.6 90 0 0 0 -0.852 L 8.046 7.2 l 1.38 -1.374 A 0.6 0.6 90 0 0 9.426 4.974 Z m 2.016 -2.016 A 6 6 90 1 0 2.958 11.442 A 6 6 90 1 0 11.442 2.958 Z M 10.596 10.596 A 4.8 4.8 90 1 1 12 7.2 A 4.77 4.77 90 0 1 10.596 10.596 Z",
+                    "title": "Dead Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "commonFeature": {
+                    "refX": "88%",
+                    "refY": "65%",
+                    "fill": "#0d6efd",
+                    "strokeLinejoin": "round",
+                    "d": "M 6.912 1.152 A 5.76 5.76 90 1 0 12.672 6.912 A 5.7664 5.7664 90 0 0 6.912 1.152 Z m 0 10.368 a 4.608 4.608 90 1 1 4.608 -4.608 A 4.6133 4.6133 90 0 1 6.912 11.52 Z m 0 -4.896 a 0.576 0.576 90 0 0 -0.576 0.576 v 1.728 a 0.576 0.576 90 0 0 1.152 0 v -1.728 A 0.576 0.576 90 0 0 6.912 6.624 Z m 0 -2.304 a 0.72 0.72 90 1 0 0.72 0.72 A 0.72 0.72 90 0 0 6.912 4.32 Z",
+                    "title": "Common Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "falseOptionalFeature": {
+                    "refX": "78%",
+                    "refY": "65%",
+                    "fill": "#CA9704",
+                    "d": "M 7.2 9.6 a 0.6 0.6 90 1 0 0.6 0.6 A 0.6 0.6 90 0 0 7.2 9.6 Z m 6.402 0.882 l -4.83 -8.4 a 1.8 1.8 90 0 0 -3.144 0 l -4.8 8.4 A 1.8 1.8 90 0 0 2.364 13.2 H 12.036 a 1.8 1.8 90 0 0 1.566 -2.718 Z m -1.038 1.2 a 0.6 0.6 90 0 1 -0.528 0.306 H 2.364 a 0.6 0.6 90 0 1 -0.528 -0.306 a 0.6 0.6 90 0 1 0 -0.6 l 4.8 -8.4 a 0.6 0.6 90 0 1 1.068 0 l 4.83 8.4 A 0.6 0.6 90 0 1 12.564 11.694 Z M 7.2 4.8 a 0.6 0.6 90 0 0 -0.6 0.6 v 2.4 a 0.6 0.6 90 0 0 1.2 0 V 5.4 A 0.6 0.6 90 0 0 7.2 4.8 Z",
+                    "title": "False Optional Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "markerColorRect": {
+                    "refX": 12,
+                    "refY": 10,
+                    "fill": "#f893c8",
+                    "stroke": "none",
+                    "r": 6,
+                    "title": "Marker color",
+                    "cursor": "pointer",
+                    "display": "block"
+                }
+            }
+        },
+        {
+            "type": "app.FeatureShapeModel",
+            "feature": {
+                "key": "6fc1e782-b3a1-4055-9daa-01b5ee9fdd93",
+                "name": "Google",
+                "nodeType": "feature",
+                "type": "Functionality feature",
+                "parent": "c41edead-a873-4c78-870b-26f224989439",
+                "parentRelation": "Or",
+                "presence": "Normal",
+                "lgFile": "",
+                "role": "",
+                "hexColor": "#9835b0",
+                "help": "",
+                "nodeWeight": -1,
+                "isPropagated": false,
+                "filePath": "",
+                "referenceType": "not a reference"
+            },
+            "size": {
+                "width": 180,
+                "height": 51
+            },
+            "hidden": false,
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "headerText"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "bodyText"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "relationType"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "deadFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "commonFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "falseOptionalFeature"
+                },
+                {
+                    "tagName": "circle",
+                    "selector": "markerColorRect"
+                }
+            ],
+            "id": "6fc1e782-b3a1-4055-9daa-01b5ee9fdd93",
+            "position": {
+                "x": 170,
+                "y": 150
+            },
+            "z": 101,
+            "attrs": {
+                "body": {
+                    "refWidth": "100%",
+                    "refHeight": "100%",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "stroke": "#adc949",
+                    "style": {
+                        "transition": "0.3s ease-in-out"
+                    },
+                    "rx": 8,
+                    "ry": 8
+                },
+                "header": {
+                    "refWidth": "100%",
+                    "height": 0,
+                    "stroke": "#adc949",
+                    "strokeWidth": 0,
+                    "fill": "#adc949"
+                },
+                "headerText": {
+                    "text": ""
+                },
+                "bodyText": {
+                    "text": "Google",
+                    "refX": "50%",
+                    "refY": "50%",
+                    "textWrap": {
+                        "ellipsis": true,
+                        "width": -10
+                    },
+                    "textVerticalAnchor": "middle",
+                    "textAnchor": "middle",
+                    "fontSize": 14,
+                    "fontWeight": 700,
+                    "fontFamily": "Inter"
+                },
+                "relationType": {
+                    "refX": "50%",
+                    "refY": "100%",
+                    "stroke": "#A0A0A0",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "strokeLinejoin": "round",
+                    "d": "M 0 0 l -10 10 q 10 10 20 0 z",
+                    "height": 20,
+                    "width": 30,
+                    "display": "none"
+                },
+                "deadFeature": {
+                    "refX": "68%",
+                    "refY": "65%",
+                    "fill": "#E63757",
+                    "d": "M 9.426 4.974 a 0.6 0.6 90 0 0 -0.852 0 L 7.2 6.354 L 5.826 4.974 A 0.6 0.6 90 0 0 4.974 5.826 L 6.354 7.2 l -1.38 1.374 a 0.6 0.6 90 0 0 0 0.852 a 0.6 0.6 90 0 0 0.852 0 L 7.2 8.046 l 1.374 1.38 a 0.6 0.6 90 0 0 0.852 0 a 0.6 0.6 90 0 0 0 -0.852 L 8.046 7.2 l 1.38 -1.374 A 0.6 0.6 90 0 0 9.426 4.974 Z m 2.016 -2.016 A 6 6 90 1 0 2.958 11.442 A 6 6 90 1 0 11.442 2.958 Z M 10.596 10.596 A 4.8 4.8 90 1 1 12 7.2 A 4.77 4.77 90 0 1 10.596 10.596 Z",
+                    "title": "Dead Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "commonFeature": {
+                    "refX": "88%",
+                    "refY": "65%",
+                    "fill": "#0d6efd",
+                    "strokeLinejoin": "round",
+                    "d": "M 6.912 1.152 A 5.76 5.76 90 1 0 12.672 6.912 A 5.7664 5.7664 90 0 0 6.912 1.152 Z m 0 10.368 a 4.608 4.608 90 1 1 4.608 -4.608 A 4.6133 4.6133 90 0 1 6.912 11.52 Z m 0 -4.896 a 0.576 0.576 90 0 0 -0.576 0.576 v 1.728 a 0.576 0.576 90 0 0 1.152 0 v -1.728 A 0.576 0.576 90 0 0 6.912 6.624 Z m 0 -2.304 a 0.72 0.72 90 1 0 0.72 0.72 A 0.72 0.72 90 0 0 6.912 4.32 Z",
+                    "title": "Common Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "falseOptionalFeature": {
+                    "refX": "78%",
+                    "refY": "65%",
+                    "fill": "#CA9704",
+                    "d": "M 7.2 9.6 a 0.6 0.6 90 1 0 0.6 0.6 A 0.6 0.6 90 0 0 7.2 9.6 Z m 6.402 0.882 l -4.83 -8.4 a 1.8 1.8 90 0 0 -3.144 0 l -4.8 8.4 A 1.8 1.8 90 0 0 2.364 13.2 H 12.036 a 1.8 1.8 90 0 0 1.566 -2.718 Z m -1.038 1.2 a 0.6 0.6 90 0 1 -0.528 0.306 H 2.364 a 0.6 0.6 90 0 1 -0.528 -0.306 a 0.6 0.6 90 0 1 0 -0.6 l 4.8 -8.4 a 0.6 0.6 90 0 1 1.068 0 l 4.83 8.4 A 0.6 0.6 90 0 1 12.564 11.694 Z M 7.2 4.8 a 0.6 0.6 90 0 0 -0.6 0.6 v 2.4 a 0.6 0.6 90 0 0 1.2 0 V 5.4 A 0.6 0.6 90 0 0 7.2 4.8 Z",
+                    "title": "False Optional Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "markerColorRect": {
+                    "refX": 12,
+                    "refY": 10,
+                    "fill": "#9835b0",
+                    "stroke": "none",
+                    "r": 6,
+                    "title": "Marker color",
+                    "cursor": "pointer",
+                    "display": "block"
+                }
+            }
+        },
+        {
+            "type": "app.FeatureShapeModel",
+            "feature": {
+                "key": "0f1da605-621d-43fa-a6c2-2b9037f7796b",
+                "name": "Github",
+                "nodeType": "feature",
+                "type": "Functionality feature",
+                "parent": "c41edead-a873-4c78-870b-26f224989439",
+                "parentRelation": "Or",
+                "presence": "Normal",
+                "lgFile": "",
+                "role": "",
+                "hexColor": "#6deb71",
+                "help": "",
+                "nodeWeight": -1,
+                "isPropagated": false,
+                "filePath": "",
+                "referenceType": "not a reference"
+            },
+            "size": {
+                "width": 180,
+                "height": 51
+            },
+            "hidden": false,
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "headerText"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "bodyText"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "relationType"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "deadFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "commonFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "falseOptionalFeature"
+                },
+                {
+                    "tagName": "circle",
+                    "selector": "markerColorRect"
+                }
+            ],
+            "id": "0f1da605-621d-43fa-a6c2-2b9037f7796b",
+            "position": {
+                "x": 170,
+                "y": 240
+            },
+            "z": 101,
+            "attrs": {
+                "body": {
+                    "refWidth": "100%",
+                    "refHeight": "100%",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "stroke": "#adc949",
+                    "style": {
+                        "transition": "0.3s ease-in-out"
+                    },
+                    "rx": 8,
+                    "ry": 8
+                },
+                "header": {
+                    "refWidth": "100%",
+                    "height": 0,
+                    "stroke": "#adc949",
+                    "strokeWidth": 0,
+                    "fill": "#adc949"
+                },
+                "headerText": {
+                    "text": ""
+                },
+                "bodyText": {
+                    "text": "Github",
+                    "refX": "50%",
+                    "refY": "50%",
+                    "textWrap": {
+                        "ellipsis": true,
+                        "width": -10
+                    },
+                    "textVerticalAnchor": "middle",
+                    "textAnchor": "middle",
+                    "fontSize": 14,
+                    "fontWeight": 700,
+                    "fontFamily": "Inter"
+                },
+                "relationType": {
+                    "refX": "50%",
+                    "refY": "100%",
+                    "stroke": "#A0A0A0",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "strokeLinejoin": "round",
+                    "d": "M 0 0 l -10 10 q 10 10 20 0 z",
+                    "height": 20,
+                    "width": 30,
+                    "display": "none"
+                },
+                "deadFeature": {
+                    "refX": "68%",
+                    "refY": "65%",
+                    "fill": "#E63757",
+                    "d": "M 9.426 4.974 a 0.6 0.6 90 0 0 -0.852 0 L 7.2 6.354 L 5.826 4.974 A 0.6 0.6 90 0 0 4.974 5.826 L 6.354 7.2 l -1.38 1.374 a 0.6 0.6 90 0 0 0 0.852 a 0.6 0.6 90 0 0 0.852 0 L 7.2 8.046 l 1.374 1.38 a 0.6 0.6 90 0 0 0.852 0 a 0.6 0.6 90 0 0 0 -0.852 L 8.046 7.2 l 1.38 -1.374 A 0.6 0.6 90 0 0 9.426 4.974 Z m 2.016 -2.016 A 6 6 90 1 0 2.958 11.442 A 6 6 90 1 0 11.442 2.958 Z M 10.596 10.596 A 4.8 4.8 90 1 1 12 7.2 A 4.77 4.77 90 0 1 10.596 10.596 Z",
+                    "title": "Dead Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "commonFeature": {
+                    "refX": "88%",
+                    "refY": "65%",
+                    "fill": "#0d6efd",
+                    "strokeLinejoin": "round",
+                    "d": "M 6.912 1.152 A 5.76 5.76 90 1 0 12.672 6.912 A 5.7664 5.7664 90 0 0 6.912 1.152 Z m 0 10.368 a 4.608 4.608 90 1 1 4.608 -4.608 A 4.6133 4.6133 90 0 1 6.912 11.52 Z m 0 -4.896 a 0.576 0.576 90 0 0 -0.576 0.576 v 1.728 a 0.576 0.576 90 0 0 1.152 0 v -1.728 A 0.576 0.576 90 0 0 6.912 6.624 Z m 0 -2.304 a 0.72 0.72 90 1 0 0.72 0.72 A 0.72 0.72 90 0 0 6.912 4.32 Z",
+                    "title": "Common Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "falseOptionalFeature": {
+                    "refX": "78%",
+                    "refY": "65%",
+                    "fill": "#CA9704",
+                    "d": "M 7.2 9.6 a 0.6 0.6 90 1 0 0.6 0.6 A 0.6 0.6 90 0 0 7.2 9.6 Z m 6.402 0.882 l -4.83 -8.4 a 1.8 1.8 90 0 0 -3.144 0 l -4.8 8.4 A 1.8 1.8 90 0 0 2.364 13.2 H 12.036 a 1.8 1.8 90 0 0 1.566 -2.718 Z m -1.038 1.2 a 0.6 0.6 90 0 1 -0.528 0.306 H 2.364 a 0.6 0.6 90 0 1 -0.528 -0.306 a 0.6 0.6 90 0 1 0 -0.6 l 4.8 -8.4 a 0.6 0.6 90 0 1 1.068 0 l 4.83 8.4 A 0.6 0.6 90 0 1 12.564 11.694 Z M 7.2 4.8 a 0.6 0.6 90 0 0 -0.6 0.6 v 2.4 a 0.6 0.6 90 0 0 1.2 0 V 5.4 A 0.6 0.6 90 0 0 7.2 4.8 Z",
+                    "title": "False Optional Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "markerColorRect": {
+                    "refX": 12,
+                    "refY": 10,
+                    "fill": "#6deb71",
+                    "stroke": "none",
+                    "r": 6,
+                    "title": "Marker color",
+                    "cursor": "pointer",
+                    "display": "block"
+                }
+            }
+        },
+        {
+            "type": "app.FeatureShapeModel",
+            "feature": {
+                "key": "10eaff41-4125-4229-9cd6-202e2cac5e93",
+                "name": "Email",
+                "nodeType": "feature",
+                "type": "Functionality feature",
+                "parent": "c41edead-a873-4c78-870b-26f224989439",
+                "parentRelation": "Or",
+                "presence": "Normal",
+                "lgFile": "",
+                "role": "",
+                "hexColor": "#729ab7",
+                "help": "",
+                "nodeWeight": -1,
+                "isPropagated": false,
+                "filePath": "",
+                "referenceType": "not a reference"
+            },
+            "size": {
+                "width": 180,
+                "height": 51
+            },
+            "hidden": false,
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "headerText"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "bodyText"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "relationType"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "deadFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "commonFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "falseOptionalFeature"
+                },
+                {
+                    "tagName": "circle",
+                    "selector": "markerColorRect"
+                }
+            ],
+            "id": "10eaff41-4125-4229-9cd6-202e2cac5e93",
+            "position": {
+                "x": 160,
+                "y": 460
+            },
+            "z": 101,
+            "attrs": {
+                "body": {
+                    "refWidth": "100%",
+                    "refHeight": "100%",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "stroke": "#adc949",
+                    "style": {
+                        "transition": "0.3s ease-in-out"
+                    },
+                    "rx": 8,
+                    "ry": 8
+                },
+                "header": {
+                    "refWidth": "100%",
+                    "height": 0,
+                    "stroke": "#adc949",
+                    "strokeWidth": 0,
+                    "fill": "#adc949"
+                },
+                "headerText": {
+                    "text": ""
+                },
+                "bodyText": {
+                    "text": "Email",
+                    "refX": "50%",
+                    "refY": "50%",
+                    "textWrap": {
+                        "ellipsis": true,
+                        "width": -10
+                    },
+                    "textVerticalAnchor": "middle",
+                    "textAnchor": "middle",
+                    "fontSize": 14,
+                    "fontWeight": 700,
+                    "fontFamily": "Inter"
+                },
+                "relationType": {
+                    "refX": "50%",
+                    "refY": "100%",
+                    "stroke": "#A0A0A0",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "strokeLinejoin": "round",
+                    "d": "M 0 0 l -10 10 q 10 10 20 0 z",
+                    "height": 20,
+                    "width": 30,
+                    "display": "none"
+                },
+                "deadFeature": {
+                    "refX": "68%",
+                    "refY": "65%",
+                    "fill": "#E63757",
+                    "d": "M 9.426 4.974 a 0.6 0.6 90 0 0 -0.852 0 L 7.2 6.354 L 5.826 4.974 A 0.6 0.6 90 0 0 4.974 5.826 L 6.354 7.2 l -1.38 1.374 a 0.6 0.6 90 0 0 0 0.852 a 0.6 0.6 90 0 0 0.852 0 L 7.2 8.046 l 1.374 1.38 a 0.6 0.6 90 0 0 0.852 0 a 0.6 0.6 90 0 0 0 -0.852 L 8.046 7.2 l 1.38 -1.374 A 0.6 0.6 90 0 0 9.426 4.974 Z m 2.016 -2.016 A 6 6 90 1 0 2.958 11.442 A 6 6 90 1 0 11.442 2.958 Z M 10.596 10.596 A 4.8 4.8 90 1 1 12 7.2 A 4.77 4.77 90 0 1 10.596 10.596 Z",
+                    "title": "Dead Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "commonFeature": {
+                    "refX": "88%",
+                    "refY": "65%",
+                    "fill": "#0d6efd",
+                    "strokeLinejoin": "round",
+                    "d": "M 6.912 1.152 A 5.76 5.76 90 1 0 12.672 6.912 A 5.7664 5.7664 90 0 0 6.912 1.152 Z m 0 10.368 a 4.608 4.608 90 1 1 4.608 -4.608 A 4.6133 4.6133 90 0 1 6.912 11.52 Z m 0 -4.896 a 0.576 0.576 90 0 0 -0.576 0.576 v 1.728 a 0.576 0.576 90 0 0 1.152 0 v -1.728 A 0.576 0.576 90 0 0 6.912 6.624 Z m 0 -2.304 a 0.72 0.72 90 1 0 0.72 0.72 A 0.72 0.72 90 0 0 6.912 4.32 Z",
+                    "title": "Common Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "falseOptionalFeature": {
+                    "refX": "78%",
+                    "refY": "65%",
+                    "fill": "#CA9704",
+                    "d": "M 7.2 9.6 a 0.6 0.6 90 1 0 0.6 0.6 A 0.6 0.6 90 0 0 7.2 9.6 Z m 6.402 0.882 l -4.83 -8.4 a 1.8 1.8 90 0 0 -3.144 0 l -4.8 8.4 A 1.8 1.8 90 0 0 2.364 13.2 H 12.036 a 1.8 1.8 90 0 0 1.566 -2.718 Z m -1.038 1.2 a 0.6 0.6 90 0 1 -0.528 0.306 H 2.364 a 0.6 0.6 90 0 1 -0.528 -0.306 a 0.6 0.6 90 0 1 0 -0.6 l 4.8 -8.4 a 0.6 0.6 90 0 1 1.068 0 l 4.83 8.4 A 0.6 0.6 90 0 1 12.564 11.694 Z M 7.2 4.8 a 0.6 0.6 90 0 0 -0.6 0.6 v 2.4 a 0.6 0.6 90 0 0 1.2 0 V 5.4 A 0.6 0.6 90 0 0 7.2 4.8 Z",
+                    "title": "False Optional Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "markerColorRect": {
+                    "refX": 12,
+                    "refY": 10,
+                    "fill": "#729ab7",
+                    "stroke": "none",
+                    "r": 6,
+                    "title": "Marker color",
+                    "cursor": "pointer",
+                    "display": "block"
+                }
+            }
+        },
+        {
+            "type": "app.FeatureShapeModel",
+            "feature": {
+                "key": "a847b2e7-9c9f-4a7f-907a-17fb8da33edf",
+                "name": "Twitter",
+                "nodeType": "feature",
+                "type": "Functionality feature",
+                "parent": "c41edead-a873-4c78-870b-26f224989439",
+                "parentRelation": "Or",
+                "presence": "Normal",
+                "lgFile": "",
+                "role": "",
+                "hexColor": "#5bbe52",
+                "help": "",
+                "nodeWeight": -1,
+                "isPropagated": false,
+                "filePath": "",
+                "referenceType": "not a reference"
+            },
+            "size": {
+                "width": 180,
+                "height": 51
+            },
+            "hidden": false,
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "headerText"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "bodyText"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "relationType"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "deadFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "commonFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "falseOptionalFeature"
+                },
+                {
+                    "tagName": "circle",
+                    "selector": "markerColorRect"
+                }
+            ],
+            "id": "a847b2e7-9c9f-4a7f-907a-17fb8da33edf",
+            "position": {
+                "x": 160,
+                "y": 540
+            },
+            "z": 101,
+            "attrs": {
+                "body": {
+                    "refWidth": "100%",
+                    "refHeight": "100%",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "stroke": "#adc949",
+                    "style": {
+                        "transition": "0.3s ease-in-out"
+                    },
+                    "rx": 8,
+                    "ry": 8
+                },
+                "header": {
+                    "refWidth": "100%",
+                    "height": 0,
+                    "stroke": "#adc949",
+                    "strokeWidth": 0,
+                    "fill": "#adc949"
+                },
+                "headerText": {
+                    "text": ""
+                },
+                "bodyText": {
+                    "text": "Twitter",
+                    "refX": "50%",
+                    "refY": "50%",
+                    "textWrap": {
+                        "ellipsis": true,
+                        "width": -10
+                    },
+                    "textVerticalAnchor": "middle",
+                    "textAnchor": "middle",
+                    "fontSize": 14,
+                    "fontWeight": 700,
+                    "fontFamily": "Inter"
+                },
+                "relationType": {
+                    "refX": "50%",
+                    "refY": "100%",
+                    "stroke": "#A0A0A0",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "strokeLinejoin": "round",
+                    "d": "M 0 0 l -10 10 q 10 10 20 0 z",
+                    "height": 20,
+                    "width": 30,
+                    "display": "none"
+                },
+                "deadFeature": {
+                    "refX": "68%",
+                    "refY": "65%",
+                    "fill": "#E63757",
+                    "d": "M 9.426 4.974 a 0.6 0.6 90 0 0 -0.852 0 L 7.2 6.354 L 5.826 4.974 A 0.6 0.6 90 0 0 4.974 5.826 L 6.354 7.2 l -1.38 1.374 a 0.6 0.6 90 0 0 0 0.852 a 0.6 0.6 90 0 0 0.852 0 L 7.2 8.046 l 1.374 1.38 a 0.6 0.6 90 0 0 0.852 0 a 0.6 0.6 90 0 0 0 -0.852 L 8.046 7.2 l 1.38 -1.374 A 0.6 0.6 90 0 0 9.426 4.974 Z m 2.016 -2.016 A 6 6 90 1 0 2.958 11.442 A 6 6 90 1 0 11.442 2.958 Z M 10.596 10.596 A 4.8 4.8 90 1 1 12 7.2 A 4.77 4.77 90 0 1 10.596 10.596 Z",
+                    "title": "Dead Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "commonFeature": {
+                    "refX": "88%",
+                    "refY": "65%",
+                    "fill": "#0d6efd",
+                    "strokeLinejoin": "round",
+                    "d": "M 6.912 1.152 A 5.76 5.76 90 1 0 12.672 6.912 A 5.7664 5.7664 90 0 0 6.912 1.152 Z m 0 10.368 a 4.608 4.608 90 1 1 4.608 -4.608 A 4.6133 4.6133 90 0 1 6.912 11.52 Z m 0 -4.896 a 0.576 0.576 90 0 0 -0.576 0.576 v 1.728 a 0.576 0.576 90 0 0 1.152 0 v -1.728 A 0.576 0.576 90 0 0 6.912 6.624 Z m 0 -2.304 a 0.72 0.72 90 1 0 0.72 0.72 A 0.72 0.72 90 0 0 6.912 4.32 Z",
+                    "title": "Common Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "falseOptionalFeature": {
+                    "refX": "78%",
+                    "refY": "65%",
+                    "fill": "#CA9704",
+                    "d": "M 7.2 9.6 a 0.6 0.6 90 1 0 0.6 0.6 A 0.6 0.6 90 0 0 7.2 9.6 Z m 6.402 0.882 l -4.83 -8.4 a 1.8 1.8 90 0 0 -3.144 0 l -4.8 8.4 A 1.8 1.8 90 0 0 2.364 13.2 H 12.036 a 1.8 1.8 90 0 0 1.566 -2.718 Z m -1.038 1.2 a 0.6 0.6 90 0 1 -0.528 0.306 H 2.364 a 0.6 0.6 90 0 1 -0.528 -0.306 a 0.6 0.6 90 0 1 0 -0.6 l 4.8 -8.4 a 0.6 0.6 90 0 1 1.068 0 l 4.83 8.4 A 0.6 0.6 90 0 1 12.564 11.694 Z M 7.2 4.8 a 0.6 0.6 90 0 0 -0.6 0.6 v 2.4 a 0.6 0.6 90 0 0 1.2 0 V 5.4 A 0.6 0.6 90 0 0 7.2 4.8 Z",
+                    "title": "False Optional Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "markerColorRect": {
+                    "refX": 12,
+                    "refY": 10,
+                    "fill": "#5bbe52",
+                    "stroke": "none",
+                    "r": 6,
+                    "title": "Marker color",
+                    "cursor": "pointer",
+                    "display": "block"
+                }
+            }
+        },
+        {
+            "type": "app.FeatureShapeModel",
+            "feature": {
+                "key": "b6f98059-0c75-4ddd-b4d3-bac33e6fce56",
+                "name": "Phone",
+                "nodeType": "feature",
+                "type": "Functionality feature",
+                "parent": "c41edead-a873-4c78-870b-26f224989439",
+                "parentRelation": "Or",
+                "presence": "Normal",
+                "lgFile": "",
+                "role": "",
+                "hexColor": "#25f172",
+                "help": "",
+                "nodeWeight": -1,
+                "isPropagated": false,
+                "filePath": "",
+                "referenceType": "not a reference"
+            },
+            "size": {
+                "width": 180,
+                "height": 51
+            },
+            "hidden": false,
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "headerText"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "bodyText"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "relationType"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "deadFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "commonFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "falseOptionalFeature"
+                },
+                {
+                    "tagName": "circle",
+                    "selector": "markerColorRect"
+                }
+            ],
+            "id": "b6f98059-0c75-4ddd-b4d3-bac33e6fce56",
+            "position": {
+                "x": 150,
+                "y": 620
+            },
+            "z": 101,
+            "attrs": {
+                "body": {
+                    "refWidth": "100%",
+                    "refHeight": "100%",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "stroke": "#adc949",
+                    "style": {
+                        "transition": "0.3s ease-in-out"
+                    },
+                    "rx": 8,
+                    "ry": 8
+                },
+                "header": {
+                    "refWidth": "100%",
+                    "height": 0,
+                    "stroke": "#adc949",
+                    "strokeWidth": 0,
+                    "fill": "#adc949"
+                },
+                "headerText": {
+                    "text": ""
+                },
+                "bodyText": {
+                    "text": "Phone",
+                    "refX": "50%",
+                    "refY": "50%",
+                    "textWrap": {
+                        "ellipsis": true,
+                        "width": -10
+                    },
+                    "textVerticalAnchor": "middle",
+                    "textAnchor": "middle",
+                    "fontSize": 14,
+                    "fontWeight": 700,
+                    "fontFamily": "Inter"
+                },
+                "relationType": {
+                    "refX": "50%",
+                    "refY": "100%",
+                    "stroke": "#A0A0A0",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "strokeLinejoin": "round",
+                    "d": "M 0 0 l -10 10 q 10 10 20 0 z",
+                    "height": 20,
+                    "width": 30,
+                    "display": "none"
+                },
+                "deadFeature": {
+                    "refX": "68%",
+                    "refY": "65%",
+                    "fill": "#E63757",
+                    "d": "M 9.426 4.974 a 0.6 0.6 90 0 0 -0.852 0 L 7.2 6.354 L 5.826 4.974 A 0.6 0.6 90 0 0 4.974 5.826 L 6.354 7.2 l -1.38 1.374 a 0.6 0.6 90 0 0 0 0.852 a 0.6 0.6 90 0 0 0.852 0 L 7.2 8.046 l 1.374 1.38 a 0.6 0.6 90 0 0 0.852 0 a 0.6 0.6 90 0 0 0 -0.852 L 8.046 7.2 l 1.38 -1.374 A 0.6 0.6 90 0 0 9.426 4.974 Z m 2.016 -2.016 A 6 6 90 1 0 2.958 11.442 A 6 6 90 1 0 11.442 2.958 Z M 10.596 10.596 A 4.8 4.8 90 1 1 12 7.2 A 4.77 4.77 90 0 1 10.596 10.596 Z",
+                    "title": "Dead Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "commonFeature": {
+                    "refX": "88%",
+                    "refY": "65%",
+                    "fill": "#0d6efd",
+                    "strokeLinejoin": "round",
+                    "d": "M 6.912 1.152 A 5.76 5.76 90 1 0 12.672 6.912 A 5.7664 5.7664 90 0 0 6.912 1.152 Z m 0 10.368 a 4.608 4.608 90 1 1 4.608 -4.608 A 4.6133 4.6133 90 0 1 6.912 11.52 Z m 0 -4.896 a 0.576 0.576 90 0 0 -0.576 0.576 v 1.728 a 0.576 0.576 90 0 0 1.152 0 v -1.728 A 0.576 0.576 90 0 0 6.912 6.624 Z m 0 -2.304 a 0.72 0.72 90 1 0 0.72 0.72 A 0.72 0.72 90 0 0 6.912 4.32 Z",
+                    "title": "Common Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "falseOptionalFeature": {
+                    "refX": "78%",
+                    "refY": "65%",
+                    "fill": "#CA9704",
+                    "d": "M 7.2 9.6 a 0.6 0.6 90 1 0 0.6 0.6 A 0.6 0.6 90 0 0 7.2 9.6 Z m 6.402 0.882 l -4.83 -8.4 a 1.8 1.8 90 0 0 -3.144 0 l -4.8 8.4 A 1.8 1.8 90 0 0 2.364 13.2 H 12.036 a 1.8 1.8 90 0 0 1.566 -2.718 Z m -1.038 1.2 a 0.6 0.6 90 0 1 -0.528 0.306 H 2.364 a 0.6 0.6 90 0 1 -0.528 -0.306 a 0.6 0.6 90 0 1 0 -0.6 l 4.8 -8.4 a 0.6 0.6 90 0 1 1.068 0 l 4.83 8.4 A 0.6 0.6 90 0 1 12.564 11.694 Z M 7.2 4.8 a 0.6 0.6 90 0 0 -0.6 0.6 v 2.4 a 0.6 0.6 90 0 0 1.2 0 V 5.4 A 0.6 0.6 90 0 0 7.2 4.8 Z",
+                    "title": "False Optional Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "markerColorRect": {
+                    "refX": 12,
+                    "refY": 10,
+                    "fill": "#25f172",
+                    "stroke": "none",
+                    "r": 6,
+                    "title": "Marker color",
+                    "cursor": "pointer",
+                    "display": "block"
+                }
+            }
+        },
+        {
+            "type": "app.FeatureShapeModel",
+            "feature": {
+                "key": "bcc94b6f-ceab-4f1c-87ea-d85c47e4af67",
+                "name": "Apple",
+                "nodeType": "feature",
+                "type": "Functionality feature",
+                "parent": "c41edead-a873-4c78-870b-26f224989439",
+                "parentRelation": "Or",
+                "presence": "Normal",
+                "lgFile": "",
+                "role": "",
+                "hexColor": "#06a41e",
+                "help": "",
+                "nodeWeight": -1,
+                "isPropagated": false,
+                "filePath": "",
+                "referenceType": "not a reference"
+            },
+            "size": {
+                "width": 180,
+                "height": 51
+            },
+            "hidden": false,
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "headerText"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "bodyText"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "relationType"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "deadFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "commonFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "falseOptionalFeature"
+                },
+                {
+                    "tagName": "circle",
+                    "selector": "markerColorRect"
+                }
+            ],
+            "id": "bcc94b6f-ceab-4f1c-87ea-d85c47e4af67",
+            "position": {
+                "x": 150,
+                "y": 690
+            },
+            "z": 101,
+            "attrs": {
+                "body": {
+                    "refWidth": "100%",
+                    "refHeight": "100%",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "stroke": "#adc949",
+                    "style": {
+                        "transition": "0.3s ease-in-out"
+                    },
+                    "rx": 8,
+                    "ry": 8
+                },
+                "header": {
+                    "refWidth": "100%",
+                    "height": 0,
+                    "stroke": "#adc949",
+                    "strokeWidth": 0,
+                    "fill": "#adc949"
+                },
+                "headerText": {
+                    "text": ""
+                },
+                "bodyText": {
+                    "text": "Apple",
+                    "refX": "50%",
+                    "refY": "50%",
+                    "textWrap": {
+                        "ellipsis": true,
+                        "width": -10
+                    },
+                    "textVerticalAnchor": "middle",
+                    "textAnchor": "middle",
+                    "fontSize": 14,
+                    "fontWeight": 700,
+                    "fontFamily": "Inter"
+                },
+                "relationType": {
+                    "refX": "50%",
+                    "refY": "100%",
+                    "stroke": "#A0A0A0",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "strokeLinejoin": "round",
+                    "d": "M 0 0 l -10 10 q 10 10 20 0 z",
+                    "height": 20,
+                    "width": 30,
+                    "display": "none"
+                },
+                "deadFeature": {
+                    "refX": "68%",
+                    "refY": "65%",
+                    "fill": "#E63757",
+                    "d": "M 9.426 4.974 a 0.6 0.6 90 0 0 -0.852 0 L 7.2 6.354 L 5.826 4.974 A 0.6 0.6 90 0 0 4.974 5.826 L 6.354 7.2 l -1.38 1.374 a 0.6 0.6 90 0 0 0 0.852 a 0.6 0.6 90 0 0 0.852 0 L 7.2 8.046 l 1.374 1.38 a 0.6 0.6 90 0 0 0.852 0 a 0.6 0.6 90 0 0 0 -0.852 L 8.046 7.2 l 1.38 -1.374 A 0.6 0.6 90 0 0 9.426 4.974 Z m 2.016 -2.016 A 6 6 90 1 0 2.958 11.442 A 6 6 90 1 0 11.442 2.958 Z M 10.596 10.596 A 4.8 4.8 90 1 1 12 7.2 A 4.77 4.77 90 0 1 10.596 10.596 Z",
+                    "title": "Dead Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "commonFeature": {
+                    "refX": "88%",
+                    "refY": "65%",
+                    "fill": "#0d6efd",
+                    "strokeLinejoin": "round",
+                    "d": "M 6.912 1.152 A 5.76 5.76 90 1 0 12.672 6.912 A 5.7664 5.7664 90 0 0 6.912 1.152 Z m 0 10.368 a 4.608 4.608 90 1 1 4.608 -4.608 A 4.6133 4.6133 90 0 1 6.912 11.52 Z m 0 -4.896 a 0.576 0.576 90 0 0 -0.576 0.576 v 1.728 a 0.576 0.576 90 0 0 1.152 0 v -1.728 A 0.576 0.576 90 0 0 6.912 6.624 Z m 0 -2.304 a 0.72 0.72 90 1 0 0.72 0.72 A 0.72 0.72 90 0 0 6.912 4.32 Z",
+                    "title": "Common Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "falseOptionalFeature": {
+                    "refX": "78%",
+                    "refY": "65%",
+                    "fill": "#CA9704",
+                    "d": "M 7.2 9.6 a 0.6 0.6 90 1 0 0.6 0.6 A 0.6 0.6 90 0 0 7.2 9.6 Z m 6.402 0.882 l -4.83 -8.4 a 1.8 1.8 90 0 0 -3.144 0 l -4.8 8.4 A 1.8 1.8 90 0 0 2.364 13.2 H 12.036 a 1.8 1.8 90 0 0 1.566 -2.718 Z m -1.038 1.2 a 0.6 0.6 90 0 1 -0.528 0.306 H 2.364 a 0.6 0.6 90 0 1 -0.528 -0.306 a 0.6 0.6 90 0 1 0 -0.6 l 4.8 -8.4 a 0.6 0.6 90 0 1 1.068 0 l 4.83 8.4 A 0.6 0.6 90 0 1 12.564 11.694 Z M 7.2 4.8 a 0.6 0.6 90 0 0 -0.6 0.6 v 2.4 a 0.6 0.6 90 0 0 1.2 0 V 5.4 A 0.6 0.6 90 0 0 7.2 4.8 Z",
+                    "title": "False Optional Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "markerColorRect": {
+                    "refX": 12,
+                    "refY": 10,
+                    "fill": "#06a41e",
+                    "stroke": "none",
+                    "r": 6,
+                    "title": "Marker color",
+                    "cursor": "pointer",
+                    "display": "block"
+                }
+            }
+        },
+        {
+            "type": "app.FeatureShapeModel",
+            "feature": {
+                "key": "97c9394c-a001-43a5-941e-b2621e76cd6c",
+                "name": "Yahoo",
+                "nodeType": "feature",
+                "type": "Functionality feature",
+                "parent": "c41edead-a873-4c78-870b-26f224989439",
+                "parentRelation": "Or",
+                "presence": "Normal",
+                "lgFile": "",
+                "role": "",
+                "hexColor": "#52154d",
+                "help": "",
+                "nodeWeight": -1,
+                "isPropagated": false,
+                "filePath": "",
+                "referenceType": "not a reference"
+            },
+            "size": {
+                "width": 180,
+                "height": 51
+            },
+            "hidden": false,
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "headerText"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "bodyText"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "relationType"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "deadFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "commonFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "falseOptionalFeature"
+                },
+                {
+                    "tagName": "circle",
+                    "selector": "markerColorRect"
+                }
+            ],
+            "id": "97c9394c-a001-43a5-941e-b2621e76cd6c",
+            "position": {
+                "x": 150,
+                "y": 760
+            },
+            "z": 101,
+            "attrs": {
+                "body": {
+                    "refWidth": "100%",
+                    "refHeight": "100%",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "stroke": "#adc949",
+                    "style": {
+                        "transition": "0.3s ease-in-out"
+                    },
+                    "rx": 8,
+                    "ry": 8
+                },
+                "header": {
+                    "refWidth": "100%",
+                    "height": 0,
+                    "stroke": "#adc949",
+                    "strokeWidth": 0,
+                    "fill": "#adc949"
+                },
+                "headerText": {
+                    "text": ""
+                },
+                "bodyText": {
+                    "text": "Yahoo",
+                    "refX": "50%",
+                    "refY": "50%",
+                    "textWrap": {
+                        "ellipsis": true,
+                        "width": -10
+                    },
+                    "textVerticalAnchor": "middle",
+                    "textAnchor": "middle",
+                    "fontSize": 14,
+                    "fontWeight": 700,
+                    "fontFamily": "Inter"
+                },
+                "relationType": {
+                    "refX": "50%",
+                    "refY": "100%",
+                    "stroke": "#A0A0A0",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "strokeLinejoin": "round",
+                    "d": "M 0 0 l -10 10 q 10 10 20 0 z",
+                    "height": 20,
+                    "width": 30,
+                    "display": "none"
+                },
+                "deadFeature": {
+                    "refX": "68%",
+                    "refY": "65%",
+                    "fill": "#E63757",
+                    "d": "M 9.426 4.974 a 0.6 0.6 90 0 0 -0.852 0 L 7.2 6.354 L 5.826 4.974 A 0.6 0.6 90 0 0 4.974 5.826 L 6.354 7.2 l -1.38 1.374 a 0.6 0.6 90 0 0 0 0.852 a 0.6 0.6 90 0 0 0.852 0 L 7.2 8.046 l 1.374 1.38 a 0.6 0.6 90 0 0 0.852 0 a 0.6 0.6 90 0 0 0 -0.852 L 8.046 7.2 l 1.38 -1.374 A 0.6 0.6 90 0 0 9.426 4.974 Z m 2.016 -2.016 A 6 6 90 1 0 2.958 11.442 A 6 6 90 1 0 11.442 2.958 Z M 10.596 10.596 A 4.8 4.8 90 1 1 12 7.2 A 4.77 4.77 90 0 1 10.596 10.596 Z",
+                    "title": "Dead Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "commonFeature": {
+                    "refX": "88%",
+                    "refY": "65%",
+                    "fill": "#0d6efd",
+                    "strokeLinejoin": "round",
+                    "d": "M 6.912 1.152 A 5.76 5.76 90 1 0 12.672 6.912 A 5.7664 5.7664 90 0 0 6.912 1.152 Z m 0 10.368 a 4.608 4.608 90 1 1 4.608 -4.608 A 4.6133 4.6133 90 0 1 6.912 11.52 Z m 0 -4.896 a 0.576 0.576 90 0 0 -0.576 0.576 v 1.728 a 0.576 0.576 90 0 0 1.152 0 v -1.728 A 0.576 0.576 90 0 0 6.912 6.624 Z m 0 -2.304 a 0.72 0.72 90 1 0 0.72 0.72 A 0.72 0.72 90 0 0 6.912 4.32 Z",
+                    "title": "Common Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "falseOptionalFeature": {
+                    "refX": "78%",
+                    "refY": "65%",
+                    "fill": "#CA9704",
+                    "d": "M 7.2 9.6 a 0.6 0.6 90 1 0 0.6 0.6 A 0.6 0.6 90 0 0 7.2 9.6 Z m 6.402 0.882 l -4.83 -8.4 a 1.8 1.8 90 0 0 -3.144 0 l -4.8 8.4 A 1.8 1.8 90 0 0 2.364 13.2 H 12.036 a 1.8 1.8 90 0 0 1.566 -2.718 Z m -1.038 1.2 a 0.6 0.6 90 0 1 -0.528 0.306 H 2.364 a 0.6 0.6 90 0 1 -0.528 -0.306 a 0.6 0.6 90 0 1 0 -0.6 l 4.8 -8.4 a 0.6 0.6 90 0 1 1.068 0 l 4.83 8.4 A 0.6 0.6 90 0 1 12.564 11.694 Z M 7.2 4.8 a 0.6 0.6 90 0 0 -0.6 0.6 v 2.4 a 0.6 0.6 90 0 0 1.2 0 V 5.4 A 0.6 0.6 90 0 0 7.2 4.8 Z",
+                    "title": "False Optional Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "markerColorRect": {
+                    "refX": 12,
+                    "refY": 10,
+                    "fill": "#52154d",
+                    "stroke": "none",
+                    "r": 6,
+                    "title": "Marker color",
+                    "cursor": "pointer",
+                    "display": "block"
+                }
+            }
+        },
+        {
+            "type": "app.FeatureShapeModel",
+            "feature": {
+                "key": "c6f06960-322a-4dc9-8257-48e00e11a2a7",
+                "name": "Facebook",
+                "nodeType": "feature",
+                "type": "Functionality feature",
+                "parent": "c41edead-a873-4c78-870b-26f224989439",
+                "parentRelation": "Or",
+                "presence": "Normal",
+                "lgFile": "",
+                "role": "",
+                "hexColor": "#e917ea",
+                "help": "",
+                "nodeWeight": -1,
+                "isPropagated": false,
+                "filePath": "",
+                "referenceType": "not a reference"
+            },
+            "size": {
+                "width": 180,
+                "height": 51
+            },
+            "hidden": false,
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "headerText"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "bodyText"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "relationType"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "deadFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "commonFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "falseOptionalFeature"
+                },
+                {
+                    "tagName": "circle",
+                    "selector": "markerColorRect"
+                }
+            ],
+            "id": "c2da34cb-da2f-4d51-bf69-aa2486cbf1bb",
+            "position": {
+                "x": 170,
+                "y": 310
+            },
+            "z": 102,
+            "attrs": {
+                "body": {
+                    "refWidth": "100%",
+                    "refHeight": "100%",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "stroke": "#adc949",
+                    "style": {
+                        "transition": "0.3s ease-in-out"
+                    },
+                    "rx": 8,
+                    "ry": 8
+                },
+                "header": {
+                    "refWidth": "100%",
+                    "height": 0,
+                    "stroke": "#adc949",
+                    "strokeWidth": 0,
+                    "fill": "#adc949"
+                },
+                "headerText": {
+                    "text": ""
+                },
+                "bodyText": {
+                    "text": "Facebook",
+                    "refX": "50%",
+                    "refY": "50%",
+                    "textWrap": {
+                        "ellipsis": true,
+                        "width": -10
+                    },
+                    "textVerticalAnchor": "middle",
+                    "textAnchor": "middle",
+                    "fontSize": 14,
+                    "fontWeight": 700,
+                    "fontFamily": "Inter"
+                },
+                "relationType": {
+                    "refX": "50%",
+                    "refY": "100%",
+                    "stroke": "#A0A0A0",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "strokeLinejoin": "round",
+                    "d": "M 0 0 l -10 10 q 10 10 20 0 z",
+                    "height": 20,
+                    "width": 30,
+                    "display": "none"
+                },
+                "deadFeature": {
+                    "refX": "68%",
+                    "refY": "65%",
+                    "fill": "#E63757",
+                    "d": "M 9.426 4.974 a 0.6 0.6 90 0 0 -0.852 0 L 7.2 6.354 L 5.826 4.974 A 0.6 0.6 90 0 0 4.974 5.826 L 6.354 7.2 l -1.38 1.374 a 0.6 0.6 90 0 0 0 0.852 a 0.6 0.6 90 0 0 0.852 0 L 7.2 8.046 l 1.374 1.38 a 0.6 0.6 90 0 0 0.852 0 a 0.6 0.6 90 0 0 0 -0.852 L 8.046 7.2 l 1.38 -1.374 A 0.6 0.6 90 0 0 9.426 4.974 Z m 2.016 -2.016 A 6 6 90 1 0 2.958 11.442 A 6 6 90 1 0 11.442 2.958 Z M 10.596 10.596 A 4.8 4.8 90 1 1 12 7.2 A 4.77 4.77 90 0 1 10.596 10.596 Z",
+                    "title": "Dead Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "commonFeature": {
+                    "refX": "88%",
+                    "refY": "65%",
+                    "fill": "#0d6efd",
+                    "strokeLinejoin": "round",
+                    "d": "M 6.912 1.152 A 5.76 5.76 90 1 0 12.672 6.912 A 5.7664 5.7664 90 0 0 6.912 1.152 Z m 0 10.368 a 4.608 4.608 90 1 1 4.608 -4.608 A 4.6133 4.6133 90 0 1 6.912 11.52 Z m 0 -4.896 a 0.576 0.576 90 0 0 -0.576 0.576 v 1.728 a 0.576 0.576 90 0 0 1.152 0 v -1.728 A 0.576 0.576 90 0 0 6.912 6.624 Z m 0 -2.304 a 0.72 0.72 90 1 0 0.72 0.72 A 0.72 0.72 90 0 0 6.912 4.32 Z",
+                    "title": "Common Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "falseOptionalFeature": {
+                    "refX": "78%",
+                    "refY": "65%",
+                    "fill": "#CA9704",
+                    "d": "M 7.2 9.6 a 0.6 0.6 90 1 0 0.6 0.6 A 0.6 0.6 90 0 0 7.2 9.6 Z m 6.402 0.882 l -4.83 -8.4 a 1.8 1.8 90 0 0 -3.144 0 l -4.8 8.4 A 1.8 1.8 90 0 0 2.364 13.2 H 12.036 a 1.8 1.8 90 0 0 1.566 -2.718 Z m -1.038 1.2 a 0.6 0.6 90 0 1 -0.528 0.306 H 2.364 a 0.6 0.6 90 0 1 -0.528 -0.306 a 0.6 0.6 90 0 1 0 -0.6 l 4.8 -8.4 a 0.6 0.6 90 0 1 1.068 0 l 4.83 8.4 A 0.6 0.6 90 0 1 12.564 11.694 Z M 7.2 4.8 a 0.6 0.6 90 0 0 -0.6 0.6 v 2.4 a 0.6 0.6 90 0 0 1.2 0 V 5.4 A 0.6 0.6 90 0 0 7.2 4.8 Z",
+                    "title": "False Optional Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "markerColorRect": {
+                    "refX": 12,
+                    "refY": 10,
+                    "fill": "#e917ea",
+                    "stroke": "none",
+                    "r": 6,
+                    "title": "Marker color",
+                    "cursor": "pointer",
+                    "display": "block"
+                }
+            }
+        },
+        {
+            "type": "app.FeatureShapeModel",
+            "feature": {
+                "key": "70afe74b-4b78-4fa9-bfa4-e425c97a59d8",
+                "name": "Microsoft",
+                "nodeType": "feature",
+                "type": "Functionality feature",
+                "parent": "c41edead-a873-4c78-870b-26f224989439",
+                "parentRelation": "Or",
+                "presence": "Normal",
+                "lgFile": "",
+                "role": "",
+                "hexColor": "#10f1ba",
+                "help": "",
+                "nodeWeight": -1,
+                "isPropagated": false,
+                "filePath": "",
+                "referenceType": "not a reference"
+            },
+            "size": {
+                "width": 180,
+                "height": 51
+            },
+            "hidden": false,
+            "markup": [
+                {
+                    "tagName": "rect",
+                    "selector": "body"
+                },
+                {
+                    "tagName": "rect",
+                    "selector": "header"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "headerText"
+                },
+                {
+                    "tagName": "text",
+                    "selector": "bodyText"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "relationType"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "deadFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "commonFeature"
+                },
+                {
+                    "tagName": "path",
+                    "selector": "falseOptionalFeature"
+                },
+                {
+                    "tagName": "circle",
+                    "selector": "markerColorRect"
+                }
+            ],
+            "id": "054ac809-c5c2-4530-b098-5e8cb1bd1801",
+            "position": {
+                "x": 160,
+                "y": 390
+            },
+            "z": 103,
+            "attrs": {
+                "body": {
+                    "refWidth": "100%",
+                    "refHeight": "100%",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "stroke": "#adc949",
+                    "style": {
+                        "transition": "0.3s ease-in-out"
+                    },
+                    "rx": 8,
+                    "ry": 8
+                },
+                "header": {
+                    "refWidth": "100%",
+                    "height": 0,
+                    "stroke": "#adc949",
+                    "strokeWidth": 0,
+                    "fill": "#adc949"
+                },
+                "headerText": {
+                    "text": ""
+                },
+                "bodyText": {
+                    "text": "Microsoft",
+                    "refX": "50%",
+                    "refY": "50%",
+                    "textWrap": {
+                        "ellipsis": true,
+                        "width": -10
+                    },
+                    "textVerticalAnchor": "middle",
+                    "textAnchor": "middle",
+                    "fontSize": 14,
+                    "fontWeight": 700,
+                    "fontFamily": "Inter"
+                },
+                "relationType": {
+                    "refX": "50%",
+                    "refY": "100%",
+                    "stroke": "#A0A0A0",
+                    "strokeWidth": 1,
+                    "fill": "#FFFFFF",
+                    "strokeLinejoin": "round",
+                    "d": "M 0 0 l -10 10 q 10 10 20 0 z",
+                    "height": 20,
+                    "width": 30,
+                    "display": "none"
+                },
+                "deadFeature": {
+                    "refX": "68%",
+                    "refY": "65%",
+                    "fill": "#E63757",
+                    "d": "M 9.426 4.974 a 0.6 0.6 90 0 0 -0.852 0 L 7.2 6.354 L 5.826 4.974 A 0.6 0.6 90 0 0 4.974 5.826 L 6.354 7.2 l -1.38 1.374 a 0.6 0.6 90 0 0 0 0.852 a 0.6 0.6 90 0 0 0.852 0 L 7.2 8.046 l 1.374 1.38 a 0.6 0.6 90 0 0 0.852 0 a 0.6 0.6 90 0 0 0 -0.852 L 8.046 7.2 l 1.38 -1.374 A 0.6 0.6 90 0 0 9.426 4.974 Z m 2.016 -2.016 A 6 6 90 1 0 2.958 11.442 A 6 6 90 1 0 11.442 2.958 Z M 10.596 10.596 A 4.8 4.8 90 1 1 12 7.2 A 4.77 4.77 90 0 1 10.596 10.596 Z",
+                    "title": "Dead Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "commonFeature": {
+                    "refX": "88%",
+                    "refY": "65%",
+                    "fill": "#0d6efd",
+                    "strokeLinejoin": "round",
+                    "d": "M 6.912 1.152 A 5.76 5.76 90 1 0 12.672 6.912 A 5.7664 5.7664 90 0 0 6.912 1.152 Z m 0 10.368 a 4.608 4.608 90 1 1 4.608 -4.608 A 4.6133 4.6133 90 0 1 6.912 11.52 Z m 0 -4.896 a 0.576 0.576 90 0 0 -0.576 0.576 v 1.728 a 0.576 0.576 90 0 0 1.152 0 v -1.728 A 0.576 0.576 90 0 0 6.912 6.624 Z m 0 -2.304 a 0.72 0.72 90 1 0 0.72 0.72 A 0.72 0.72 90 0 0 6.912 4.32 Z",
+                    "title": "Common Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "falseOptionalFeature": {
+                    "refX": "78%",
+                    "refY": "65%",
+                    "fill": "#CA9704",
+                    "d": "M 7.2 9.6 a 0.6 0.6 90 1 0 0.6 0.6 A 0.6 0.6 90 0 0 7.2 9.6 Z m 6.402 0.882 l -4.83 -8.4 a 1.8 1.8 90 0 0 -3.144 0 l -4.8 8.4 A 1.8 1.8 90 0 0 2.364 13.2 H 12.036 a 1.8 1.8 90 0 0 1.566 -2.718 Z m -1.038 1.2 a 0.6 0.6 90 0 1 -0.528 0.306 H 2.364 a 0.6 0.6 90 0 1 -0.528 -0.306 a 0.6 0.6 90 0 1 0 -0.6 l 4.8 -8.4 a 0.6 0.6 90 0 1 1.068 0 l 4.83 8.4 A 0.6 0.6 90 0 1 12.564 11.694 Z M 7.2 4.8 a 0.6 0.6 90 0 0 -0.6 0.6 v 2.4 a 0.6 0.6 90 0 0 1.2 0 V 5.4 A 0.6 0.6 90 0 0 7.2 4.8 Z",
+                    "title": "False Optional Feature",
+                    "cursor": "pointer",
+                    "display": "none"
+                },
+                "markerColorRect": {
+                    "refX": 12,
+                    "refY": 10,
+                    "fill": "#10f1ba",
+                    "stroke": "none",
+                    "r": 6,
+                    "title": "Marker color",
+                    "cursor": "pointer",
+                    "display": "block"
+                }
+            }
+        }
+    ]
+}
