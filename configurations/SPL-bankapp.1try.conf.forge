@@ -5,11 +5,10 @@
         "e38533fb-1158-4309-b667-b2a5abd5eb0d",
         "d38fb18e-cd4d-4686-b8c7-b9114f24a892",
         "c41edead-a873-4c78-870b-26f224989439",
-        "a6e8bd5d-2b21-4dc5-ae2d-d7413d295fe6",
         "6fc1e782-b3a1-4055-9daa-01b5ee9fdd93",
-        "c6f06960-322a-4dc9-8257-48e00e11a2a7",
+        "0f1da605-621d-43fa-a6c2-2b9037f7796b",
         "97c9394c-a001-43a5-941e-b2621e76cd6c",
-        "fc2e7569-c4e3-42f6-8bb8-e977c210324b"
+        "06e517d5-085e-4723-9032-7c65058d7be6"
     ],
     "fileResourceConfiguration": [
         {
@@ -21,6 +20,11 @@
             "key": "a97d36a3-8528-487c-870c-1ae2742b2641",
             "value": "frontend/src/static/data",
             "fileName": "default.json"
+        },
+        {
+            "key": "d3b46dc7-7e2f-48dc-a156-c324423e8575",
+            "value": "frontend/src/static/styles/banks",
+            "fileName": "banque_postale.css"
         }
     ],
     "textResourceConfiguration": [],

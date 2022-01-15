@@ -1,35 +1,17 @@
 {
     "deletionPropagations": [
         {
-            "file": "frontend/src/views/Login.vue",
+            "file": "frontend/src/static/data/banque_postale.json",
             "propagations": [
                 {
-                    "featureKey": "97c9394c-a001-43a5-941e-b2621e76cd6c",
+                    "featureKey": "1d6e2e98-28dc-4ab9-9aa4-93cfba58b11b",
                     "ranges": [
                         {
-                            "propagationId": "ad252ae3-618c-44d8-b7f6-1c501ee8940b",
-                            "sourceId": "ad252ae3-618c-44d8-b7f6-1c501ee8940b",
-                            "startLine": 36,
+                            "propagationId": "0ffb9727-254f-4e1c-9f7e-b57d0e6e6fe3",
+                            "sourceId": "0ffb9727-254f-4e1c-9f7e-b57d0e6e6fe3",
+                            "startLine": 0,
                             "startColumn": 0,
-                            "endLine": 37,
-                            "endColumn": 0,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "featureKey": "6fc1e782-b3a1-4055-9daa-01b5ee9fdd93",
-                    "ranges": [
-                        {
-                            "propagationId": "4cdc128b-c612-4dc7-b893-4f78beb165c8",
-                            "sourceId": "4cdc128b-c612-4dc7-b893-4f78beb165c8",
-                            "startLine": 28,
-                            "startColumn": 0,
-                            "endLine": 29,
+                            "endLine": 6,
                             "endColumn": 0,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
@@ -37,6 +19,281 @@
                             "parent": "-1",
                             "children": []
                         },
+                        {
+                            "propagationId": "4f9bc73a-0cee-4e7e-90a3-364b49568dad",
+                            "sourceId": "8249a15c-446a-4f1e-a422-53c7b33c8449",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 6,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "File system analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/cic.json",
+            "propagations": [
+                {
+                    "featureKey": "5f440b15-937c-44f6-9f29-b894bc8f7329",
+                    "ranges": [
+                        {
+                            "propagationId": "8001a116-3fd6-46a8-abcb-42d1792504bd",
+                            "sourceId": "8001a116-3fd6-46a8-abcb-42d1792504bd",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 5,
+                            "endColumn": 1,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "34edc01b-1f70-4a6f-8549-211fdd5e5f9d",
+                            "sourceId": "92c3107b-ae1d-43c3-8130-1257e8303c09",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 5,
+                            "endColumn": 1,
+                            "isValidated": true,
+                            "analyzer": "File system analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/default.json",
+            "propagations": [
+                {
+                    "featureKey": "b587769f-1255-447e-9e77-46968e73fdbb",
+                    "ranges": [
+                        {
+                            "propagationId": "4d779e4b-d9bf-4ec4-83ad-6344a70d46db",
+                            "sourceId": "4d779e4b-d9bf-4ec4-83ad-6344a70d46db",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 5,
+                            "endColumn": 1,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "8808c278-60a4-4276-80bd-9a28ae744e11",
+                            "sourceId": "321c0763-2f42-4f64-a7e0-dc60abe5c502",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 5,
+                            "endColumn": 1,
+                            "isValidated": true,
+                            "analyzer": "File system analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/societe_generale.json",
+            "propagations": [
+                {
+                    "featureKey": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
+                    "ranges": [
+                        {
+                            "propagationId": "9f45107e-828c-4b38-90a8-5a972ae5bf2d",
+                            "sourceId": "9f45107e-828c-4b38-90a8-5a972ae5bf2d",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 5,
+                            "endColumn": 1,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "7bf1a1c2-f4aa-4207-86b8-ef0c85154b31",
+                            "sourceId": "ee59c84e-27a0-41b6-89c3-98378832a72d",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 5,
+                            "endColumn": 1,
+                            "isValidated": true,
+                            "analyzer": "File system analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/styles/banks/banque_postale.css",
+            "propagations": [
+                {
+                    "featureKey": "1d6e2e98-28dc-4ab9-9aa4-93cfba58b11b",
+                    "ranges": [
+                        {
+                            "propagationId": "82017e57-00e5-4773-9f9d-f45ed1298a96",
+                            "sourceId": "82017e57-00e5-4773-9f9d-f45ed1298a96",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 15,
+                            "endColumn": 935,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "950d4878-c953-4a82-b6bd-b026de1d7fd8",
+                            "sourceId": "571874f0-dbb8-4b11-a882-8190d1e1a690",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 15,
+                            "endColumn": 935,
+                            "isValidated": true,
+                            "analyzer": "File system analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/styles/banks/cic.css",
+            "propagations": [
+                {
+                    "featureKey": "5f440b15-937c-44f6-9f29-b894bc8f7329",
+                    "ranges": [
+                        {
+                            "propagationId": "6caa0290-54d1-48ef-9561-c4c7cc7e251f",
+                            "sourceId": "6caa0290-54d1-48ef-9561-c4c7cc7e251f",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 14,
+                            "endColumn": 887,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "09b06db6-9839-43a5-90d6-25e52f9ae493",
+                            "sourceId": "6bbe24b8-798e-4225-8fdd-2721be1fe134",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 14,
+                            "endColumn": 887,
+                            "isValidated": true,
+                            "analyzer": "File system analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/styles/banks/default.css",
+            "propagations": [
+                {
+                    "featureKey": "b587769f-1255-447e-9e77-46968e73fdbb",
+                    "ranges": [
+                        {
+                            "propagationId": "f2037e17-7f59-4f7b-9bac-44edb15986d8",
+                            "sourceId": "f2037e17-7f59-4f7b-9bac-44edb15986d8",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 21,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "57ddffde-9a2e-4491-8dc0-d603ee10c3c5",
+                            "sourceId": "f3ff3329-f101-456f-b333-a1394bb55efa",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 21,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "File system analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/styles/banks/societe_generale.css",
+            "propagations": [
+                {
+                    "featureKey": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
+                    "ranges": [
+                        {
+                            "propagationId": "0ee5eed7-423c-4daa-90d3-50777e4cc835",
+                            "sourceId": "0ee5eed7-423c-4daa-90d3-50777e4cc835",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 14,
+                            "endColumn": 935,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "1b281fc0-1175-47ed-8ae9-3273664ebb39",
+                            "sourceId": "1f068662-1b5f-4ae9-b3e9-9367a6168b96",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 14,
+                            "endColumn": 935,
+                            "isValidated": true,
+                            "analyzer": "File system analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/views/Login.vue",
+            "propagations": [
+                {
+                    "featureKey": "6fc1e782-b3a1-4055-9daa-01b5ee9fdd93",
+                    "ranges": [
                         {
                             "propagationId": "99d24f8b-0b40-4ff2-8b17-39e25786c402",
                             "sourceId": "99d24f8b-0b40-4ff2-8b17-39e25786c402",
@@ -56,19 +313,6 @@
                     "featureKey": "0f1da605-621d-43fa-a6c2-2b9037f7796b",
                     "ranges": [
                         {
-                            "propagationId": "f2c8d2fd-c6fb-4aeb-9269-8d1b4c61228c",
-                            "sourceId": "f2c8d2fd-c6fb-4aeb-9269-8d1b4c61228c",
-                            "startLine": 29,
-                            "startColumn": 0,
-                            "endLine": 30,
-                            "endColumn": 0,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
                             "propagationId": "66ad12ca-e905-4964-80e7-015b22a55bdf",
                             "sourceId": "66ad12ca-e905-4964-80e7-015b22a55bdf",
                             "startLine": 29,
@@ -86,19 +330,6 @@
                 {
                     "featureKey": "10eaff41-4125-4229-9cd6-202e2cac5e93",
                     "ranges": [
-                        {
-                            "propagationId": "b6c6c75f-b689-4907-8c87-453bd66e3330",
-                            "sourceId": "b6c6c75f-b689-4907-8c87-453bd66e3330",
-                            "startLine": 30,
-                            "startColumn": 0,
-                            "endLine": 31,
-                            "endColumn": 0,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        },
                         {
                             "propagationId": "1d171ecc-7e4c-4a9c-a21c-01c5691890ef",
                             "sourceId": "1d171ecc-7e4c-4a9c-a21c-01c5691890ef",
@@ -118,60 +349,11 @@
                     "featureKey": "c6f06960-322a-4dc9-8257-48e00e11a2a7",
                     "ranges": [
                         {
-                            "propagationId": "eaa52148-0304-4e7d-aa76-a2c6b4e70528",
-                            "sourceId": "eaa52148-0304-4e7d-aa76-a2c6b4e70528",
-                            "startLine": 31,
-                            "startColumn": 0,
-                            "endLine": 32,
-                            "endColumn": 0,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
                             "propagationId": "5346dea6-f565-4773-8435-807b3e17d327",
                             "sourceId": "5346dea6-f565-4773-8435-807b3e17d327",
                             "startLine": 31,
                             "startColumn": 0,
                             "endLine": 32,
-                            "endColumn": 0,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "featureKey": "b6f98059-0c75-4ddd-b4d3-bac33e6fce56",
-                    "ranges": [
-                        {
-                            "propagationId": "9492ab6e-0ea7-4524-a84a-ce9439ac768f",
-                            "sourceId": "9492ab6e-0ea7-4524-a84a-ce9439ac768f",
-                            "startLine": 33,
-                            "startColumn": 0,
-                            "endLine": 34,
-                            "endColumn": 0,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "featureKey": "bcc94b6f-ceab-4f1c-87ea-d85c47e4af67",
-                    "ranges": [
-                        {
-                            "propagationId": "39169ca2-b508-4f61-9701-d94bf6ca3216",
-                            "sourceId": "39169ca2-b508-4f61-9701-d94bf6ca3216",
-                            "startLine": 35,
-                            "startColumn": 0,
-                            "endLine": 36,
                             "endColumn": 0,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
@@ -200,6 +382,24 @@
                     ]
                 },
                 {
+                    "featureKey": "b6f98059-0c75-4ddd-b4d3-bac33e6fce56",
+                    "ranges": [
+                        {
+                            "propagationId": "9492ab6e-0ea7-4524-a84a-ce9439ac768f",
+                            "sourceId": "9492ab6e-0ea7-4524-a84a-ce9439ac768f",
+                            "startLine": 33,
+                            "startColumn": 0,
+                            "endLine": 34,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
                     "featureKey": "70afe74b-4b78-4fa9-bfa4-e425c97a59d8",
                     "ranges": [
                         {
@@ -216,21 +416,16 @@
                             "children": []
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "file": "frontend/src/static/data/banque_postale.json",
-            "propagations": [
+                },
                 {
-                    "featureKey": "1d6e2e98-28dc-4ab9-9aa4-93cfba58b11b",
+                    "featureKey": "bcc94b6f-ceab-4f1c-87ea-d85c47e4af67",
                     "ranges": [
                         {
-                            "propagationId": "0ffb9727-254f-4e1c-9f7e-b57d0e6e6fe3",
-                            "sourceId": "0ffb9727-254f-4e1c-9f7e-b57d0e6e6fe3",
-                            "startLine": 0,
+                            "propagationId": "39169ca2-b508-4f61-9701-d94bf6ca3216",
+                            "sourceId": "39169ca2-b508-4f61-9701-d94bf6ca3216",
+                            "startLine": 35,
                             "startColumn": 0,
-                            "endLine": 6,
+                            "endLine": 36,
                             "endColumn": 0,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
@@ -239,242 +434,17 @@
                             "children": []
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "file": "frontend/src/static/data/cic.json",
-            "propagations": [
+                },
                 {
-                    "featureKey": "5f440b15-937c-44f6-9f29-b894bc8f7329",
+                    "featureKey": "97c9394c-a001-43a5-941e-b2621e76cd6c",
                     "ranges": [
                         {
-                            "propagationId": "8001a116-3fd6-46a8-abcb-42d1792504bd",
-                            "sourceId": "8001a116-3fd6-46a8-abcb-42d1792504bd",
-                            "startLine": 0,
+                            "propagationId": "ad252ae3-618c-44d8-b7f6-1c501ee8940b",
+                            "sourceId": "ad252ae3-618c-44d8-b7f6-1c501ee8940b",
+                            "startLine": 36,
                             "startColumn": 0,
-                            "endLine": 5,
-                            "endColumn": 1,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "file": "frontend/src/static/data/default.json",
-            "propagations": [
-                {
-                    "featureKey": "b587769f-1255-447e-9e77-46968e73fdbb",
-                    "ranges": [
-                        {
-                            "propagationId": "4d779e4b-d9bf-4ec4-83ad-6344a70d46db",
-                            "sourceId": "4d779e4b-d9bf-4ec4-83ad-6344a70d46db",
-                            "startLine": 0,
-                            "startColumn": 0,
-                            "endLine": 5,
-                            "endColumn": 1,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "file": "frontend/src/static/data/societe_generale.json",
-            "propagations": [
-                {
-                    "featureKey": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
-                    "ranges": [
-                        {
-                            "propagationId": "9f45107e-828c-4b38-90a8-5a972ae5bf2d",
-                            "sourceId": "9f45107e-828c-4b38-90a8-5a972ae5bf2d",
-                            "startLine": 0,
-                            "startColumn": 0,
-                            "endLine": 5,
-                            "endColumn": 1,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "file": "frontend/src/static/styles/banks/banque_postale.css",
-            "propagations": [
-                {
-                    "featureKey": "1d6e2e98-28dc-4ab9-9aa4-93cfba58b11b",
-                    "ranges": [
-                        {
-                            "propagationId": "82017e57-00e5-4773-9f9d-f45ed1298a96",
-                            "sourceId": "82017e57-00e5-4773-9f9d-f45ed1298a96",
-                            "startLine": 0,
-                            "startColumn": 0,
-                            "endLine": 15,
-                            "endColumn": 935,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "file": "frontend/src/static/styles/banks/cic.css",
-            "propagations": [
-                {
-                    "featureKey": "5f440b15-937c-44f6-9f29-b894bc8f7329",
-                    "ranges": [
-                        {
-                            "propagationId": "6caa0290-54d1-48ef-9561-c4c7cc7e251f",
-                            "sourceId": "6caa0290-54d1-48ef-9561-c4c7cc7e251f",
-                            "startLine": 0,
-                            "startColumn": 0,
-                            "endLine": 14,
-                            "endColumn": 887,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "file": "frontend/src/static/styles/banks/default.css",
-            "propagations": [
-                {
-                    "featureKey": "b587769f-1255-447e-9e77-46968e73fdbb",
-                    "ranges": [
-                        {
-                            "propagationId": "f2037e17-7f59-4f7b-9bac-44edb15986d8",
-                            "sourceId": "f2037e17-7f59-4f7b-9bac-44edb15986d8",
-                            "startLine": 0,
-                            "startColumn": 0,
-                            "endLine": 21,
+                            "endLine": 37,
                             "endColumn": 0,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "file": "frontend/src/static/styles/banks/societe_generale.css",
-            "propagations": [
-                {
-                    "featureKey": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
-                    "ranges": [
-                        {
-                            "propagationId": "0ee5eed7-423c-4daa-90d3-50777e4cc835",
-                            "sourceId": "0ee5eed7-423c-4daa-90d3-50777e4cc835",
-                            "startLine": 0,
-                            "startColumn": 0,
-                            "endLine": 14,
-                            "endColumn": 935,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "file": "frontend/src/views/About.vue",
-            "propagations": [
-                {
-                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
-                    "ranges": [
-                        {
-                            "propagationId": "c7720b2b-7ff1-4d14-a37c-3931ec6c293b",
-                            "sourceId": "c7720b2b-7ff1-4d14-a37c-3931ec6c293b",
-                            "startLine": 0,
-                            "startColumn": 0,
-                            "endLine": 20,
-                            "endColumn": 0,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
-                            "propagationId": "c4d83ece-69a0-4ace-afcf-7f393ad761aa",
-                            "sourceId": "c4d83ece-69a0-4ace-afcf-7f393ad761aa",
-                            "startLine": 0,
-                            "startColumn": 0,
-                            "endLine": 20,
-                            "endColumn": 0,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "file": "frontend/src/App.vue",
-            "propagations": [
-                {
-                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
-                    "ranges": [
-                        {
-                            "propagationId": "8ec2af2d-aa5a-421e-8454-c5351acf42f7",
-                            "sourceId": "8ec2af2d-aa5a-421e-8454-c5351acf42f7",
-                            "startLine": 3,
-                            "startColumn": 0,
-                            "endLine": 4,
-                            "endColumn": 0,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "file": "frontend/src/router/index.js",
-            "propagations": [
-                {
-                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
-                    "ranges": [
-                        {
-                            "propagationId": "9f715706-0798-4116-b826-c92c6b0263f1",
-                            "sourceId": "9f715706-0798-4116-b826-c92c6b0263f1",
-                            "startLine": 9,
-                            "startColumn": 4,
-                            "endLine": 14,
-                            "endColumn": 4,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": true,
@@ -501,136 +471,6 @@
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
-                            "propagationId": "201aa413-3e78-4b9e-b36e-e28e46f08ef1",
-                            "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
-                            "startLine": 50,
-                            "startColumn": 13,
-                            "endLine": 50,
-                            "endColumn": 22,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": false,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
-                            "propagationId": "30a1210d-3fe6-44bd-9832-601f8d7e0cb3",
-                            "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
-                            "startLine": 59,
-                            "startColumn": 13,
-                            "endLine": 59,
-                            "endColumn": 22,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": false,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
-                            "propagationId": "0004c74f-9a84-435e-bbd2-d956bf357241",
-                            "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
-                            "startLine": 103,
-                            "startColumn": 15,
-                            "endLine": 103,
-                            "endColumn": 24,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": false,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
-                            "propagationId": "42699fc5-72eb-481e-81b3-080b995c7cae",
-                            "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
-                            "startLine": 107,
-                            "startColumn": 13,
-                            "endLine": 107,
-                            "endColumn": 22,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": false,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
-                            "propagationId": "f32a91d2-951f-44c4-bf62-1a1b60a1e4a9",
-                            "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
-                            "startLine": 118,
-                            "startColumn": 36,
-                            "endLine": 118,
-                            "endColumn": 45,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": false,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
-                            "propagationId": "9a2db39a-2d18-4175-aa01-b3cad524b282",
-                            "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
-                            "startLine": 118,
-                            "startColumn": 61,
-                            "endLine": 118,
-                            "endColumn": 70,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": false,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
-                            "propagationId": "22e76f43-730b-472b-ab69-c24d47108049",
-                            "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
-                            "startLine": 154,
-                            "startColumn": 12,
-                            "endLine": 154,
-                            "endColumn": 21,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": false,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
-                            "propagationId": "be6b7871-d576-4817-9a98-1c58fcccb694",
-                            "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
-                            "startLine": 155,
-                            "startColumn": 22,
-                            "endLine": 155,
-                            "endColumn": 31,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": false,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
-                            "propagationId": "607eafc2-1530-4a6f-913d-36f3d76c43e8",
-                            "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
-                            "startLine": 157,
-                            "startColumn": 20,
-                            "endLine": 157,
-                            "endColumn": 29,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": false,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
-                            "propagationId": "a2de21c0-b42e-400c-93cb-269a8794f8e8",
-                            "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
-                            "startLine": 157,
-                            "startColumn": 43,
-                            "endLine": 157,
-                            "endColumn": 52,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": false,
                             "parent": "-1",
                             "children": []
                         },
@@ -711,17 +551,27 @@
                             "isFromMarker": true,
                             "parent": "-1",
                             "children": []
-                        },
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/views/About.vue",
+            "propagations": [
+                {
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "ranges": [
                         {
-                            "propagationId": "dff477ac-cc6b-472c-9ee0-9a208fcc795d",
-                            "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
-                            "startLine": 41,
-                            "startColumn": 13,
-                            "endLine": 41,
-                            "endColumn": 22,
+                            "propagationId": "1ae66378-3410-47ec-9066-e5fabd521729",
+                            "sourceId": "1ae66378-3410-47ec-9066-e5fabd521729",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 15,
+                            "endColumn": 11,
                             "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": false,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": true,
                             "parent": "-1",
                             "children": []
                         }
@@ -731,7 +581,155 @@
         }
     ],
     "replacementPropagations": [],
-    "resourcePropagations": [],
+    "resourcePropagations": [
+        {
+            "file": "frontend/src/views/About.vue",
+            "propagations": [
+                {
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "ranges": [
+                        {
+                            "propagationId": "c7720b2b-7ff1-4d14-a37c-3931ec6c293b",
+                            "sourceId": "c7720b2b-7ff1-4d14-a37c-3931ec6c293b",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 20,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "c4d83ece-69a0-4ace-afcf-7f393ad761aa",
+                            "sourceId": "c4d83ece-69a0-4ace-afcf-7f393ad761aa",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 20,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "a0904bc1-54e1-4c86-b7c6-79ea5eeb83b1",
+                            "sourceId": "a0904bc1-54e1-4c86-b7c6-79ea5eeb83b1",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 20,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "b61c9a6b-54a7-4d07-b11e-8a0f136eb30d",
+                            "sourceId": "b61c9a6b-54a7-4d07-b11e-8a0f136eb30d",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 20,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "0e63314d-588e-4cbc-90b3-176a2bdaf52d",
+                            "sourceId": "0e63314d-588e-4cbc-90b3-176a2bdaf52d",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 20,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "1bad7c6a-6eb1-47ff-9422-f5afca472471",
+                            "sourceId": "1bad7c6a-6eb1-47ff-9422-f5afca472471",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 15,
+                            "endColumn": 11,
+                            "isValidated": true,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "5f1a2054-e19c-427f-aeec-6aee14bfbd2b",
+                            "sourceId": "5f1a2054-e19c-427f-aeec-6aee14bfbd2b",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 15,
+                            "endColumn": 11,
+                            "isValidated": true,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/App.vue",
+            "propagations": [
+                {
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "ranges": [
+                        {
+                            "propagationId": "8ec2af2d-aa5a-421e-8454-c5351acf42f7",
+                            "sourceId": "8ec2af2d-aa5a-421e-8454-c5351acf42f7",
+                            "startLine": 3,
+                            "startColumn": 0,
+                            "endLine": 4,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/router/index.js",
+            "propagations": [
+                {
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "ranges": [
+                        {
+                            "propagationId": "9f715706-0798-4116-b826-c92c6b0263f1",
+                            "sourceId": "9f715706-0798-4116-b826-c92c6b0263f1",
+                            "startLine": 9,
+                            "startColumn": 4,
+                            "endLine": 14,
+                            "endColumn": 4,
+                            "isValidated": true,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
     "pathPropagations": [
         {
             "propagationId": "8249a15c-446a-4f1e-a422-53c7b33c8449",

@@ -14,7 +14,3 @@
     @Sorbonne Université - Paris
   </div>
 </template>
-
-
-
-

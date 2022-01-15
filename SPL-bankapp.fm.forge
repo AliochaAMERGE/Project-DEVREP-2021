@@ -40,19 +40,6 @@
             "nodeWeight": -1
         },
         {
-            "key": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
-            "name": "Societe-generale",
-            "type": "Functionality feature",
-            "parent": "a97d36a3-8528-487c-870c-1ae2742b2641",
-            "parentRelation": "Xor",
-            "presence": "Normal",
-            "lgFile": "",
-            "role": "",
-            "hexColor": "#b6581c",
-            "help": "",
-            "nodeWeight": -1
-        },
-        {
             "key": "70afe74b-4b78-4fa9-bfa4-e425c97a59d8",
             "name": "Microsoft",
             "type": "Functionality feature",
@@ -183,19 +170,6 @@
             "nodeWeight": -1
         },
         {
-            "key": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
-            "name": "About-View",
-            "type": "Functionality feature",
-            "parent": "e38533fb-1158-4309-b667-b2a5abd5eb0d",
-            "parentRelation": "Normal",
-            "presence": "Optional",
-            "lgFile": "",
-            "role": "",
-            "hexColor": "#de1a8c",
-            "help": "",
-            "nodeWeight": -1
-        },
-        {
             "key": "1d6e2e98-28dc-4ab9-9aa4-93cfba58b11b",
             "name": "Banque-postale",
             "type": "Functionality feature",
@@ -264,6 +238,33 @@
             "filePath": "frontend/src/assets"
         },
         {
+            "key": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+            "name": "About-View",
+            "type": "Resource feature",
+            "parent": "e38533fb-1158-4309-b667-b2a5abd5eb0d",
+            "parentRelation": "Normal",
+            "presence": "Optional",
+            "lgFile": "",
+            "role": "",
+            "hexColor": "#de1a8c",
+            "help": "",
+            "nodeWeight": -1,
+            "filePath": "frontend/src/views"
+        },
+        {
+            "key": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
+            "name": "Societe-generale",
+            "type": "Resource feature",
+            "parent": "a97d36a3-8528-487c-870c-1ae2742b2641",
+            "parentRelation": "Xor",
+            "lgFile": "",
+            "role": "",
+            "hexColor": "#b6581c",
+            "help": "",
+            "nodeWeight": -1,
+            "filePath": "frontend/src/static/data"
+        },
+        {
             "key": "a97d36a3-8528-487c-870c-1ae2742b2641",
             "name": "BankChoice",
             "type": "Resource feature",
@@ -276,6 +277,20 @@
             "help": "",
             "nodeWeight": -1,
             "filePath": "frontend/src/static/data"
+        },
+        {
+            "key": "d3b46dc7-7e2f-48dc-a156-c324423e8575",
+            "name": "StyleCSS",
+            "type": "Resource feature",
+            "parent": "d38fb18e-cd4d-4686-b8c7-b9114f24a892",
+            "parentRelation": "Normal",
+            "presence": "Mandatory",
+            "lgFile": "",
+            "role": "",
+            "hexColor": "#f8dde3",
+            "help": "",
+            "nodeWeight": -1,
+            "filePath": "frontend/src/static/styles/banks"
         }
     ],
     "textResources": [],

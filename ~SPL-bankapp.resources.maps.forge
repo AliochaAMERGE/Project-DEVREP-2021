@@ -1,4 +1,177 @@
 {
-    "rangeSeeds": [],
+    "rangeSeeds": [
+        {
+            "file": "frontend/src/static/data/banque_postale.json",
+            "seeds": [
+                {
+                    "id": "f0002aad-cb8b-4d36-8065-7095156700f4",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "a97d36a3-8528-487c-870c-1ae2742b2641",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 6,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/cic.json",
+            "seeds": [
+                {
+                    "id": "7a14404c-4816-42ba-9516-b3c18af397db",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "a97d36a3-8528-487c-870c-1ae2742b2641",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 5,
+                    "endColumn": 1,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/default.json",
+            "seeds": [
+                {
+                    "id": "e51fad48-cd2f-4347-883c-9481dceb091b",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "a97d36a3-8528-487c-870c-1ae2742b2641",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 5,
+                    "endColumn": 1,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/societe_generale.json",
+            "seeds": [
+                {
+                    "id": "a92e455b-2afa-4d61-9ae3-6e4fd6adc91d",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "a97d36a3-8528-487c-870c-1ae2742b2641",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 5,
+                    "endColumn": 1,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/views/About.vue",
+            "seeds": [
+                {
+                    "id": "1bad7c6a-6eb1-47ff-9422-f5afca472471",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 15,
+                    "endColumn": 11,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "5f1a2054-e19c-427f-aeec-6aee14bfbd2b",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 15,
+                    "endColumn": 11,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "1ae66378-3410-47ec-9066-e5fabd521729",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 15,
+                    "endColumn": 11,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/App.vue",
+            "seeds": [
+                {
+                    "id": "baada4be-9783-4f74-bf0b-31df922fa0cb",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "startLine": 3,
+                    "startColumn": 0,
+                    "endLine": 4,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/router/index.js",
+            "seeds": [
+                {
+                    "id": "3226da84-054d-4cc3-ad86-53a0722de395",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "startLine": 10,
+                    "startColumn": 0,
+                    "endLine": 14,
+                    "endColumn": 4,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/views/Home.vue",
+            "seeds": [
+                {
+                    "id": "8b57f7fa-d75a-4140-8b5a-ac680975bfa7",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "d3b46dc7-7e2f-48dc-a156-c324423e8575",
+                    "startLine": 25,
+                    "startColumn": 12,
+                    "endLine": 25,
+                    "endColumn": 52,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "9bb5375f-8d46-4f08-91ac-e3f7ff839e75",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "a97d36a3-8528-487c-870c-1ae2742b2641",
+                    "startLine": 61,
+                    "startColumn": 23,
+                    "endLine": 61,
+                    "endColumn": 68,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "a4513a05-0b7d-49f8-84e5-e337e25146e7",
+                    "analyzer": "Resource Analyzer",
+                    "featureKey": "a97d36a3-8528-487c-870c-1ae2742b2641",
+                    "startLine": 313,
+                    "startColumn": 28,
+                    "endLine": 313,
+                    "endColumn": 61,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        }
+    ],
     "fileSeeds": []
 }
