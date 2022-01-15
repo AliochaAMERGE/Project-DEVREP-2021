@@ -1,6 +1,491 @@
 {
     "deletionPropagations": [
         {
+            "file": "frontend/src/views/Login.vue",
+            "propagations": [
+                {
+                    "featureKey": "97c9394c-a001-43a5-941e-b2621e76cd6c",
+                    "ranges": [
+                        {
+                            "propagationId": "ad252ae3-618c-44d8-b7f6-1c501ee8940b",
+                            "sourceId": "ad252ae3-618c-44d8-b7f6-1c501ee8940b",
+                            "startLine": 36,
+                            "startColumn": 0,
+                            "endLine": 37,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "6fc1e782-b3a1-4055-9daa-01b5ee9fdd93",
+                    "ranges": [
+                        {
+                            "propagationId": "4cdc128b-c612-4dc7-b893-4f78beb165c8",
+                            "sourceId": "4cdc128b-c612-4dc7-b893-4f78beb165c8",
+                            "startLine": 28,
+                            "startColumn": 0,
+                            "endLine": 29,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "99d24f8b-0b40-4ff2-8b17-39e25786c402",
+                            "sourceId": "99d24f8b-0b40-4ff2-8b17-39e25786c402",
+                            "startLine": 28,
+                            "startColumn": 0,
+                            "endLine": 29,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "0f1da605-621d-43fa-a6c2-2b9037f7796b",
+                    "ranges": [
+                        {
+                            "propagationId": "f2c8d2fd-c6fb-4aeb-9269-8d1b4c61228c",
+                            "sourceId": "f2c8d2fd-c6fb-4aeb-9269-8d1b4c61228c",
+                            "startLine": 29,
+                            "startColumn": 0,
+                            "endLine": 30,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "66ad12ca-e905-4964-80e7-015b22a55bdf",
+                            "sourceId": "66ad12ca-e905-4964-80e7-015b22a55bdf",
+                            "startLine": 29,
+                            "startColumn": 0,
+                            "endLine": 30,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "10eaff41-4125-4229-9cd6-202e2cac5e93",
+                    "ranges": [
+                        {
+                            "propagationId": "b6c6c75f-b689-4907-8c87-453bd66e3330",
+                            "sourceId": "b6c6c75f-b689-4907-8c87-453bd66e3330",
+                            "startLine": 30,
+                            "startColumn": 0,
+                            "endLine": 31,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "1d171ecc-7e4c-4a9c-a21c-01c5691890ef",
+                            "sourceId": "1d171ecc-7e4c-4a9c-a21c-01c5691890ef",
+                            "startLine": 30,
+                            "startColumn": 0,
+                            "endLine": 31,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "c6f06960-322a-4dc9-8257-48e00e11a2a7",
+                    "ranges": [
+                        {
+                            "propagationId": "eaa52148-0304-4e7d-aa76-a2c6b4e70528",
+                            "sourceId": "eaa52148-0304-4e7d-aa76-a2c6b4e70528",
+                            "startLine": 31,
+                            "startColumn": 0,
+                            "endLine": 32,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "5346dea6-f565-4773-8435-807b3e17d327",
+                            "sourceId": "5346dea6-f565-4773-8435-807b3e17d327",
+                            "startLine": 31,
+                            "startColumn": 0,
+                            "endLine": 32,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "b6f98059-0c75-4ddd-b4d3-bac33e6fce56",
+                    "ranges": [
+                        {
+                            "propagationId": "9492ab6e-0ea7-4524-a84a-ce9439ac768f",
+                            "sourceId": "9492ab6e-0ea7-4524-a84a-ce9439ac768f",
+                            "startLine": 33,
+                            "startColumn": 0,
+                            "endLine": 34,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "bcc94b6f-ceab-4f1c-87ea-d85c47e4af67",
+                    "ranges": [
+                        {
+                            "propagationId": "39169ca2-b508-4f61-9701-d94bf6ca3216",
+                            "sourceId": "39169ca2-b508-4f61-9701-d94bf6ca3216",
+                            "startLine": 35,
+                            "startColumn": 0,
+                            "endLine": 36,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "a847b2e7-9c9f-4a7f-907a-17fb8da33edf",
+                    "ranges": [
+                        {
+                            "propagationId": "8174b844-3239-4d71-a2f5-6af6d18a211d",
+                            "sourceId": "8174b844-3239-4d71-a2f5-6af6d18a211d",
+                            "startLine": 32,
+                            "startColumn": 0,
+                            "endLine": 33,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "70afe74b-4b78-4fa9-bfa4-e425c97a59d8",
+                    "ranges": [
+                        {
+                            "propagationId": "a2826055-1f76-4826-8b64-86ea015a811b",
+                            "sourceId": "a2826055-1f76-4826-8b64-86ea015a811b",
+                            "startLine": 34,
+                            "startColumn": 0,
+                            "endLine": 35,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/banque_postale.json",
+            "propagations": [
+                {
+                    "featureKey": "1d6e2e98-28dc-4ab9-9aa4-93cfba58b11b",
+                    "ranges": [
+                        {
+                            "propagationId": "0ffb9727-254f-4e1c-9f7e-b57d0e6e6fe3",
+                            "sourceId": "0ffb9727-254f-4e1c-9f7e-b57d0e6e6fe3",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 6,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/cic.json",
+            "propagations": [
+                {
+                    "featureKey": "5f440b15-937c-44f6-9f29-b894bc8f7329",
+                    "ranges": [
+                        {
+                            "propagationId": "8001a116-3fd6-46a8-abcb-42d1792504bd",
+                            "sourceId": "8001a116-3fd6-46a8-abcb-42d1792504bd",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 5,
+                            "endColumn": 1,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/default.json",
+            "propagations": [
+                {
+                    "featureKey": "b587769f-1255-447e-9e77-46968e73fdbb",
+                    "ranges": [
+                        {
+                            "propagationId": "4d779e4b-d9bf-4ec4-83ad-6344a70d46db",
+                            "sourceId": "4d779e4b-d9bf-4ec4-83ad-6344a70d46db",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 5,
+                            "endColumn": 1,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/societe_generale.json",
+            "propagations": [
+                {
+                    "featureKey": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
+                    "ranges": [
+                        {
+                            "propagationId": "9f45107e-828c-4b38-90a8-5a972ae5bf2d",
+                            "sourceId": "9f45107e-828c-4b38-90a8-5a972ae5bf2d",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 5,
+                            "endColumn": 1,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/styles/banks/banque_postale.css",
+            "propagations": [
+                {
+                    "featureKey": "1d6e2e98-28dc-4ab9-9aa4-93cfba58b11b",
+                    "ranges": [
+                        {
+                            "propagationId": "82017e57-00e5-4773-9f9d-f45ed1298a96",
+                            "sourceId": "82017e57-00e5-4773-9f9d-f45ed1298a96",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 15,
+                            "endColumn": 935,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/styles/banks/cic.css",
+            "propagations": [
+                {
+                    "featureKey": "5f440b15-937c-44f6-9f29-b894bc8f7329",
+                    "ranges": [
+                        {
+                            "propagationId": "6caa0290-54d1-48ef-9561-c4c7cc7e251f",
+                            "sourceId": "6caa0290-54d1-48ef-9561-c4c7cc7e251f",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 14,
+                            "endColumn": 887,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/styles/banks/default.css",
+            "propagations": [
+                {
+                    "featureKey": "b587769f-1255-447e-9e77-46968e73fdbb",
+                    "ranges": [
+                        {
+                            "propagationId": "f2037e17-7f59-4f7b-9bac-44edb15986d8",
+                            "sourceId": "f2037e17-7f59-4f7b-9bac-44edb15986d8",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 21,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/styles/banks/societe_generale.css",
+            "propagations": [
+                {
+                    "featureKey": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
+                    "ranges": [
+                        {
+                            "propagationId": "0ee5eed7-423c-4daa-90d3-50777e4cc835",
+                            "sourceId": "0ee5eed7-423c-4daa-90d3-50777e4cc835",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 14,
+                            "endColumn": 935,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/views/About.vue",
+            "propagations": [
+                {
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "ranges": [
+                        {
+                            "propagationId": "c7720b2b-7ff1-4d14-a37c-3931ec6c293b",
+                            "sourceId": "c7720b2b-7ff1-4d14-a37c-3931ec6c293b",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 20,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "c4d83ece-69a0-4ace-afcf-7f393ad761aa",
+                            "sourceId": "c4d83ece-69a0-4ace-afcf-7f393ad761aa",
+                            "startLine": 0,
+                            "startColumn": 0,
+                            "endLine": 20,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/App.vue",
+            "propagations": [
+                {
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "ranges": [
+                        {
+                            "propagationId": "8ec2af2d-aa5a-421e-8454-c5351acf42f7",
+                            "sourceId": "8ec2af2d-aa5a-421e-8454-c5351acf42f7",
+                            "startLine": 3,
+                            "startColumn": 0,
+                            "endLine": 4,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/router/index.js",
+            "propagations": [
+                {
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "ranges": [
+                        {
+                            "propagationId": "9f715706-0798-4116-b826-c92c6b0263f1",
+                            "sourceId": "9f715706-0798-4116-b826-c92c6b0263f1",
+                            "startLine": 9,
+                            "startColumn": 4,
+                            "endLine": 14,
+                            "endColumn": 4,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "file": "backend/src/main/java/fr/su/bankapp/model/Client.java",
             "propagations": [
                 {
@@ -20,25 +505,12 @@
                             "children": []
                         },
                         {
-                            "propagationId": "cc82761e-2fcb-4a57-bb49-059647049f5e",
-                            "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
-                            "startLine": 41,
-                            "startColumn": 0,
-                            "endLine": 42,
-                            "endColumn": 0,
-                            "isValidated": true,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": false,
-                            "parent": "-1",
-                            "children": []
-                        },
-                        {
-                            "propagationId": "86e4b99b-fb07-469f-ad88-4bbc3979c5fd",
+                            "propagationId": "201aa413-3e78-4b9e-b36e-e28e46f08ef1",
                             "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
                             "startLine": 50,
-                            "startColumn": 0,
-                            "endLine": 51,
-                            "endColumn": 0,
+                            "startColumn": 13,
+                            "endLine": 50,
+                            "endColumn": 22,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": false,
@@ -46,12 +518,12 @@
                             "children": []
                         },
                         {
-                            "propagationId": "50d04e69-2d8d-45fa-931b-4faff0e168cb",
+                            "propagationId": "30a1210d-3fe6-44bd-9832-601f8d7e0cb3",
                             "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
                             "startLine": 59,
-                            "startColumn": 0,
-                            "endLine": 60,
-                            "endColumn": 0,
+                            "startColumn": 13,
+                            "endLine": 59,
+                            "endColumn": 22,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": false,
@@ -59,12 +531,12 @@
                             "children": []
                         },
                         {
-                            "propagationId": "8cbd8e34-43e7-4683-8f47-b84b5c5c7e22",
+                            "propagationId": "0004c74f-9a84-435e-bbd2-d956bf357241",
                             "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
-                            "startLine": 101,
-                            "startColumn": 0,
-                            "endLine": 108,
-                            "endColumn": 5,
+                            "startLine": 103,
+                            "startColumn": 15,
+                            "endLine": 103,
+                            "endColumn": 24,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": false,
@@ -72,7 +544,7 @@
                             "children": []
                         },
                         {
-                            "propagationId": "e21acc53-80e1-4f4a-8062-1cf8d5c87793",
+                            "propagationId": "42699fc5-72eb-481e-81b3-080b995c7cae",
                             "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
                             "startLine": 107,
                             "startColumn": 13,
@@ -85,12 +557,12 @@
                             "children": []
                         },
                         {
-                            "propagationId": "5034b4ec-1626-4dbf-9247-50244ea0821c",
+                            "propagationId": "f32a91d2-951f-44c4-bf62-1a1b60a1e4a9",
                             "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
                             "startLine": 118,
-                            "startColumn": 0,
-                            "endLine": 119,
-                            "endColumn": 0,
+                            "startColumn": 36,
+                            "endLine": 118,
+                            "endColumn": 45,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": false,
@@ -98,7 +570,7 @@
                             "children": []
                         },
                         {
-                            "propagationId": "2f386588-2e00-4cbb-adbc-f6b13aa63f24",
+                            "propagationId": "9a2db39a-2d18-4175-aa01-b3cad524b282",
                             "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
                             "startLine": 118,
                             "startColumn": 61,
@@ -111,12 +583,12 @@
                             "children": []
                         },
                         {
-                            "propagationId": "3041a77e-71ee-41a8-b603-0848a7617598",
+                            "propagationId": "22e76f43-730b-472b-ab69-c24d47108049",
                             "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
                             "startLine": 154,
-                            "startColumn": 0,
-                            "endLine": 158,
-                            "endColumn": 25,
+                            "startColumn": 12,
+                            "endLine": 154,
+                            "endColumn": 21,
                             "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": false,
@@ -124,7 +596,7 @@
                             "children": []
                         },
                         {
-                            "propagationId": "d1e1289f-5427-4149-a960-a2fa630659cf",
+                            "propagationId": "be6b7871-d576-4817-9a98-1c58fcccb694",
                             "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
                             "startLine": 155,
                             "startColumn": 22,
@@ -137,7 +609,7 @@
                             "children": []
                         },
                         {
-                            "propagationId": "f0785d73-806c-4248-93fb-1467a05b6f4e",
+                            "propagationId": "607eafc2-1530-4a6f-913d-36f3d76c43e8",
                             "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
                             "startLine": 157,
                             "startColumn": 20,
@@ -150,7 +622,7 @@
                             "children": []
                         },
                         {
-                            "propagationId": "c74f3dc3-a725-4ffc-a53e-cb23f7301592",
+                            "propagationId": "a2de21c0-b42e-400c-93cb-269a8794f8e8",
                             "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
                             "startLine": 157,
                             "startColumn": 43,
@@ -161,171 +633,95 @@
                             "isFromMarker": false,
                             "parent": "-1",
                             "children": []
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "file": "frontend/src/views/Login.vue",
-            "propagations": [
-                {
-                    "featureKey": "6fc1e782-b3a1-4055-9daa-01b5ee9fdd93",
-                    "ranges": [
+                        },
                         {
-                            "propagationId": "99d24f8b-0b40-4ff2-8b17-39e25786c402",
-                            "sourceId": "99d24f8b-0b40-4ff2-8b17-39e25786c402",
-                            "startLine": 28,
+                            "propagationId": "31737a4b-33a4-49e3-b658-ae3aab374802",
+                            "sourceId": "31737a4b-33a4-49e3-b658-ae3aab374802",
+                            "startLine": 41,
                             "startColumn": 0,
-                            "endLine": 29,
+                            "endLine": 43,
                             "endColumn": 0,
-                            "isValidated": false,
+                            "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": true,
                             "parent": "-1",
                             "children": []
-                        }
-                    ]
-                },
-                {
-                    "featureKey": "0f1da605-621d-43fa-a6c2-2b9037f7796b",
-                    "ranges": [
+                        },
                         {
-                            "propagationId": "66ad12ca-e905-4964-80e7-015b22a55bdf",
-                            "sourceId": "66ad12ca-e905-4964-80e7-015b22a55bdf",
-                            "startLine": 29,
+                            "propagationId": "3723979f-7227-4cbf-a23d-7fa126b799c3",
+                            "sourceId": "3723979f-7227-4cbf-a23d-7fa126b799c3",
+                            "startLine": 50,
                             "startColumn": 0,
-                            "endLine": 30,
+                            "endLine": 51,
                             "endColumn": 0,
-                            "isValidated": false,
+                            "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": true,
                             "parent": "-1",
                             "children": []
-                        }
-                    ]
-                },
-                {
-                    "featureKey": "10eaff41-4125-4229-9cd6-202e2cac5e93",
-                    "ranges": [
+                        },
                         {
-                            "propagationId": "1d171ecc-7e4c-4a9c-a21c-01c5691890ef",
-                            "sourceId": "1d171ecc-7e4c-4a9c-a21c-01c5691890ef",
-                            "startLine": 30,
+                            "propagationId": "77eb4014-6b23-4939-bce4-2584711b886f",
+                            "sourceId": "77eb4014-6b23-4939-bce4-2584711b886f",
+                            "startLine": 59,
                             "startColumn": 0,
-                            "endLine": 31,
+                            "endLine": 60,
                             "endColumn": 0,
-                            "isValidated": false,
+                            "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": true,
                             "parent": "-1",
                             "children": []
-                        }
-                    ]
-                },
-                {
-                    "featureKey": "c6f06960-322a-4dc9-8257-48e00e11a2a7",
-                    "ranges": [
+                        },
                         {
-                            "propagationId": "5346dea6-f565-4773-8435-807b3e17d327",
-                            "sourceId": "5346dea6-f565-4773-8435-807b3e17d327",
-                            "startLine": 31,
+                            "propagationId": "031ac180-1d4a-49b7-a62f-b537688065dc",
+                            "sourceId": "031ac180-1d4a-49b7-a62f-b537688065dc",
+                            "startLine": 101,
                             "startColumn": 0,
-                            "endLine": 32,
+                            "endLine": 109,
                             "endColumn": 0,
-                            "isValidated": false,
+                            "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": true,
                             "parent": "-1",
                             "children": []
-                        }
-                    ]
-                },
-                {
-                    "featureKey": "a847b2e7-9c9f-4a7f-907a-17fb8da33edf",
-                    "ranges": [
+                        },
                         {
-                            "propagationId": "8174b844-3239-4d71-a2f5-6af6d18a211d",
-                            "sourceId": "8174b844-3239-4d71-a2f5-6af6d18a211d",
-                            "startLine": 32,
+                            "propagationId": "901a1e15-3e68-4d59-8ae0-7dc05c2c29e4",
+                            "sourceId": "901a1e15-3e68-4d59-8ae0-7dc05c2c29e4",
+                            "startLine": 118,
                             "startColumn": 0,
-                            "endLine": 33,
+                            "endLine": 119,
                             "endColumn": 0,
-                            "isValidated": false,
+                            "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": true,
                             "parent": "-1",
                             "children": []
-                        }
-                    ]
-                },
-                {
-                    "featureKey": "b6f98059-0c75-4ddd-b4d3-bac33e6fce56",
-                    "ranges": [
+                        },
                         {
-                            "propagationId": "9492ab6e-0ea7-4524-a84a-ce9439ac768f",
-                            "sourceId": "9492ab6e-0ea7-4524-a84a-ce9439ac768f",
-                            "startLine": 33,
+                            "propagationId": "34d42441-8549-4a8c-bdd7-9e93f312f34c",
+                            "sourceId": "34d42441-8549-4a8c-bdd7-9e93f312f34c",
+                            "startLine": 154,
                             "startColumn": 0,
-                            "endLine": 34,
-                            "endColumn": 0,
-                            "isValidated": false,
+                            "endLine": 159,
+                            "endColumn": 20,
+                            "isValidated": true,
                             "analyzer": "Interoperable analyzer",
                             "isFromMarker": true,
                             "parent": "-1",
                             "children": []
-                        }
-                    ]
-                },
-                {
-                    "featureKey": "70afe74b-4b78-4fa9-bfa4-e425c97a59d8",
-                    "ranges": [
+                        },
                         {
-                            "propagationId": "a2826055-1f76-4826-8b64-86ea015a811b",
-                            "sourceId": "a2826055-1f76-4826-8b64-86ea015a811b",
-                            "startLine": 34,
-                            "startColumn": 0,
-                            "endLine": 35,
-                            "endColumn": 0,
-                            "isValidated": false,
+                            "propagationId": "dff477ac-cc6b-472c-9ee0-9a208fcc795d",
+                            "sourceId": "49966d7f-c51d-4f1e-817c-082c1b931122",
+                            "startLine": 41,
+                            "startColumn": 13,
+                            "endLine": 41,
+                            "endColumn": 22,
+                            "isValidated": true,
                             "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "featureKey": "bcc94b6f-ceab-4f1c-87ea-d85c47e4af67",
-                    "ranges": [
-                        {
-                            "propagationId": "39169ca2-b508-4f61-9701-d94bf6ca3216",
-                            "sourceId": "39169ca2-b508-4f61-9701-d94bf6ca3216",
-                            "startLine": 35,
-                            "startColumn": 0,
-                            "endLine": 36,
-                            "endColumn": 0,
-                            "isValidated": false,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
-                            "parent": "-1",
-                            "children": []
-                        }
-                    ]
-                },
-                {
-                    "featureKey": "97c9394c-a001-43a5-941e-b2621e76cd6c",
-                    "ranges": [
-                        {
-                            "propagationId": "ad252ae3-618c-44d8-b7f6-1c501ee8940b",
-                            "sourceId": "ad252ae3-618c-44d8-b7f6-1c501ee8940b",
-                            "startLine": 36,
-                            "startColumn": 0,
-                            "endLine": 37,
-                            "endColumn": 0,
-                            "isValidated": false,
-                            "analyzer": "Interoperable analyzer",
-                            "isFromMarker": true,
+                            "isFromMarker": false,
                             "parent": "-1",
                             "children": []
                         }
@@ -336,5 +732,96 @@
     ],
     "replacementPropagations": [],
     "resourcePropagations": [],
-    "pathPropagations": []
+    "pathPropagations": [
+        {
+            "propagationId": "8249a15c-446a-4f1e-a422-53c7b33c8449",
+            "sourceId": "8249a15c-446a-4f1e-a422-53c7b33c8449",
+            "propagatedPath": "frontend/src/static/data/banque_postale.json",
+            "featureKey": "1d6e2e98-28dc-4ab9-9aa4-93cfba58b11b",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
+            "contentAnalysis": true
+        },
+        {
+            "propagationId": "92c3107b-ae1d-43c3-8130-1257e8303c09",
+            "sourceId": "92c3107b-ae1d-43c3-8130-1257e8303c09",
+            "propagatedPath": "frontend/src/static/data/cic.json",
+            "featureKey": "5f440b15-937c-44f6-9f29-b894bc8f7329",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
+            "contentAnalysis": true
+        },
+        {
+            "propagationId": "321c0763-2f42-4f64-a7e0-dc60abe5c502",
+            "sourceId": "321c0763-2f42-4f64-a7e0-dc60abe5c502",
+            "propagatedPath": "frontend/src/static/data/default.json",
+            "featureKey": "b587769f-1255-447e-9e77-46968e73fdbb",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
+            "contentAnalysis": true
+        },
+        {
+            "propagationId": "ee59c84e-27a0-41b6-89c3-98378832a72d",
+            "sourceId": "ee59c84e-27a0-41b6-89c3-98378832a72d",
+            "propagatedPath": "frontend/src/static/data/societe_generale.json",
+            "featureKey": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
+            "contentAnalysis": true
+        },
+        {
+            "propagationId": "571874f0-dbb8-4b11-a882-8190d1e1a690",
+            "sourceId": "571874f0-dbb8-4b11-a882-8190d1e1a690",
+            "propagatedPath": "frontend/src/static/styles/banks/banque_postale.css",
+            "featureKey": "1d6e2e98-28dc-4ab9-9aa4-93cfba58b11b",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
+            "contentAnalysis": true
+        },
+        {
+            "propagationId": "6bbe24b8-798e-4225-8fdd-2721be1fe134",
+            "sourceId": "6bbe24b8-798e-4225-8fdd-2721be1fe134",
+            "propagatedPath": "frontend/src/static/styles/banks/cic.css",
+            "featureKey": "5f440b15-937c-44f6-9f29-b894bc8f7329",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
+            "contentAnalysis": true
+        },
+        {
+            "propagationId": "f3ff3329-f101-456f-b333-a1394bb55efa",
+            "sourceId": "f3ff3329-f101-456f-b333-a1394bb55efa",
+            "propagatedPath": "frontend/src/static/styles/banks/default.css",
+            "featureKey": "b587769f-1255-447e-9e77-46968e73fdbb",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
+            "contentAnalysis": true
+        },
+        {
+            "propagationId": "1f068662-1b5f-4ae9-b3e9-9367a6168b96",
+            "sourceId": "1f068662-1b5f-4ae9-b3e9-9367a6168b96",
+            "propagatedPath": "frontend/src/static/styles/banks/societe_generale.css",
+            "featureKey": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
+            "contentAnalysis": true
+        },
+        {
+            "propagationId": "f045bccc-57a7-49c4-85d0-ab73f2b61272",
+            "sourceId": "f045bccc-57a7-49c4-85d0-ab73f2b61272",
+            "propagatedPath": "frontend/src/views/About.vue",
+            "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
+            "contentAnalysis": true
+        }
+    ]
 }

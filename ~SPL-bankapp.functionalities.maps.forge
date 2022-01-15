@@ -13,6 +13,72 @@
                     "endColumn": 0,
                     "type": "Deletion",
                     "isValidated": true
+                },
+                {
+                    "id": "31737a4b-33a4-49e3-b658-ae3aab374802",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "a6e8bd5d-2b21-4dc5-ae2d-d7413d295fe6",
+                    "startLine": 41,
+                    "startColumn": 0,
+                    "endLine": 43,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "3723979f-7227-4cbf-a23d-7fa126b799c3",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "a6e8bd5d-2b21-4dc5-ae2d-d7413d295fe6",
+                    "startLine": 50,
+                    "startColumn": 0,
+                    "endLine": 51,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "77eb4014-6b23-4939-bce4-2584711b886f",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "a6e8bd5d-2b21-4dc5-ae2d-d7413d295fe6",
+                    "startLine": 59,
+                    "startColumn": 0,
+                    "endLine": 60,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "031ac180-1d4a-49b7-a62f-b537688065dc",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "a6e8bd5d-2b21-4dc5-ae2d-d7413d295fe6",
+                    "startLine": 101,
+                    "startColumn": 0,
+                    "endLine": 109,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "901a1e15-3e68-4d59-8ae0-7dc05c2c29e4",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "a6e8bd5d-2b21-4dc5-ae2d-d7413d295fe6",
+                    "startLine": 118,
+                    "startColumn": 0,
+                    "endLine": 119,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "34d42441-8549-4a8c-bdd7-9e93f312f34c",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "a6e8bd5d-2b21-4dc5-ae2d-d7413d295fe6",
+                    "startLine": 154,
+                    "startColumn": 0,
+                    "endLine": 159,
+                    "endColumn": 20,
+                    "type": "Deletion",
+                    "isValidated": true
                 }
             ]
         },
@@ -20,12 +86,34 @@
             "file": "frontend/src/views/Login.vue",
             "seeds": [
                 {
+                    "id": "4cdc128b-c612-4dc7-b893-4f78beb165c8",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "6fc1e782-b3a1-4055-9daa-01b5ee9fdd93",
+                    "startLine": 28,
+                    "startColumn": 0,
+                    "endLine": 29,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
                     "id": "99d24f8b-0b40-4ff2-8b17-39e25786c402",
                     "analyzer": "Interoperable analyzer",
                     "featureKey": "6fc1e782-b3a1-4055-9daa-01b5ee9fdd93",
                     "startLine": 28,
                     "startColumn": 0,
                     "endLine": 29,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "f2c8d2fd-c6fb-4aeb-9269-8d1b4c61228c",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "0f1da605-621d-43fa-a6c2-2b9037f7796b",
+                    "startLine": 29,
+                    "startColumn": 0,
+                    "endLine": 30,
                     "endColumn": 0,
                     "type": "Deletion",
                     "isValidated": false
@@ -39,6 +127,17 @@
                     "endLine": 30,
                     "endColumn": 0,
                     "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "b6c6c75f-b689-4907-8c87-453bd66e3330",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "10eaff41-4125-4229-9cd6-202e2cac5e93",
+                    "startLine": 30,
+                    "startColumn": 0,
+                    "endLine": 31,
+                    "endColumn": 0,
+                    "type": "Deletion",
                     "isValidated": false
                 },
                 {
@@ -48,6 +147,17 @@
                     "startLine": 30,
                     "startColumn": 0,
                     "endLine": 31,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "eaa52148-0304-4e7d-aa76-a2c6b4e70528",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "c6f06960-322a-4dc9-8257-48e00e11a2a7",
+                    "startLine": 31,
+                    "startColumn": 0,
+                    "endLine": 32,
                     "endColumn": 0,
                     "type": "Deletion",
                     "isValidated": false
@@ -61,7 +171,7 @@
                     "endLine": 32,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "8174b844-3239-4d71-a2f5-6af6d18a211d",
@@ -72,7 +182,7 @@
                     "endLine": 33,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "9492ab6e-0ea7-4524-a84a-ce9439ac768f",
@@ -83,7 +193,7 @@
                     "endLine": 34,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "a2826055-1f76-4826-8b64-86ea015a811b",
@@ -94,7 +204,7 @@
                     "endLine": 35,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "39169ca2-b508-4f61-9701-d94bf6ca3216",
@@ -105,7 +215,7 @@
                     "endLine": 36,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "ad252ae3-618c-44d8-b7f6-1c501ee8940b",
@@ -116,10 +226,281 @@
                     "endLine": 37,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/views/About.vue",
+            "seeds": [
+                {
+                    "id": "c7720b2b-7ff1-4d14-a37c-3931ec6c293b",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 20,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "c4d83ece-69a0-4ace-afcf-7f393ad761aa",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 20,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "a0904bc1-54e1-4c86-b7c6-79ea5eeb83b1",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 20,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/App.vue",
+            "seeds": [
+                {
+                    "id": "8ec2af2d-aa5a-421e-8454-c5351acf42f7",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "startLine": 3,
+                    "startColumn": 0,
+                    "endLine": 4,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/router/index.js",
+            "seeds": [
+                {
+                    "id": "9f715706-0798-4116-b826-c92c6b0263f1",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "endLine": 14,
+                    "endColumn": 4,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/banque_postale.json",
+            "seeds": [
+                {
+                    "id": "0ffb9727-254f-4e1c-9f7e-b57d0e6e6fe3",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "1d6e2e98-28dc-4ab9-9aa4-93cfba58b11b",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 6,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/cic.json",
+            "seeds": [
+                {
+                    "id": "8001a116-3fd6-46a8-abcb-42d1792504bd",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "5f440b15-937c-44f6-9f29-b894bc8f7329",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 5,
+                    "endColumn": 1,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/default.json",
+            "seeds": [
+                {
+                    "id": "4d779e4b-d9bf-4ec4-83ad-6344a70d46db",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "b587769f-1255-447e-9e77-46968e73fdbb",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 5,
+                    "endColumn": 1,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/data/societe_generale.json",
+            "seeds": [
+                {
+                    "id": "9f45107e-828c-4b38-90a8-5a972ae5bf2d",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 5,
+                    "endColumn": 1,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/styles/banks/banque_postale.css",
+            "seeds": [
+                {
+                    "id": "82017e57-00e5-4773-9f9d-f45ed1298a96",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "1d6e2e98-28dc-4ab9-9aa4-93cfba58b11b",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 15,
+                    "endColumn": 935,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/styles/banks/cic.css",
+            "seeds": [
+                {
+                    "id": "6caa0290-54d1-48ef-9561-c4c7cc7e251f",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "5f440b15-937c-44f6-9f29-b894bc8f7329",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 14,
+                    "endColumn": 887,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/styles/banks/default.css",
+            "seeds": [
+                {
+                    "id": "f2037e17-7f59-4f7b-9bac-44edb15986d8",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "b587769f-1255-447e-9e77-46968e73fdbb",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 21,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/static/styles/banks/societe_generale.css",
+            "seeds": [
+                {
+                    "id": "0ee5eed7-423c-4daa-90d3-50777e4cc835",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 14,
+                    "endColumn": 935,
+                    "type": "Deletion",
+                    "isValidated": true
                 }
             ]
         }
     ],
-    "fileSeeds": []
+    "fileSeeds": [
+        {
+            "id": "f045bccc-57a7-49c4-85d0-ab73f2b61272",
+            "file": "frontend/src/views/About.vue",
+            "featureKey": "fc2e7569-c4e3-42f6-8bb8-e977c210324b",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "8249a15c-446a-4f1e-a422-53c7b33c8449",
+            "file": "frontend/src/static/data/banque_postale.json",
+            "featureKey": "1d6e2e98-28dc-4ab9-9aa4-93cfba58b11b",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "92c3107b-ae1d-43c3-8130-1257e8303c09",
+            "file": "frontend/src/static/data/cic.json",
+            "featureKey": "5f440b15-937c-44f6-9f29-b894bc8f7329",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "321c0763-2f42-4f64-a7e0-dc60abe5c502",
+            "file": "frontend/src/static/data/default.json",
+            "featureKey": "b587769f-1255-447e-9e77-46968e73fdbb",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "ee59c84e-27a0-41b6-89c3-98378832a72d",
+            "file": "frontend/src/static/data/societe_generale.json",
+            "featureKey": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "571874f0-dbb8-4b11-a882-8190d1e1a690",
+            "file": "frontend/src/static/styles/banks/banque_postale.css",
+            "featureKey": "1d6e2e98-28dc-4ab9-9aa4-93cfba58b11b",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "6bbe24b8-798e-4225-8fdd-2721be1fe134",
+            "file": "frontend/src/static/styles/banks/cic.css",
+            "featureKey": "5f440b15-937c-44f6-9f29-b894bc8f7329",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "f3ff3329-f101-456f-b333-a1394bb55efa",
+            "file": "frontend/src/static/styles/banks/default.css",
+            "featureKey": "b587769f-1255-447e-9e77-46968e73fdbb",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        },
+        {
+            "id": "1f068662-1b5f-4ae9-b3e9-9367a6168b96",
+            "file": "frontend/src/static/styles/banks/societe_generale.css",
+            "featureKey": "3fd9381c-32ab-4e19-ab01-744e30c1ae7e",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        }
+    ]
 }

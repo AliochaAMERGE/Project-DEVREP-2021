@@ -1,0 +1,29 @@
+{
+    "isAbsolutePath": false,
+    "resourcesPath": "resources/files",
+    "functionalityConfiguration": [
+        "e38533fb-1158-4309-b667-b2a5abd5eb0d",
+        "d38fb18e-cd4d-4686-b8c7-b9114f24a892",
+        "c41edead-a873-4c78-870b-26f224989439",
+        "a6e8bd5d-2b21-4dc5-ae2d-d7413d295fe6",
+        "6fc1e782-b3a1-4055-9daa-01b5ee9fdd93",
+        "c6f06960-322a-4dc9-8257-48e00e11a2a7",
+        "97c9394c-a001-43a5-941e-b2621e76cd6c",
+        "fc2e7569-c4e3-42f6-8bb8-e977c210324b"
+    ],
+    "fileResourceConfiguration": [
+        {
+            "key": "9260490f-94bb-42e3-bd3c-0658232cdab2",
+            "value": "frontend/src/assets",
+            "fileName": "logo.png"
+        },
+        {
+            "key": "a97d36a3-8528-487c-870c-1ae2742b2641",
+            "value": "frontend/src/static/data",
+            "fileName": "default.json"
+        }
+    ],
+    "textResourceConfiguration": [],
+    "assetResourceConfiguration": [],
+    "colorResourceConfiguration": []
+}
