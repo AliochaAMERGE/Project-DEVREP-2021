@@ -73,6 +73,30 @@
         ></iframe>
       </div>
 
+      <div class="column is-offset-4 is-2">
+        <div class="columns is-mobile">
+          <div class="column is-half">
+            <figure class="image is-64x64">
+              <img
+                src="./../static/images/mastercard.png"
+                width="100"
+                alt="Image"
+              />
+            </figure>
+          </div>
+          <div class="column is-half">
+            <figure class="image is-64x64">
+              <img
+                style="margin-top: 13px"
+                src="./../static/images/visa.png"
+                width="100"
+                alt="Image"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+
       <!-- The buttons (form) (Withdraw & Deposit) -->
       <div
         v-show="user"

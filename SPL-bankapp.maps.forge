@@ -253,9 +253,435 @@
                     ]
                 }
             ]
+        },
+        {
+            "file": "frontend/src/router/index.js",
+            "propagations": [
+                {
+                    "featureKey": "5924cace-5d08-4afa-bdd7-af2d18b4b0c1",
+                    "ranges": [
+                        {
+                            "propagationId": "e9f991a7-8422-4143-bb8d-50f505395a6d",
+                            "sourceId": "e9f991a7-8422-4143-bb8d-50f505395a6d",
+                            "startLine": 9,
+                            "startColumn": 4,
+                            "endLine": 14,
+                            "endColumn": 4,
+                            "isValidated": false,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/App.vue",
+            "propagations": [
+                {
+                    "featureKey": "5924cace-5d08-4afa-bdd7-af2d18b4b0c1",
+                    "ranges": [
+                        {
+                            "propagationId": "240cc379-9d28-48bb-88dd-9d673381de75",
+                            "sourceId": "240cc379-9d28-48bb-88dd-9d673381de75",
+                            "startLine": 4,
+                            "startColumn": 0,
+                            "endLine": 5,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/views/Login.vue",
+            "propagations": [
+                {
+                    "featureKey": "434bf3b1-6566-4a98-8a2d-7f3aa821c25a",
+                    "ranges": [
+                        {
+                            "propagationId": "947e0be5-8fd0-43aa-8cfb-af8964b1fb56",
+                            "sourceId": "947e0be5-8fd0-43aa-8cfb-af8964b1fb56",
+                            "startLine": 28,
+                            "startColumn": 0,
+                            "endLine": 29,
+                            "endColumn": 0,
+                            "isValidated": false,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "5ca8b7cc-15ba-40c6-8877-19239be22988",
+                    "ranges": [
+                        {
+                            "propagationId": "7eab9036-d761-4dba-9ab9-f2f13854bdc6",
+                            "sourceId": "7eab9036-d761-4dba-9ab9-f2f13854bdc6",
+                            "startLine": 29,
+                            "startColumn": 0,
+                            "endLine": 30,
+                            "endColumn": 0,
+                            "isValidated": false,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "fa112340-0108-42fe-be03-972d002a3a43",
+                    "ranges": [
+                        {
+                            "propagationId": "a89a47d5-8ee3-46f9-821f-d20878d34588",
+                            "sourceId": "a89a47d5-8ee3-46f9-821f-d20878d34588",
+                            "startLine": 30,
+                            "startColumn": 0,
+                            "endLine": 31,
+                            "endColumn": 0,
+                            "isValidated": false,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "e664d5a7-8ba7-4a6f-b2f8-75b3bf51d343",
+                    "ranges": [
+                        {
+                            "propagationId": "7c158ad3-24db-4923-9c5a-5280a1bd0b84",
+                            "sourceId": "7c158ad3-24db-4923-9c5a-5280a1bd0b84",
+                            "startLine": 31,
+                            "startColumn": 0,
+                            "endLine": 32,
+                            "endColumn": 0,
+                            "isValidated": false,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "521fd9d0-85ba-4dbe-85cd-764427975cd2",
+                    "ranges": [
+                        {
+                            "propagationId": "4e9414d5-e9fa-4f3e-aa82-cddd2b567683",
+                            "sourceId": "4e9414d5-e9fa-4f3e-aa82-cddd2b567683",
+                            "startLine": 32,
+                            "startColumn": 0,
+                            "endLine": 33,
+                            "endColumn": 0,
+                            "isValidated": false,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "6c1ed8dd-6192-4d59-9fa3-460114e9ab36",
+                    "ranges": [
+                        {
+                            "propagationId": "408a4e8e-edf0-4cfb-8624-eb04689cad26",
+                            "sourceId": "408a4e8e-edf0-4cfb-8624-eb04689cad26",
+                            "startLine": 33,
+                            "startColumn": 0,
+                            "endLine": 34,
+                            "endColumn": 0,
+                            "isValidated": false,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "ba48bb35-cecf-4f19-909b-75517954b0ff",
+                    "ranges": [
+                        {
+                            "propagationId": "ac4193a2-dd30-40c9-9c9a-a30cca1dfdcc",
+                            "sourceId": "ac4193a2-dd30-40c9-9c9a-a30cca1dfdcc",
+                            "startLine": 34,
+                            "startColumn": 0,
+                            "endLine": 35,
+                            "endColumn": 0,
+                            "isValidated": false,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "d208160a-d9fa-4274-b043-ec76373d003e",
+                    "ranges": [
+                        {
+                            "propagationId": "e9d91add-e161-415d-8cc1-b0896503acbd",
+                            "sourceId": "e9d91add-e161-415d-8cc1-b0896503acbd",
+                            "startLine": 35,
+                            "startColumn": 0,
+                            "endLine": 36,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "7dda10f1-134d-4969-bc15-1088104473b2",
+                    "ranges": [
+                        {
+                            "propagationId": "b7389dae-ac42-4af1-b449-faaccf4545a0",
+                            "sourceId": "b7389dae-ac42-4af1-b449-faaccf4545a0",
+                            "startLine": 36,
+                            "startColumn": 0,
+                            "endLine": 37,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/views/Home.vue",
+            "propagations": [
+                {
+                    "featureKey": "c4df42ec-1c58-4184-998b-27675f407390",
+                    "ranges": [
+                        {
+                            "propagationId": "038b632b-4c9c-4dbe-bb2b-4d014d12c5d1",
+                            "sourceId": "038b632b-4c9c-4dbe-bb2b-4d014d12c5d1",
+                            "startLine": 63,
+                            "startColumn": 6,
+                            "endLine": 73,
+                            "endColumn": 12,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "4bf62f83-5f35-461d-96cf-6d1693444e07",
+                    "ranges": [
+                        {
+                            "propagationId": "6bf64f9d-b9da-4e3d-9ea8-f8c9856b3363",
+                            "sourceId": "6bf64f9d-b9da-4e3d-9ea8-f8c9856b3363",
+                            "startLine": 75,
+                            "startColumn": 6,
+                            "endLine": 85,
+                            "endColumn": 16,
+                            "isValidated": false,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "918ee766-0efe-45c4-a24e-ccd98232b6af",
+                            "sourceId": "918ee766-0efe-45c4-a24e-ccd98232b6af",
+                            "startLine": 75,
+                            "startColumn": 0,
+                            "endLine": 85,
+                            "endColumn": 16,
+                            "isValidated": false,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                },
+                {
+                    "featureKey": "2e8adfe9-8235-440f-afbb-80a18078b9f0",
+                    "ranges": [
+                        {
+                            "propagationId": "54484198-1fc5-4172-9b84-ba25c81e14f6",
+                            "sourceId": "54484198-1fc5-4172-9b84-ba25c81e14f6",
+                            "startLine": 86,
+                            "startColumn": 10,
+                            "endLine": 96,
+                            "endColumn": 14,
+                            "isValidated": false,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
         }
     ],
     "replacementPropagations": [],
-    "resourcePropagations": [],
-    "pathPropagations": []
+    "resourcePropagations": [
+        {
+            "file": "frontend/public/index.html",
+            "propagations": [
+                {
+                    "featureKey": "b35c2abb-6e08-4cb5-97ce-73ddcf454e9d",
+                    "ranges": [
+                        {
+                            "propagationId": "d42d9a90-872a-49b2-bfc0-af0baddfcc44",
+                            "sourceId": "c8f6db88-a3a3-4b28-9113-d3bdf2ace2a2",
+                            "startLine": 6,
+                            "startColumn": 42,
+                            "endLine": 6,
+                            "endColumn": 53,
+                            "isValidated": true,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": false,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/views/Home.vue",
+            "propagations": [
+                {
+                    "featureKey": "27c73b9d-af98-4e93-9411-45dd3ea9d7af",
+                    "ranges": [
+                        {
+                            "propagationId": "d86a6ec0-e65c-4a34-a234-6cb5ab99517b",
+                            "sourceId": "dd02ad7a-817c-4e3c-8ff1-15411ee319cf",
+                            "startLine": 27,
+                            "startColumn": 23,
+                            "endLine": 27,
+                            "endColumn": 64,
+                            "isValidated": true,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": false,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/main.js",
+            "propagations": [
+                {
+                    "featureKey": "89498cfe-9965-4981-a173-cf41c196ac58",
+                    "ranges": [
+                        {
+                            "propagationId": "c14938b5-e070-4bef-aada-347aa290bb99",
+                            "sourceId": "84747f8c-e981-44f5-b26b-e659536bb658",
+                            "startLine": 29,
+                            "startColumn": 18,
+                            "endLine": 29,
+                            "endColumn": 49,
+                            "isValidated": true,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": false,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "pathPropagations": [
+        {
+            "propagationId": "c8f6db88-a3a3-4b28-9113-d3bdf2ace2a2",
+            "sourceId": "c8f6db88-a3a3-4b28-9113-d3bdf2ace2a2",
+            "propagatedPath": "frontend/public/favicon.ico",
+            "featureKey": "b35c2abb-6e08-4cb5-97ce-73ddcf454e9d",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
+            "contentAnalysis": false
+        },
+        {
+            "propagationId": "ff5d79c3-d979-46c5-a4af-ca597002a3b5",
+            "sourceId": "e9f991a7-8422-4143-bb8d-50f505395a6d",
+            "propagatedPath": "frontend/src/views/About.vue",
+            "featureKey": "5924cace-5d08-4afa-bdd7-af2d18b4b0c1",
+            "isValidated": false,
+            "analyzer": "File system analyzer",
+            "isFromMarker": false,
+            "contentAnalysis": true
+        },
+        {
+            "propagationId": "f1a18f32-4d9f-4d1c-9904-4e66cfba6cfb",
+            "sourceId": "f1a18f32-4d9f-4d1c-9904-4e66cfba6cfb",
+            "propagatedPath": "frontend/src/static/data/default.json",
+            "featureKey": "6b064d9e-be8a-4791-9824-f11fbc1b32fe",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
+            "contentAnalysis": false
+        },
+        {
+            "propagationId": "dd02ad7a-817c-4e3c-8ff1-15411ee319cf",
+            "sourceId": "dd02ad7a-817c-4e3c-8ff1-15411ee319cf",
+            "propagatedPath": "frontend/src/static/images/bank_icons/default.png",
+            "featureKey": "27c73b9d-af98-4e93-9411-45dd3ea9d7af",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
+            "contentAnalysis": false
+        },
+        {
+            "propagationId": "84747f8c-e981-44f5-b26b-e659536bb658",
+            "sourceId": "84747f8c-e981-44f5-b26b-e659536bb658",
+            "propagatedPath": "frontend/src/static/styles/banks/default.css",
+            "featureKey": "89498cfe-9965-4981-a173-cf41c196ac58",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
+            "contentAnalysis": false
+        },
+        {
+            "propagationId": "a4d8788a-0229-4ae0-9108-8cc2b3c75aac",
+            "sourceId": "918ee766-0efe-45c4-a24e-ccd98232b6af",
+            "propagatedPath": "frontend/src/static/images/mastercard.png",
+            "featureKey": "4bf62f83-5f35-461d-96cf-6d1693444e07",
+            "isValidated": false,
+            "analyzer": "File system analyzer",
+            "isFromMarker": false,
+            "contentAnalysis": false
+        },
+        {
+            "propagationId": "a4e7486b-3887-4595-a2e4-e1914b503433",
+            "sourceId": "54484198-1fc5-4172-9b84-ba25c81e14f6",
+            "propagatedPath": "frontend/src/static/images/visa.png",
+            "featureKey": "2e8adfe9-8235-440f-afbb-80a18078b9f0",
+            "isValidated": false,
+            "analyzer": "File system analyzer",
+            "isFromMarker": false,
+            "contentAnalysis": false
+        }
+    ]
 }

@@ -24,8 +24,8 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // The Vue build version to load with the `import` command
-require("./../src/static/styles/banks/banque_postale.css");
-require("./../src/static/styles/banks/societe_generale.css");
-require("./../src/static/styles/banks/default.css");
+// require("./../src/static/styles/banks/banque_postale.css");
+// require("./../src/static/styles/banks/societe_generale.css");
 require("./../src/static/styles/main.css");
-require("./../src/static/styles/banks/cic.css");
+require("./../src/static/styles/banks/default.css");
+// require("./../src/static/styles/banks/cic.css");

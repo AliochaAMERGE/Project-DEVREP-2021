@@ -86,7 +86,190 @@
                     "isValidated": false
                 }
             ]
+        },
+        {
+            "file": "frontend/src/router/index.js",
+            "seeds": [
+                {
+                    "id": "e9f991a7-8422-4143-bb8d-50f505395a6d",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "5924cace-5d08-4afa-bdd7-af2d18b4b0c1",
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "endLine": 14,
+                    "endColumn": 4,
+                    "type": "Deletion",
+                    "isValidated": false
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/views/Home.vue",
+            "seeds": [
+                {
+                    "id": "038b632b-4c9c-4dbe-bb2b-4d014d12c5d1",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "c4df42ec-1c58-4184-998b-27675f407390",
+                    "startLine": 63,
+                    "startColumn": 6,
+                    "endLine": 73,
+                    "endColumn": 12,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "918ee766-0efe-45c4-a24e-ccd98232b6af",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "4bf62f83-5f35-461d-96cf-6d1693444e07",
+                    "startLine": 75,
+                    "startColumn": 0,
+                    "endLine": 85,
+                    "endColumn": 16,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
+                    "id": "54484198-1fc5-4172-9b84-ba25c81e14f6",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "2e8adfe9-8235-440f-afbb-80a18078b9f0",
+                    "startLine": 86,
+                    "startColumn": 10,
+                    "endLine": 96,
+                    "endColumn": 14,
+                    "type": "Deletion",
+                    "isValidated": false
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/App.vue",
+            "seeds": [
+                {
+                    "id": "240cc379-9d28-48bb-88dd-9d673381de75",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "5924cace-5d08-4afa-bdd7-af2d18b4b0c1",
+                    "startLine": 4,
+                    "startColumn": 0,
+                    "endLine": 5,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/views/Login.vue",
+            "seeds": [
+                {
+                    "id": "947e0be5-8fd0-43aa-8cfb-af8964b1fb56",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "434bf3b1-6566-4a98-8a2d-7f3aa821c25a",
+                    "startLine": 28,
+                    "startColumn": 0,
+                    "endLine": 29,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
+                    "id": "7eab9036-d761-4dba-9ab9-f2f13854bdc6",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "5ca8b7cc-15ba-40c6-8877-19239be22988",
+                    "startLine": 29,
+                    "startColumn": 0,
+                    "endLine": 30,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
+                    "id": "a89a47d5-8ee3-46f9-821f-d20878d34588",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "fa112340-0108-42fe-be03-972d002a3a43",
+                    "startLine": 30,
+                    "startColumn": 0,
+                    "endLine": 31,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
+                    "id": "7c158ad3-24db-4923-9c5a-5280a1bd0b84",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "e664d5a7-8ba7-4a6f-b2f8-75b3bf51d343",
+                    "startLine": 31,
+                    "startColumn": 0,
+                    "endLine": 32,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
+                    "id": "4e9414d5-e9fa-4f3e-aa82-cddd2b567683",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "521fd9d0-85ba-4dbe-85cd-764427975cd2",
+                    "startLine": 32,
+                    "startColumn": 0,
+                    "endLine": 33,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
+                    "id": "408a4e8e-edf0-4cfb-8624-eb04689cad26",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "6c1ed8dd-6192-4d59-9fa3-460114e9ab36",
+                    "startLine": 33,
+                    "startColumn": 0,
+                    "endLine": 34,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
+                    "id": "ac4193a2-dd30-40c9-9c9a-a30cca1dfdcc",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "ba48bb35-cecf-4f19-909b-75517954b0ff",
+                    "startLine": 34,
+                    "startColumn": 0,
+                    "endLine": 35,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
+                    "id": "e9d91add-e161-415d-8cc1-b0896503acbd",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "d208160a-d9fa-4274-b043-ec76373d003e",
+                    "startLine": 35,
+                    "startColumn": 0,
+                    "endLine": 36,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "b7389dae-ac42-4af1-b449-faaccf4545a0",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "7dda10f1-134d-4969-bc15-1088104473b2",
+                    "startLine": 36,
+                    "startColumn": 0,
+                    "endLine": 37,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
         }
     ],
-    "fileSeeds": []
+    "fileSeeds": [
+        {
+            "id": "8bb36a1a-c5a8-4c59-a15b-c1ba5dc003b9",
+            "file": "frontend/src/views/About.vue",
+            "featureKey": "5924cace-5d08-4afa-bdd7-af2d18b4b0c1",
+            "analyzer": "File system analyzer",
+            "isValidated": true,
+            "contentAnalysis": true
+        }
+    ]
 }

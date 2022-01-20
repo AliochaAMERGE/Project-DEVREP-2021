@@ -14,3 +14,16 @@ feature de ressources :
   - le logo
   - la description de la banque (json)
 
+
+
+TODO : 
+
+- [ ] Authentification
+- [ ] Personnalization
+  - [ ] JSON
+  - [ ] CSS
+  - [ ] Logo
+- [ ] Convertisseur
+- [x] overdraft
+- [ ] avout-view
+- [ ] card-accepted
