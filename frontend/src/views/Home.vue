@@ -1,6 +1,4 @@
 <template>
-  
-
   <body class="container" style="margin-top: 5%">
     <!-- Columns for login functions -->
     <div v-show="false" id="sign-in-status"></div>
@@ -26,15 +24,9 @@
           <article class="media">
             <div class="media-left">
               <figure class="image is-64x64">
-                <!-- Choose the icon between :
-                  - "./images/bank_icons/banque_postale.png"
-                  - "./images/bank_icons/cic.png"
-                  - "./images/bank_icons/societe_generale.png"
-                  ./images/bank_icons/banque_postale.png ./images/bank_icons/cic.png ./images/bank_icons/societe_generale.png
-                -->
                 <img
-                  src="./../static/images/bank_icons/cic.png"
-                  width=250
+                  src="./../static/images/bank_icons/default.png"
+                  width="250"
                   alt="Image"
                 />
               </figure>
@@ -283,7 +275,7 @@ export default {
      * Init the bank information on page load
      */
     initWebPageWithData() {
-      let donnee = require("@/static/data/banque_postale.json");
+      let donnee = require("@/static/data/default.json");
       this.bankName = donnee.name;
       this.bankDescription = donnee.description;
       this.phone = donnee.phoneNumber;

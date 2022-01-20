@@ -1,0 +1,92 @@
+{
+    "rangeSeeds": [
+        {
+            "file": "backend/src/main/java/fr/su/bankapp/model/Client.java",
+            "seeds": [
+                {
+                    "id": "b0c5a7d4-31c5-4dd9-b7d6-7e8ffd17f8fd",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "d4415f4c-820d-4514-b355-0a4ee229af93",
+                    "startLine": 30,
+                    "startColumn": 0,
+                    "endLine": 31,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
+                    "id": "19a5ff6e-6555-436b-8cc0-d871702dee88",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "d4415f4c-820d-4514-b355-0a4ee229af93",
+                    "startLine": 102,
+                    "startColumn": 0,
+                    "endLine": 104,
+                    "endColumn": 5,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
+                    "id": "b9648c7a-e41b-4fd0-a23d-2f1cd1d101a3",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "d4415f4c-820d-4514-b355-0a4ee229af93",
+                    "startLine": 106,
+                    "startColumn": 0,
+                    "endLine": 108,
+                    "endColumn": 5,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
+                    "id": "8f295fa1-4908-47b2-af52-3f9e2e5ae008",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "d4415f4c-820d-4514-b355-0a4ee229af93",
+                    "startLine": 118,
+                    "startColumn": 0,
+                    "endLine": 119,
+                    "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
+                    "id": "bf89070c-9c41-4d28-a5be-9eb98a4cd3e6",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "d4415f4c-820d-4514-b355-0a4ee229af93",
+                    "startLine": 154,
+                    "startColumn": 0,
+                    "endLine": 158,
+                    "endColumn": 25,
+                    "type": "Deletion",
+                    "isValidated": false
+                }
+            ]
+        },
+        {
+            "file": "backend/src/main/java/fr/su/bankapp/controller/ClientController.java",
+            "seeds": [
+                {
+                    "id": "575a85b2-f57f-40f9-a689-cf21599b058b",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "d4415f4c-820d-4514-b355-0a4ee229af93",
+                    "startLine": 96,
+                    "startColumn": 84,
+                    "endLine": 96,
+                    "endColumn": 96,
+                    "type": "Deletion",
+                    "isValidated": false
+                },
+                {
+                    "id": "ff8ff013-1177-425d-8738-a7eb7ef959fa",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "d4415f4c-820d-4514-b355-0a4ee229af93",
+                    "startLine": 100,
+                    "startColumn": 51,
+                    "endLine": 100,
+                    "endColumn": 96,
+                    "type": "Deletion",
+                    "isValidated": false
+                }
+            ]
+        }
+    ],
+    "fileSeeds": []
+}
