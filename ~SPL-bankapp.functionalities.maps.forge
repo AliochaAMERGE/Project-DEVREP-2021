@@ -12,7 +12,7 @@
                     "endLine": 31,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "19a5ff6e-6555-436b-8cc0-d871702dee88",
@@ -23,7 +23,7 @@
                     "endLine": 104,
                     "endColumn": 5,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "b9648c7a-e41b-4fd0-a23d-2f1cd1d101a3",
@@ -34,7 +34,7 @@
                     "endLine": 108,
                     "endColumn": 5,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "8f295fa1-4908-47b2-af52-3f9e2e5ae008",
@@ -56,7 +56,7 @@
                     "endLine": 158,
                     "endColumn": 25,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 }
             ]
         },
@@ -72,7 +72,7 @@
                     "endLine": 96,
                     "endColumn": 96,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "ff8ff013-1177-425d-8738-a7eb7ef959fa",
@@ -83,7 +83,7 @@
                     "endLine": 100,
                     "endColumn": 96,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 }
             ]
         },
@@ -99,7 +99,7 @@
                     "endLine": 14,
                     "endColumn": 4,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 }
             ]
         },
@@ -126,7 +126,7 @@
                     "endLine": 85,
                     "endColumn": 16,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "54484198-1fc5-4172-9b84-ba25c81e14f6",
@@ -137,7 +137,7 @@
                     "endLine": 96,
                     "endColumn": 14,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 }
             ]
         },
@@ -169,7 +169,7 @@
                     "endLine": 29,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "7eab9036-d761-4dba-9ab9-f2f13854bdc6",
@@ -180,7 +180,7 @@
                     "endLine": 30,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "a89a47d5-8ee3-46f9-821f-d20878d34588",
@@ -191,7 +191,7 @@
                     "endLine": 31,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "7c158ad3-24db-4923-9c5a-5280a1bd0b84",
@@ -202,7 +202,7 @@
                     "endLine": 32,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "4e9414d5-e9fa-4f3e-aa82-cddd2b567683",
@@ -213,7 +213,7 @@
                     "endLine": 33,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "408a4e8e-edf0-4cfb-8624-eb04689cad26",
@@ -224,7 +224,7 @@
                     "endLine": 34,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "ac4193a2-dd30-40c9-9c9a-a30cca1dfdcc",
@@ -235,7 +235,7 @@
                     "endLine": 35,
                     "endColumn": 0,
                     "type": "Deletion",
-                    "isValidated": false
+                    "isValidated": true
                 },
                 {
                     "id": "e9d91add-e161-415d-8cc1-b0896503acbd",
@@ -256,6 +256,44 @@
                     "startColumn": 0,
                     "endLine": 37,
                     "endColumn": 0,
+                    "type": "Deletion",
+                    "isValidated": true
+                }
+            ]
+        },
+        {
+            "file": "frontend/src/views/About.vue",
+            "seeds": [
+                {
+                    "id": "03eac17e-4649-4f9e-8be5-1e696c8c3842",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "5924cace-5d08-4afa-bdd7-af2d18b4b0c1",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 15,
+                    "endColumn": 11,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "3bb805f8-dfa3-45ad-bf96-14aa8c7f8d82",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "5924cace-5d08-4afa-bdd7-af2d18b4b0c1",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 15,
+                    "endColumn": 11,
+                    "type": "Deletion",
+                    "isValidated": true
+                },
+                {
+                    "id": "933f62be-a40a-4868-91e1-860b3faffc7d",
+                    "analyzer": "Interoperable analyzer",
+                    "featureKey": "5924cace-5d08-4afa-bdd7-af2d18b4b0c1",
+                    "startLine": 0,
+                    "startColumn": 0,
+                    "endLine": 15,
+                    "endColumn": 11,
                     "type": "Deletion",
                     "isValidated": true
                 }
