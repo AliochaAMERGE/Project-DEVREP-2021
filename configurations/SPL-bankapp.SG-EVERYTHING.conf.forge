@@ -1,0 +1,34 @@
+{
+    "isAbsolutePath": false,
+    "resourcesPath": "resources/files",
+    "functionalityConfiguration": [
+        "6c895abd-e2d9-47d3-bc51-4289c6a8061f",
+        "c20cd123-692e-4e94-a475-f0c39ff3df29",
+        "a96d1af4-b21a-45d1-8c65-4c3485de8c0c"
+    ],
+    "fileResourceConfiguration": [
+        {
+            "key": "6b064d9e-be8a-4791-9824-f11fbc1b32fe",
+            "value": "frontend/src/static/data",
+            "fileName": "societe_generale.json"
+        },
+        {
+            "key": "89498cfe-9965-4981-a173-cf41c196ac58",
+            "value": "frontend/src/static/styles/banks",
+            "fileName": "societe_generale.css"
+        },
+        {
+            "key": "27c73b9d-af98-4e93-9411-45dd3ea9d7af",
+            "value": "frontend/src/static/images/bank_icons",
+            "fileName": "societe_generale.png"
+        },
+        {
+            "key": "b35c2abb-6e08-4cb5-97ce-73ddcf454e9d",
+            "value": "frontend/public",
+            "fileName": "favicon.ico"
+        }
+    ],
+    "textResourceConfiguration": [],
+    "assetResourceConfiguration": [],
+    "colorResourceConfiguration": []
+}

@@ -299,7 +299,7 @@ export default {
      * Init the bank information on page load
      */
     initWebPageWithData() {
-      let donnee = require("@/static/data/default.json");
+      let donnee = require("./../static/data/default.json");
       this.bankName = donnee.name;
       this.bankDescription = donnee.description;
       this.phone = donnee.phoneNumber;
