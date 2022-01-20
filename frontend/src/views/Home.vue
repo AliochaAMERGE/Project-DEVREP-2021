@@ -1,31 +1,5 @@
 <template>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bank Web Application</title>
-    <link rel="apple-touch-icon" href="@/static/apple-touch-icon.png" />
-    <!-- Place favicon.ico in the root directory -->
-    <!--<link href="bulma.min.css" /> -->
-    <link
-      rel="stylesheet"
-      type="text/html"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css"
-    />
-    <link rel="stylesheet" type="text/html" href="@/static/styles/main.css" />
-
-    <!-- Choose the icon between :
-        - "./styles/banks/banque_postale.css"
-        - "./styles/banks/cic.css"
-        - "./styles/banks/societe_generale.css"
-
-        ./styles/banks/banque_postale.css ./styles/banks/cic.css ./styles/banks/societe_generale.css
-      -->
-    <link
-      rel="stylesheet"
-      type="text/html"
-      href="@/static/styles/banks/banque_postale.css"
-    />
-  </head>
+  
 
   <body class="container" style="margin-top: 5%">
     <!-- Columns for login functions -->
@@ -59,7 +33,8 @@
                   ./images/bank_icons/banque_postale.png ./images/bank_icons/cic.png ./images/bank_icons/societe_generale.png
                 -->
                 <img
-                  src="@/static/images/bank_icons/banque_postale.png"
+                  src="./../static/images/bank_icons/cic.png"
+                  width=250
                   alt="Image"
                 />
               </figure>
