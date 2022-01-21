@@ -94,11 +94,11 @@ public class ClientController {
 
     /** Add a client to the database with full parameters */
     @ResponseBody
-    @RequestMapping(path = "/secured/create/{lastName}/{firstName}/{email}/{balance}/{overdraft}", method = RequestMethod.POST)
+    @RequestMapping(path = "/secured/create/{lastName}/{firstName}/{email}/{balance}", method = RequestMethod.POST)
     @ResponseStatus(HttpStatus.CREATED)
     public long addNewClient(@PathVariable("lastName") String lastName, @PathVariable("firstName") String firstName,
             @PathVariable("email") String email,
-            @PathVariable("balance") Double balance, @PathVariable("overdraft") Double overdraft) {
+            @PathVariable("balance") Double balance) {
         Client savedClient = clientRepository.save(new Client(firstName, lastName, email));
 
         logger.info(savedClient.toString() + " successfully saved into sDB");
@@ -149,3 +149,4 @@ public class ClientController {
         return c;
     }
 }
+
