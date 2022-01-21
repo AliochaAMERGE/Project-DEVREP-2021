@@ -25,7 +25,7 @@
             <div class="media-left">
               <figure class="image is-64x64">
                 <img
-                  src="./../static/images/bank_icons/default.png"
+                  src="./../static/images/bank_icons/cic.png"
                   width="250"
                   alt="Image"
                 />
@@ -65,25 +65,25 @@
         class="column is-4 is-offset-1"
         style="width: 50%; float: left; margin-top: 5%"
       >
-        <iframe
-          title="Converter"
-          src="https://xeconvert.com/widget1?from=usd&to=eur&lang=&theme=blue&font=12"
-          width="75%"
-          height="100%"
-        ></iframe>
+        
+
+
+
+
+
       </div>
 
       <div class="column is-offset-4 is-2">
         <div class="columns is-mobile">
-          <div class="column is-half">
-            <figure class="image is-64x64">
-              <img
-                src="./../static/images/mastercard.png"
-                width="100"
-                alt="Image"
-              />
-            </figure>
-          </div>
+          
+
+
+
+
+
+
+
+
           <div class="column is-half">
             <figure class="image is-64x64">
               <img
@@ -299,7 +299,7 @@ export default {
      * Init the bank information on page load
      */
     initWebPageWithData() {
-      let donnee = require("./../static/data/default.json");
+      let donnee = require("./../static/data/cic.json");
       this.bankName = donnee.name;
       this.bankDescription = donnee.description;
       this.phone = donnee.phoneNumber;
@@ -418,3 +418,5 @@ export default {
   right: 0;
 }
 </style>
+
+
