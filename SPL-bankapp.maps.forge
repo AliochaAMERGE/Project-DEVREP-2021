@@ -435,6 +435,24 @@
                             "children": []
                         }
                     ]
+                },
+                {
+                    "featureKey": "6b064d9e-be8a-4791-9824-f11fbc1b32fe",
+                    "ranges": [
+                        {
+                            "propagationId": "ee1f20ba-ea29-47c3-b8fc-22211887e244",
+                            "sourceId": "ecc69e34-e3a6-458d-840f-b056c2add6ec",
+                            "startLine": 301,
+                            "startColumn": 28,
+                            "endLine": 301,
+                            "endColumn": 57,
+                            "isValidated": true,
+                            "analyzer": "Resource Analyzer",
+                            "isFromMarker": false,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
                 }
             ]
         },
@@ -484,16 +502,6 @@
             "contentAnalysis": false
         },
         {
-            "propagationId": "f1a18f32-4d9f-4d1c-9904-4e66cfba6cfb",
-            "sourceId": "f1a18f32-4d9f-4d1c-9904-4e66cfba6cfb",
-            "propagatedPath": "frontend/src/static/data/default.json",
-            "featureKey": "6b064d9e-be8a-4791-9824-f11fbc1b32fe",
-            "isValidated": true,
-            "analyzer": "File system analyzer",
-            "isFromMarker": true,
-            "contentAnalysis": false
-        },
-        {
             "propagationId": "dd02ad7a-817c-4e3c-8ff1-15411ee319cf",
             "sourceId": "dd02ad7a-817c-4e3c-8ff1-15411ee319cf",
             "propagatedPath": "frontend/src/static/images/bank_icons/default.png",
@@ -521,6 +529,16 @@
             "isValidated": true,
             "analyzer": "File system analyzer",
             "isFromMarker": false,
+            "contentAnalysis": false
+        },
+        {
+            "propagationId": "ecc69e34-e3a6-458d-840f-b056c2add6ec",
+            "sourceId": "ecc69e34-e3a6-458d-840f-b056c2add6ec",
+            "propagatedPath": "frontend/src/static/data/default.json",
+            "featureKey": "6b064d9e-be8a-4791-9824-f11fbc1b32fe",
+            "isValidated": true,
+            "analyzer": "File system analyzer",
+            "isFromMarker": true,
             "contentAnalysis": false
         }
     ]
