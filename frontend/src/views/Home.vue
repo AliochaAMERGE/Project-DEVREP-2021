@@ -25,7 +25,7 @@
             <div class="media-left">
               <figure class="image is-64x64">
                 <img
-                  src="./../static/images/bank_icons/default.png"
+                  src="./../static/images/bank_icons/banque_postale.png"
                   width="250"
                   alt="Image"
                 />
@@ -75,15 +75,15 @@
 
       <div class="column is-offset-4 is-2">
         <div class="columns is-mobile">
-          <div class="column is-half">
-            <figure class="image is-64x64">
-              <img
-                src="./../static/images/mastercard.png"
-                width="100"
-                alt="Image"
-              />
-            </figure>
-          </div>
+          
+
+
+
+
+
+
+
+
           <div class="column is-half">
             <figure class="image is-64x64">
               <img
@@ -299,7 +299,7 @@ export default {
      * Init the bank information on page load
      */
     initWebPageWithData() {
-      let donnee = require("./../static/data/default.json");
+      let donnee = require("./../static/data/banque_postale.json");
       this.bankName = donnee.name;
       this.bankDescription = donnee.description;
       this.phone = donnee.phoneNumber;
@@ -418,3 +418,5 @@ export default {
   right: 0;
 }
 </style>
+
+

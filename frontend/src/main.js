@@ -27,5 +27,5 @@ firebase.initializeApp(firebaseConfig);
 // require("./../src/static/styles/banks/banque_postale.css");
 // require("./../src/static/styles/banks/societe_generale.css");
 require("./../src/static/styles/main.css");
-require("./../src/static/styles/banks/default.css");
+require("./../src/static/styles/banks/banque_postale.css");
 // require("./../src/static/styles/banks/cic.css");

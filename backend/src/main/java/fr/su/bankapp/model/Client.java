@@ -28,7 +28,7 @@ public class Client implements Serializable {
     private String email;
 
     private Double balance;
-    private Double overdraft;
+
 
     public Client() {
     }
@@ -39,8 +39,8 @@ public class Client implements Serializable {
         this.lastName = lastName;
         this.email = email;
         this.balance = balance;
-        this.overdraft = overdraft;
     }
+
 
     public Client(String firstName, String lastName, String email) {
         super();
@@ -48,8 +48,8 @@ public class Client implements Serializable {
         this.lastName = lastName;
         this.email = email;
         this.balance = 0.0;
-        this.overdraft = 0.0;
     }
+
 
     public Client(String name, String email) {
         super();
@@ -57,8 +57,8 @@ public class Client implements Serializable {
         this.lastName = "";
         this.email = email;
         this.balance = 0.0;
-        this.overdraft = 0.0;
     }
+
 
     public long getId() {
         return id;
@@ -100,13 +100,13 @@ public class Client implements Serializable {
         this.balance = balance;
     }
 
-    public Double getOverdraft() {
-        return overdraft;
-    }
 
-    public void setOverdraft(Double overdraft) {
-        this.overdraft = overdraft;
-    }
+
+
+
+
+
+
 
     @Override
     public int hashCode() {
@@ -116,8 +116,8 @@ public class Client implements Serializable {
         result = prime * result + ((email == null) ? 0 : email.hashCode());
         result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
         result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
-        result = prime * result + ((overdraft == null) ? 0 : overdraft.hashCode());
         result = prime * result + (int) (id ^ (id >>> 32));
+
         return result;
     }
 
@@ -152,12 +152,13 @@ public class Client implements Serializable {
                 return false;
         } else if (!lastName.equals(other.lastName))
             return false;
-        if (overdraft == null) {
-            if (other.overdraft != null)
-                return false;
-        } else if (!overdraft.equals(other.overdraft))
-            return false;
+
+
+
+
+
         return true;
     }
 
 }
+
