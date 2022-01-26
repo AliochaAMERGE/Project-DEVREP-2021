@@ -25,7 +25,7 @@
             <div class="media-left">
               <figure class="image is-64x64">
                 <img
-                  src="./../static/images/bank_icons/default.png"
+                  src="./../static/images/bank_icons/societe_generale.png"
                   width="250"
                   alt="Image"
                 />
@@ -75,15 +75,15 @@
 
       <div class="column is-offset-4 is-2">
         <div class="columns is-mobile">
-          <div class="column is-half">
-            <figure class="image is-64x64">
-              <img
-                src="./../static/images/mastercard.png"
-                width="100"
-                alt="Image"
-              />
-            </figure>
-          </div>
+          
+
+
+
+
+
+
+
+
           <div class="column is-half">
             <figure class="image is-64x64">
               <img
@@ -156,8 +156,8 @@ export default {
       mail: "example@example.com",
       accountId: "-1",
       accountBalance: "-1",
-      overdraft: "-1",
       bankName: "myBankName",
+
       bankDescription: "myBankDescription",
       depositAmount: "-1",
       withdrawAmount: "-1",
@@ -205,8 +205,8 @@ export default {
             this.fillAccountData(
               account.data.id,
               account.data.balance,
-              account.data.overdraft
             );
+
           })
           .catch((error) => {
             console.log(error);
@@ -238,8 +238,8 @@ export default {
         const url = this.BASE_URL + "Withdraw/";
 
         if (
-          this.amount > 0 &&
-          this.accountBalance - args.amount < this.overdraft
+          this.amount > 0
+
         ) {
           // Not enough money on your account
         } else {
@@ -249,8 +249,8 @@ export default {
               this.fillAccountData(
                 account.data.id,
                 account.data.balance,
-                account.data.overdraft
               );
+
             })
             .catch((error) => {
               console.log(error);
@@ -277,8 +277,8 @@ export default {
           this.fillAccountData(
             account.data.id,
             account.data.balance,
-            account.data.overdraft
           );
+
         })
         .catch((error) => {
           console.log(error);
@@ -288,17 +288,17 @@ export default {
     /**
      * Set the local account data.
      */
-    fillAccountData(accountId, accountBalance, overdraft) {
+    fillAccountData(accountId, accountBalance) {
       this.accountId = accountId;
       this.accountBalance = accountBalance;
-      this.overdraft = overdraft;
     },
+
 
     /**
      * Init the bank information on page load
      */
     initWebPageWithData() {
-      let donnee = require("./../static/data/default.json");
+      let donnee = require("./../static/data/cic.json");
       this.bankName = donnee.name;
       this.bankDescription = donnee.description;
       this.phone = donnee.phoneNumber;
@@ -417,3 +417,5 @@ export default {
   right: 0;
 }
 </style>
+
+

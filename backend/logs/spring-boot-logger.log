@@ -91,3 +91,106 @@ Using generated security password: 71ff3f4a-c5a8-43d5-9019-fc3c98162535
 2022-01-26 15:45:27,430 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
 2022-01-26 16:00:52,121 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
 2022-01-26 16:00:52,128 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
+2022-01-26 16:25:42,470 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 16:25:42,480 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Client with email aliocha.amerge@gmail.com
+2022-01-26 16:25:45,993 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 16:25:46,007 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
+2022-01-26 17:49:33,694 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-5] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 17:49:33,700 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown initiated...
+2022-01-26 17:49:33,713 INFO com.zaxxer.hikari.HikariDataSource [Thread-5] HikariPool-1 - Shutdown completed.
+2022-01-26 17:49:33,884 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application using Java 11.0.13 on pop-os with PID 31017 (/home/aliocha/Workspace/M2S1/Project-DEVREP-2021/backend/target/classes started by aliocha in /home/aliocha/Workspace/M2S1/Project-DEVREP-2021/backend)
+2022-01-26 17:49:33,887 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-01-26 17:49:34,212 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-26 17:49:34,222 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2022-01-26 17:49:34,376 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8082 (http)
+2022-01-26 17:49:34,377 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8082"]
+2022-01-26 17:49:34,377 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-01-26 17:49:34,377 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-26 17:49:34,385 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-01-26 17:49:34,385 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 491 ms
+2022-01-26 17:49:34,433 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-26 17:49:34,441 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Starting...
+2022-01-26 17:49:34,445 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-2 - Start completed.
+2022-01-26 17:49:34,446 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-01-26 17:49:34,486 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-26 17:49:34,487 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 17:49:34,520 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-26 17:49:34,627 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: 09093fd7-e5ba-4013-ba6a-47bab6b16bde
+
+2022-01-26 17:49:34,659 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [public/index.html]
+2022-01-26 17:49:34,692 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@469d9122, org.springframework.security.web.context.SecurityContextPersistenceFilter@728b9015, org.springframework.security.web.header.HeaderWriterFilter@27f962e4, org.springframework.web.filter.CorsFilter@2965e220, org.springframework.security.web.authentication.logout.LogoutFilter@195bf2a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4618c5fb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31d2305c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5dd08ac0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1441a5fb, org.springframework.security.web.session.SessionManagementFilter@66029201, org.springframework.security.web.access.ExceptionTranslationFilter@393f44bc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6399d22d]
+2022-01-26 17:49:34,767 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-01-26 17:49:34,779 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8082"]
+2022-01-26 17:49:34,780 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8082 (http) with context path ''
+2022-01-26 17:49:34,786 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 0.966 seconds (JVM running for 8627.483)
+2022-01-26 17:49:34,788 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-01-26 18:14:07,339 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-26 18:14:07,340 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-01-26 18:14:07,341 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 1 ms
+2022-01-26 18:14:07,353 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 18:14:07,357 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
+2022-01-26 18:21:49,241 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 18:21:49,253 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 18:21:49,267 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 18:21:49,271 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 18:21:49,278 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
+2022-01-26 18:21:49,295 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
+2022-01-26 18:21:49,298 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
+2022-01-26 18:21:49,310 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Client with email aliocha.amerge@gmail.com
+2022-01-26 18:21:50,584 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 18:21:50,586 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
+2022-01-26 18:28:42,739 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 18:28:42,742 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Client with email aliocha.amerge@gmail.com
+2022-01-26 18:28:44,791 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 18:28:44,798 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
+2022-01-26 18:29:21,313 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 18:29:21,316 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
+2022-01-26 18:29:37,806 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 18:29:37,808 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
+2022-01-26 18:30:11,004 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 18:30:11,007 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
+2022-01-26 18:30:18,007 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 18:30:18,019 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
+2022-01-26 19:00:53,772 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-7] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 19:00:53,773 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown initiated...
+2022-01-26 19:00:53,784 INFO com.zaxxer.hikari.HikariDataSource [Thread-7] HikariPool-2 - Shutdown completed.
+2022-01-26 19:00:53,876 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application using Java 11.0.13 on pop-os with PID 31017 (/home/aliocha/Workspace/M2S1/Project-DEVREP-2021/backend/target/classes started by aliocha in /home/aliocha/Workspace/M2S1/Project-DEVREP-2021/backend)
+2022-01-26 19:00:53,876 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-01-26 19:00:54,047 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-26 19:00:54,054 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interfaces.
+2022-01-26 19:00:54,149 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8082 (http)
+2022-01-26 19:00:54,150 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8082"]
+2022-01-26 19:00:54,150 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-01-26 19:00:54,150 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-26 19:00:54,157 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-01-26 19:00:54,157 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 279 ms
+2022-01-26 19:00:54,189 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-26 19:00:54,192 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Starting...
+2022-01-26 19:00:54,196 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-3 - Start completed.
+2022-01-26 19:00:54,197 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-01-26 19:00:54,225 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-26 19:00:54,225 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 19:00:54,249 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-26 19:00:54,397 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
+
+Using generated security password: 3341b613-967c-434f-b85d-d33b4f1cece8
+
+2022-01-26 19:00:54,430 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [public/index.html]
+2022-01-26 19:00:54,475 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34bd1782, org.springframework.security.web.context.SecurityContextPersistenceFilter@21688545, org.springframework.security.web.header.HeaderWriterFilter@76b58894, org.springframework.web.filter.CorsFilter@f3e60da, org.springframework.security.web.authentication.logout.LogoutFilter@47463f9c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@628c892, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5ec3d667, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4e81403, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a2e9a6c, org.springframework.security.web.session.SessionManagementFilter@f953759, org.springframework.security.web.access.ExceptionTranslationFilter@1c4c630c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39bab7bc]
+2022-01-26 19:00:54,543 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-01-26 19:00:54,555 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8082"]
+2022-01-26 19:00:54,562 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8082 (http) with context path ''
+2022-01-26 19:00:54,567 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 0.714 seconds (JVM running for 12907.264)
+2022-01-26 19:00:54,568 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain] Condition evaluation unchanged
+2022-01-26 19:13:21,265 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-26 19:13:21,267 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
+2022-01-26 19:13:21,269 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 2 ms
+2022-01-26 19:13:21,322 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 19:13:21,328 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
+2022-01-26 19:34:45,484 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
+2022-01-26 19:34:45,501 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
+2022-01-26 20:30:09,855 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 20:30:09,875 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-3 - Shutdown initiated...
+2022-01-26 20:30:09,882 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-3 - Shutdown completed.
