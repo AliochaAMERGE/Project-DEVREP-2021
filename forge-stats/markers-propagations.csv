@@ -1,0 +1,21 @@
+Feature,#Markers,#Code Markers,#File Markers,#Propagations,#Deletion Propagations,#Replacement Propagations,#Resource Propagations,#Path Propagations
+Authentification,0,0,0,0,0,0,0,0
+Personnalization,0,0,0,0,0,0,0,0
+Convertisseur,1,1,0,1,1,0,0,0
+Overdraft,15,15,0,18,18,0,0,0
+Google,1,1,0,1,1,0,0,0
+Microsoft,1,1,0,1,1,0,0,0
+Github,1,1,0,1,1,0,0,0
+Yahoo,1,1,0,1,1,0,0,0
+Apple,1,1,0,1,1,0,0,0
+Twitter,1,1,0,1,1,0,0,0
+Phone,1,1,0,1,1,0,0,0
+Email,1,1,0,1,1,0,0,0
+Facebook,1,1,0,1,1,0,0,0
+Card_accepted,0,0,0,0,0,0,0,0
+VISA,1,1,0,1,1,0,0,1
+MASTERCARD,1,1,0,1,1,0,0,1
+Banque_data,2,1,1,1,0,0,1,1
+Banque_style,1,0,1,1,0,0,1,1
+Banque_logo,1,0,1,1,0,0,1,1
+Favicon,1,0,1,1,0,0,1,1

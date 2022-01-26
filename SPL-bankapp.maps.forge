@@ -223,6 +223,102 @@
                             "children": []
                         }
                     ]
+                },
+                {
+                    "featureKey": "d4415f4c-820d-4514-b355-0a4ee229af93",
+                    "ranges": [
+                        {
+                            "propagationId": "9f1fa41a-683e-40dc-8be4-1a2bbfa4c2a6",
+                            "sourceId": "9f1fa41a-683e-40dc-8be4-1a2bbfa4c2a6",
+                            "startLine": 279,
+                            "startColumn": 0,
+                            "endLine": 280,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "e78ea62e-79e8-4469-80f5-04b7cb88b71a",
+                            "sourceId": "e78ea62e-79e8-4469-80f5-04b7cb88b71a",
+                            "startLine": 290,
+                            "startColumn": 45,
+                            "endLine": 290,
+                            "endColumn": 56,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "1ee70692-a70c-4680-a787-507051610097",
+                            "sourceId": "1ee70692-a70c-4680-a787-507051610097",
+                            "startLine": 293,
+                            "startColumn": 0,
+                            "endLine": 294,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "b8beba2f-10cc-49b7-95bf-1407316b8d71",
+                            "sourceId": "b8beba2f-10cc-49b7-95bf-1407316b8d71",
+                            "startLine": 158,
+                            "startColumn": 0,
+                            "endLine": 159,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "83ad1d61-7a3c-4efb-99f7-a31580ece9b8",
+                            "sourceId": "83ad1d61-7a3c-4efb-99f7-a31580ece9b8",
+                            "startLine": 207,
+                            "startColumn": 0,
+                            "endLine": 208,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "289fdf0b-a107-40b2-b13c-ac6602558411",
+                            "sourceId": "289fdf0b-a107-40b2-b13c-ac6602558411",
+                            "startLine": 240,
+                            "startColumn": 25,
+                            "endLine": 241,
+                            "endColumn": 60,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        },
+                        {
+                            "propagationId": "dd56bd20-19fb-4065-af54-2e38e03e3816",
+                            "sourceId": "dd56bd20-19fb-4065-af54-2e38e03e3816",
+                            "startLine": 251,
+                            "startColumn": 0,
+                            "endLine": 252,
+                            "endColumn": 0,
+                            "isValidated": true,
+                            "analyzer": "Interoperable analyzer",
+                            "isFromMarker": true,
+                            "parent": "-1",
+                            "children": []
+                        }
+                    ]
                 }
             ]
         },
@@ -427,7 +523,7 @@
                             "startLine": 27,
                             "startColumn": 23,
                             "endLine": 27,
-                            "endColumn": 64,
+                            "endColumn": 73,
                             "isValidated": true,
                             "analyzer": "Resource Analyzer",
                             "isFromMarker": false,
@@ -445,7 +541,7 @@
                             "startLine": 300,
                             "startColumn": 28,
                             "endLine": 300,
-                            "endColumn": 57,
+                            "endColumn": 66,
                             "isValidated": true,
                             "analyzer": "Resource Analyzer",
                             "isFromMarker": false,
@@ -468,7 +564,7 @@
                             "startLine": 29,
                             "startColumn": 9,
                             "endLine": 29,
-                            "endColumn": 49,
+                            "endColumn": 58,
                             "isValidated": true,
                             "analyzer": "Resource Analyzer",
                             "isFromMarker": false,

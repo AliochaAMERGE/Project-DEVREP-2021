@@ -229,7 +229,7 @@
             "type": "Resource feature",
             "parent": "a96d1af4-b21a-45d1-8c65-4c3485de8c0c",
             "parentRelation": "Normal",
-            "presence": "Mandatory",
+            "presence": "Normal",
             "lgFile": "",
             "role": "",
             "hexColor": "#09772a",
