@@ -1,300 +1,34 @@
-2022-01-14 10:12:44,565 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application using Java 11.0.13 on pop-os with PID 28744 (/home/aliocha/Workspace/M2S1/Project-DEVREP-2021/backend/target/classes started by aliocha in /home/aliocha/Workspace/M2S1/Project-DEVREP-2021)
-2022-01-14 10:12:44,570 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
-2022-01-14 10:12:44,678 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2022-01-14 10:12:44,678 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2022-01-14 10:12:45,654 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2022-01-14 10:12:45,726 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interfaces.
-2022-01-14 10:12:46,729 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8082 (http)
-2022-01-14 10:12:46,745 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8082"]
-2022-01-14 10:12:46,746 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
-2022-01-14 10:12:46,747 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
-2022-01-14 10:12:46,892 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
-2022-01-14 10:12:46,893 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 2214 ms
-2022-01-14 10:12:47,199 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
-2022-01-14 10:12:47,285 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final
-2022-01-14 10:12:47,469 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2022-01-14 10:12:47,743 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
-2022-01-14 10:12:48,001 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
-2022-01-14 10:12:48,019 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-2022-01-14 10:12:48,643 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2022-01-14 10:12:48,653 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2022-01-14 10:12:48,758 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2022-01-14 10:12:49,425 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
+2022-01-26 15:20:42,041 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting Application using Java 11.0.13 on pop-os with PID 29330 (/home/aliocha/Workspace/M2S1/Project-DEVREP-2021/backend/target/classes started by aliocha in /home/aliocha/Workspace/M2S1/Project-DEVREP-2021)
+2022-01-26 15:20:42,129 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2022-01-26 15:20:42,259 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-01-26 15:20:42,259 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-01-26 15:20:43,079 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-01-26 15:20:43,166 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 73 ms. Found 1 JPA repository interfaces.
+2022-01-26 15:20:43,958 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8082 (http)
+2022-01-26 15:20:43,971 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8082"]
+2022-01-26 15:20:43,973 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2022-01-26 15:20:43,975 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.55]
+2022-01-26 15:20:44,108 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2022-01-26 15:20:44,109 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1849 ms
+2022-01-26 15:20:44,298 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-01-26 15:20:44,339 INFO org.hibernate.Version [restartedMain] HHH000412: Hibernate ORM core version 5.6.1.Final
+2022-01-26 15:20:44,460 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-01-26 15:20:44,561 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2022-01-26 15:20:44,698 INFO com.zaxxer.hikari.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2022-01-26 15:20:44,710 INFO org.hibernate.dialect.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+2022-01-26 15:20:45,168 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-01-26 15:20:45,174 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 15:20:45,230 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-01-26 15:20:45,604 INFO org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration [restartedMain] 
 
-Using generated security password: bb79142a-5e4b-4d7a-a503-44c44435d3e8
+Using generated security password: d6c21025-26f5-44ba-8139-15d0a33d886f
 
-2022-01-14 10:12:49,636 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [public/index.html]
-2022-01-14 10:12:49,793 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64efd1e4, org.springframework.security.web.context.SecurityContextPersistenceFilter@23dea0f2, org.springframework.security.web.header.HeaderWriterFilter@3b5faddf, org.springframework.web.filter.CorsFilter@40d02e93, org.springframework.security.web.authentication.logout.LogoutFilter@2a01261c, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@63765426, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cc56dd1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@769c0360, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e81b6cf, org.springframework.security.web.session.SessionManagementFilter@36bc442b, org.springframework.security.web.access.ExceptionTranslationFilter@60e8afdc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4347018a]
-2022-01-14 10:12:50,039 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
-2022-01-14 10:12:50,054 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8082"]
-2022-01-14 10:12:50,077 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8082 (http) with context path ''
-2022-01-14 10:12:50,099 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 6.098 seconds (JVM running for 7.077)
-2022-01-14 10:13:45,665 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8082-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-01-14 10:13:45,666 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Initializing Servlet 'dispatcherServlet'
-2022-01-14 10:13:45,670 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8082-exec-1] Completed initialization in 2 ms
-2022-01-14 10:13:46,005 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 10:13:46,090 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 10:13:46,565 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 10:13:46,574 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 10:15:04,208 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 10:15:04,212 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
-2022-01-14 10:15:08,074 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 10:15:08,084 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
-2022-01-14 10:15:18,506 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 10:15:18,510 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 10:15:42,083 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 10:15:42,087 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Client with email aliocha.amerge@gmail.com
-2022-01-14 10:20:48,466 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 10:20:48,480 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 10:21:21,989 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 10:21:21,998 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 10:22:53,598 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 10:22:53,606 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
-2022-01-14 10:23:13,642 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 10:23:13,652 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
-2022-01-14 10:24:38,570 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 10:24:38,581 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 10:29:33,124 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 10:29:33,127 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 10:29:33,246 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 10:29:33,256 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:13:25,782 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:13:25,784 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:13:26,093 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:13:26,098 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:18:38,708 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:18:38,712 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:18:39,140 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:18:39,145 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:28:43,213 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:28:43,218 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:29:27,208 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:29:27,211 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:32:48,271 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:32:48,274 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:38:11,156 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:38:11,162 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:38:24,683 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:38:24,685 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:38:24,691 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:38:24,693 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:38:24,774 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:38:24,776 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:38:25,233 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:38:25,237 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:38:49,055 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:38:49,060 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:40:55,155 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:40:55,158 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:40:58,787 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:40:58,790 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:47:08,644 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:47:08,648 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 11:50:26,142 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 11:50:26,147 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:04:26,107 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:04:26,111 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:06:29,757 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:06:29,760 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:09:00,840 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:09:00,843 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:12:46,378 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:12:46,382 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:13:01,898 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:13:01,901 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:13:04,760 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:13:04,762 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:14:07,840 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Withdraw : 23
-2022-01-14 12:14:07,877 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7]  account 23 withdrawing 0.0 from his account
-2022-01-14 12:14:09,963 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9]  account 23 depositing 0.0 from his account
-2022-01-14 12:14:10,763 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10]  account 23 depositing 0.0 from his account
-2022-01-14 12:14:11,237 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1]  account 23 depositing 0.0 from his account
-2022-01-14 12:18:56,029 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:18:56,034 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:20:46,455 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:20:46,464 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:23:21,268 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:23:21,271 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:26:06,052 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:26:06,055 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:27:19,213 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:27:19,216 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:27:34,793 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:27:34,797 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:28:16,554 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:28:16,557 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:30:16,201 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:30:16,203 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:31:04,855 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:31:04,858 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:32:40,364 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:32:40,367 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:34:08,528 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:34:08,530 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:34:29,292 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:34:29,295 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:35:13,901 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:35:13,907 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:35:41,478 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:35:41,481 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:35:45,159 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:35:45,162 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:36:03,746 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:36:03,749 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:36:10,931 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:36:10,934 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:36:23,852 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:36:23,855 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:36:44,983 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:36:44,986 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:36:49,632 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:36:49,634 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:36:54,592 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:36:54,595 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:37:03,919 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:37:03,922 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:37:03,984 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:37:03,988 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:37:10,467 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:37:10,470 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:37:58,567 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:37:58,570 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:38:05,176 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:38:05,179 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:38:32,034 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:38:32,037 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:38:50,516 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:38:50,526 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:39:16,143 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:39:16,146 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:39:20,457 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:39:20,461 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:39:24,037 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:39:24,039 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:40:10,680 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:40:10,683 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:40:21,762 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:40:21,765 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:41:13,450 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:41:13,454 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:42:03,343 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:42:03,347 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:42:09,117 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:42:09,120 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:42:16,963 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:42:16,968 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 12:42:22,101 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 12:42:22,104 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:07:26,073 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:07:26,077 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:09:29,050 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:09:29,054 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:09:31,741 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:09:31,743 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:09:53,698 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:09:53,701 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:12:57,350 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:12:57,352 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:12:57,387 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:12:57,390 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:12:58,381 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:12:58,384 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:13:30,474 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:13:30,477 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:13:51,232 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:13:51,235 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:14:43,140 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:14:43,143 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:14:48,462 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:14:48,464 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:14:54,979 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:14:54,982 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:15:12,215 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:15:12,218 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:15:29,659 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:15:29,661 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:16:34,740 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:16:34,744 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:17:01,987 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:17:01,991 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:17:10,108 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:17:10,112 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:17:18,534 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:17:18,536 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:17:38,875 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:17:38,885 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:17:48,508 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:17:48,512 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:18:05,877 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:18:05,880 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:18:58,162 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:18:58,166 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:20:01,651 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:20:01,654 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:20:25,321 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:20:25,325 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:27:02,898 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:27:02,900 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:28:04,535 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:28:04,537 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:28:12,133 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:28:12,137 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:28:34,483 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:28:34,485 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:29:38,400 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:29:38,403 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:30:02,488 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:30:02,492 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Client with email aliocha.amerge@gmail.com
-2022-01-14 14:33:01,041 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 14:33:01,045 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:01:48,455 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:01:48,459 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:03:12,127 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:03:12,129 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:12:28,371 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:12:28,373 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:13:30,590 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:13:30,595 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:14:24,864 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:14:24,869 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:15:27,081 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:15:27,085 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:16:03,599 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:16:03,601 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:18:34,911 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:18:34,915 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:23:50,715 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:23:50,720 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:26:04,348 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:26:04,351 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:28:29,211 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:28:29,213 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-10] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:28:32,206 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:28:32,210 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:28:33,597 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:28:33,600 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:28:41,913 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:28:41,918 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:28:45,241 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:28:45,243 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-4] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:28:55,897 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:28:55,901 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:29:03,095 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:29:03,099 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-6] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:35:43,894 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:35:43,896 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-9] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:36:51,390 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:36:51,395 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-1] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:36:52,481 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:36:52,483 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-2] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:36:53,396 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:36:53,399 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-3] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:38:04,491 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:38:04,495 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-5] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:49:13,798 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:49:13,803 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-7] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:49:22,843 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Reading client with email aliocha.amerge@gmail.com from database.
-2022-01-14 15:49:22,847 INFO fr.su.bankapp.controller.ClientController [http-nio-8082-exec-8] Client with email aliocha.amerge@gmail.com
-2022-01-14 15:53:53,379 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
-2022-01-14 15:53:53,384 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
-2022-01-14 15:53:53,388 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2022-01-26 15:20:45,879 INFO org.springframework.boot.autoconfigure.web.servlet.WelcomePageHandlerMapping [restartedMain] Adding welcome page: class path resource [public/index.html]
+2022-01-26 15:20:46,124 INFO org.springframework.security.web.DefaultSecurityFilterChain [restartedMain] Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@546ba150, org.springframework.security.web.context.SecurityContextPersistenceFilter@71ce7d1d, org.springframework.security.web.header.HeaderWriterFilter@f182f37, org.springframework.web.filter.CorsFilter@28425305, org.springframework.security.web.authentication.logout.LogoutFilter@407725bb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7aeaf706, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@25d2d6b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@50c613c7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2029d890, org.springframework.security.web.session.SessionManagementFilter@70eeb61, org.springframework.security.web.access.ExceptionTranslationFilter@2d94985c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6aa9190b]
+2022-01-26 15:20:46,379 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2022-01-26 15:20:46,397 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8082"]
+2022-01-26 15:20:46,415 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8082 (http) with context path ''
+2022-01-26 15:20:46,434 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started Application in 4.929 seconds (JVM running for 5.531)
+2022-01-26 15:20:49,975 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-01-26 15:20:49,993 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2022-01-26 15:20:50,038 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.

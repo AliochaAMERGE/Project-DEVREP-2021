@@ -442,9 +442,9 @@
                         {
                             "propagationId": "ee1f20ba-ea29-47c3-b8fc-22211887e244",
                             "sourceId": "ecc69e34-e3a6-458d-840f-b056c2add6ec",
-                            "startLine": 301,
+                            "startLine": 300,
                             "startColumn": 28,
-                            "endLine": 301,
+                            "endLine": 300,
                             "endColumn": 57,
                             "isValidated": true,
                             "analyzer": "Resource Analyzer",

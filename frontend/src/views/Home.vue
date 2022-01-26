@@ -180,7 +180,6 @@ export default {
         this.user = user;
         this.accountId = user.uid;
         this.getAccount();
-        console.log(user);
       }
     });
   },
